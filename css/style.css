@@ -1,0 +1,426 @@
+/****************************************************
+	* Development
+****************************************************/
+
+/** {
+	color: red;
+}*/
+
+/** {
+	background: red;
+}*/
+
+/** {
+	border: 1px solid red;
+}*/
+
+/****************************************************
+	* Format
+****************************************************/
+
+/**
+	* Typography
+	*/
+
+/* Font Face */
+
+/* Font Family */
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+caption,
+blockquote p,
+q {
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+pre,
+code,
+kbd,
+tt,
+samp,
+var {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+/* Font Size */
+
+/* % */
+
+html {
+	font-size: calc( 100% * 1 ); /* 16px * 1 = 16px base rem unit */
+}
+
+/* rem */
+
+sup,
+sub { 
+	font-size: 0.75rem;
+}
+
+code,
+kbd,
+tt,
+samp,
+var,
+small {
+	font-size: 0.85rem;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+	font-size: 1rem;
+}
+
+h4,
+big {
+	font-size: 1.25rem;
+}
+
+h3,
+blockquote p,
+caption {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+@media screen and (min-width: 26.25rem) { /* 420 px */
+
+	html {
+		font-size: calc( 100% * 1.125 ); /* 16px * 1.125 = 18px base rem unit */
+	}
+
+}
+
+/* Line Height */
+
+h1,
+h2,
+h3,
+h4,
+pre,
+code {
+	line-height: 1.2;
+}
+
+blockquote p,
+caption,
+th,
+td {
+	line-height: 1.3;
+}
+
+body,
+p,
+ul,
+ol,
+dl {
+	line-height: 1.4;
+}
+
+/* Font Weight */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+th,
+dt,
+cite,
+legend {
+	font-weight: bold;
+}
+
+/* Font Style */
+
+em,
+i,
+q {
+	font-style: italic;
+}
+
+/* Text Decoration */
+
+abbr,
+acronym {
+	text-decoration: underline dotted;
+}
+
+/* Text Transform */
+
+caption,
+legend,
+button {
+	text-transform: capitalize;
+}
+
+/* Text Align */
+
+blockquote {
+	text-align: center;
+}
+
+/* Letter Spacing */
+
+/* White Space */
+
+/* List Styles */
+
+ul {
+	list-style: disc;
+}
+
+ul ul {
+	list-style: square;
+}
+
+ul ul ul {
+	list-style: circle;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: lower-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+/**
+	* Colors
+	*
+	* https://www.w3schools.com/colors/colors_converter.asp
+	* http://accessible-colors.com/
+	* https://webaim.org/resources/contrastchecker/
+	* http://colorsafe.co/
+	* https://toolness.github.io/accessible-color-matrix/
+	*/
+
+/* Black / hsl( 0, 0%, 0% ) / rgb( 0, 0, 0 ) / #000 */
+
+/* Darkest Gray / hsl( 0, 0%, 10% ) / rgb( 26, 26, 26 ) / #1a1a1a */
+
+body {
+	color: #1a1a1a;
+	color: rgb( 26, 26, 26 );
+	color: hsl( 0, 0%, 10% );
+}
+
+/* Darker Gray / hsl( 0, 0%, 20% ) / rgb( 51, 51, 51 ) / #333 */
+
+/* Dark Gray / hsl( 0, 0%, 30% ) / rgb( 77, 77, 77 ) / #4d4d4d */
+
+p,
+ul,
+ol,
+td {
+	color: #4d4d4d;
+	color: rgb( 77, 77, 77 );
+	color: hsl( 0, 0%, 30% );
+}
+
+/* Medium Dark Gray / hsl( 0, 0%, 40% ) / rgb( 102, 102, 102 ) / #666 */
+
+/* Medium Gray / hsl( 0, 0%, 50% ) / rgb( 128, 128, 128 ) / #808080 */
+
+/* Medium Light Gray / hsl( 0, 0%, 60% ) / rgb( 153, 153, 153 ) / #999 */
+
+/* Light Gray / hsl( 0, 0%, 70% ) / rgb( 179, 179, 179 ) / #b3b3b3 */
+
+/* Lighter Gray / hsl( 0, 0%, 80% ) / rgb( 204, 204, 204 ) / #cccccc */
+
+th,
+td,
+caption {
+	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid rgb( 204, 204, 204 );
+	border-bottom: 1px solid hsl( 0, 0%, 80% );
+}
+
+/* Lightest Gray / hsl( 0, 0%, 90% ) / rgb( 230, 230, 230 ) / #e6e6e6 */
+
+/* Off White / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
+
+body {
+	background: #f2f2f2;
+	background: rgb( 242, 242, 242 );
+	background: hsl( 0, 0%, 95% );
+}
+
+/* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
+
+/**
+	* Colorless / Transparent
+	*/
+
+/* Background */
+
+/* Border */
+
+input,
+textarea,
+button,
+input[type="button"] {
+	border: none;
+}
+
+tfoot th,
+tfoot td {
+	border-bottom: none;
+}
+
+/* Outline */
+
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* Opacity */
+
+/**
+	* Background Images
+	*/
+
+/* Background Blend Mode */
+
+/* Mix Blend Mode */
+
+/**
+	* Utility
+	*/
+
+/* Cursor */
+
+button,
+input {
+	cursor: pointer;
+}
+
+/* Clip Path */
+
+/* Transform */
+
+/* Transition */
+
+/* Content */
+
+/* Animation Keyframes */
+
+/****************************************************
+	* Layout
+****************************************************/
+
+/**
+	* Box Model
+	*/
+
+/* Box Sizing */
+
+/* Border Radius */
+
+/* Border Spacing */
+
+table {
+	border-spacing: 0;
+}
+
+/* Object Fit */
+
+/* Display */
+
+/* Dimensions */
+
+/* Width */
+
+/* Height */
+
+/* Padding */
+
+/* 0 */
+
+/* rem */
+
+body {
+	padding: 1rem;
+}
+
+/* em */
+
+th,
+td,
+caption {
+	padding: 1em;
+}
+
+/* Margin */
+
+/* 0 */
+
+body,
+ul ul,
+ol ol {
+	margin: 0;
+}
+
+/* rem */
+
+/* em */
+
+dd + dt {
+	margin: 1em 0 0;
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+	margin: 0 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 2em 0 0.5em;
+}
+
+/**
+	* Position
+	*/
+
+/* Overflow */
+
+/* Vertical Align */
+
+/* Z-Index */
+
+/**
+	* Flexbox
+	*/
+
+/**
+	* Grid
+	*/

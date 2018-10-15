@@ -1,0 +1,24 @@
+# humanstxt.org/
+
+The humans responsible & technology colophon
+
+## Team
+
+- Paul Shryock -- Lead Front End Developer -- @paul_shryock
+
+## Thanks
+
+- https://gethead.info/
+- http://www.robotstxt.org/
+- http://humanstxt.org/
+- https://codepen.io/ericrasch/pen/qIiyK
+
+## Technology Colophon
+
+- Apache
+- CSS
+- Git
+- GitHub
+- HTML
+- LiveReload
+- Sublime Text
