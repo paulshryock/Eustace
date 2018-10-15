@@ -73,7 +73,9 @@ body,
 input,
 textarea,
 select,
-button {
+button,
+h5,
+h6 {
 	font-size: 1rem;
 }
 
@@ -226,6 +228,12 @@ body {
 	color: hsl( 0, 0%, 10% );
 }
 
+thead {
+	background: #1a1a1a;
+	background: rgb( 26, 26, 26 );
+	background: hsl( 0, 0%, 10% );
+}
+
 /* Darker Gray / hsl( 0, 0%, 20% ) / rgb( 51, 51, 51 ) / #333 */
 
 /* Dark Gray / hsl( 0, 0%, 30% ) / rgb( 77, 77, 77 ) / #4d4d4d */
@@ -233,7 +241,7 @@ body {
 p,
 ul,
 ol,
-td {
+table {
 	color: #4d4d4d;
 	color: rgb( 77, 77, 77 );
 	color: hsl( 0, 0%, 30% );
@@ -247,27 +255,42 @@ td {
 
 /* Light Gray / hsl( 0, 0%, 70% ) / rgb( 179, 179, 179 ) / #b3b3b3 */
 
-/* Lighter Gray / hsl( 0, 0%, 80% ) / rgb( 204, 204, 204 ) / #cccccc */
+/* Lighter Gray / hsl( 0, 0%, 80% ) / rgb( 204, 204, 204 ) / #ccc */
 
-th,
-td,
-caption {
-	border-bottom: 1px solid #cccccc;
-	border-bottom: 1px solid rgb( 204, 204, 204 );
-	border-bottom: 1px solid hsl( 0, 0%, 80% );
+tfoot {
+	background: #ccc;
+	background: rgb( 204, 204, 204 );
+	background: hsl( 0, 0%, 80% );
 }
 
 /* Lightest Gray / hsl( 0, 0%, 90% ) / rgb( 230, 230, 230 ) / #e6e6e6 */
 
+table {
+	box-shadow: 0 0 0.25rem 0.25rem hsl( 0, 0%, 90% );
+}
+
 /* Off White / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
 
-body {
+thead {
+	color: #f2f2f2;
+	color: rgb( 242, 242, 242 );
+	color: hsl( 0, 0%, 95% );
+}
+
+body,
+tr:nth-of-type(even) {
 	background: #f2f2f2;
 	background: rgb( 242, 242, 242 );
 	background: hsl( 0, 0%, 95% );
 }
 
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
+
+table {
+	background: #fff;
+	background: rgb( 255, 255, 255 );
+	background: hsl( 0, 0%, 100% );
+}
 
 /**
 	* Colorless / Transparent
@@ -348,6 +371,30 @@ html {
 
 /* Border Radius */
 
+table {
+	border-radius: 1em;
+}
+
+thead th:first-child,
+thead td:first-child {
+	border-top-left-radius: 1em;
+}
+
+thead th:last-child,
+thead td:last-child {
+	border-top-right-radius: 1em;
+}
+
+tfoot th:first-child,
+tfoot td:first-child {
+	border-bottom-left-radius: 1em;
+}
+
+tfoot th:last-child,
+tfoot td:last-child {
+	border-bottom-right-radius: 1em;
+}
+
 /* Border Spacing */
 
 table {
@@ -408,6 +455,10 @@ table {
 	margin: 0 0 1em;
 }
 
+blockquote {
+	margin: 2em;
+}
+
 h1,
 h2,
 h3,
@@ -415,6 +466,18 @@ h4,
 h5,
 h6 {
 	margin: 2em 0 0.5em;
+}
+
+/* Margin Top */
+
+table + table {
+	margin-top: 2em;
+}
+
+/* Margin Bottom */
+
+blockquote p {
+	margin-bottom: 0.5em;
 }
 
 /**
