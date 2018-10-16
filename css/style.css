@@ -241,6 +241,7 @@ thead {
 p,
 ul,
 ol,
+dl,
 table {
 	color: #4d4d4d;
 	color: rgb( 77, 77, 77 );
@@ -459,13 +460,24 @@ caption {
 	padding: 1em;
 }
 
+dl {
+	padding: 0 0 0 1em;
+}
+
+ul,
+ol,
+dd {
+	padding: 0 0 0 2em;
+}
+
 /* Margin */
 
 /* 0 */
 
 body,
 ul ul,
-ol ol {
+ol ol,
+dd {
 	margin: 0;
 }
 
