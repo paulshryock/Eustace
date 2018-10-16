@@ -65,13 +65,17 @@ And again you'd need to tell what the previous code actually does. -->
 
 ## Priorities
 
-- Accessibility
-- Flexibility
-- Inclusivity
-- Performance
-- Responsiveness
-- Security
-- Simplicity
+- Accessible
+- Client-agnostic
+- Content-agnostic
+- Device-agnostic
+- Flexibile
+- Inclusive
+- Mobile-first
+- Performant
+- Responsive
+- Secure
+- Simple
 
 <!-- ## Configuration
 

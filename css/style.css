@@ -14,6 +14,28 @@
 	border: 1px solid red;
 }*/
 
+/**
+	* Media Queries
+	*/
+
+/* Default: Mobile */
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+}
+
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 37.5rem / 900px */
+
+}
+
+@media screen and (min-width: 75rem) { /* Desktop / 75rem / 1200px */
+
+}
+
+@media screen and (min-width: 112.5rem) { /* Big Desktop / 112.5rem / 1800px */
+
+}
+
 /****************************************************
 	* Format
 ****************************************************/
@@ -159,6 +181,17 @@ q {
 
 /* Text Decoration */
 
+nav a,
+nav a:link,
+nav a:visited {
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+	text-decoration: underline;
+}
+
 abbr,
 acronym {
 	text-decoration: underline dotted;
@@ -183,6 +216,10 @@ blockquote {
 /* White Space */
 
 /* List Styles */
+
+nav ul {
+	list-style: none;
+}
 
 ul {
 	list-style: disc;
@@ -419,6 +456,14 @@ table {
 
 /* Display */
 
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	nav li {
+		display: inline-block;
+	}
+
+}
+
 /* Dimensions */
 
 /* Width */
@@ -432,6 +477,10 @@ hr {
 /* Padding */
 
 /* 0 */
+
+nav ul {
+	padding: 0;
+}
 
 /* rem */
 
