@@ -309,6 +309,12 @@ table {
 	color: hsl( 0, 0%, 30% );
 }
 
+code {
+	background: #4d4d4d;
+	background: rgb( 77, 77, 77 );
+	background: hsl( 0, 0%, 30% );
+}
+
 /* Medium Dark Gray / hsl( 0, 0%, 40% ) / rgb( 102, 102, 102 ) / #666 */
 
 /* Medium Gray / hsl( 0, 0%, 50% ) / rgb( 128, 128, 128 ) / #808080 */
@@ -337,6 +343,10 @@ tfoot {
 	background: hsl( 0, 0%, 80% );
 }
 
+kbd {
+	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 80% );
+}
+
 /* Lightest Gray / hsl( 0, 0%, 90% ) / rgb( 230, 230, 230 ) / #e6e6e6 */
 
 table {
@@ -360,7 +370,14 @@ tr:nth-of-type(even) {
 
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
 
-table {
+code {
+	color: #fff;
+	color: rgb( 255, 255, 255 );
+	color: hsl( 0, 0%, 100% );
+}
+
+table,
+kbd {
 	background: #fff;
 	background: rgb( 255, 255, 255 );
 	background: hsl( 0, 0%, 100% );
@@ -446,6 +463,11 @@ html {
 
 /* Border Radius */
 
+kbd,
+code {
+	border-radius: 0.25em;
+}
+
 table {
 	border-radius: 1em;
 }
@@ -479,6 +501,14 @@ table {
 /* Object Fit */
 
 /* Display */
+
+kbd {
+	display: inline-block;
+}
+
+pre code {
+	display: block;
+}
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
@@ -528,12 +558,18 @@ button {
 	padding: 0.25rem;
 }
 
+kbd,
+code {
+	padding: 0 0.25rem;
+}
+
 legend {
 	padding: 0 0.5rem;
 }
 
 body,
-fieldset {
+fieldset,
+pre code {
 	padding: 1rem;
 }
 
@@ -562,11 +598,17 @@ dd {
 body,
 ul ul,
 ol ol,
-dd {
+dd,
+pre code {
 	margin: 0;
 }
 
 /* rem */
+
+kbd,
+code {
+	margin: 0 0.125rem;
+}
 
 hr {
 	margin: 1rem 0;
