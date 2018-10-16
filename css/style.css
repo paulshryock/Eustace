@@ -255,6 +255,18 @@ table {
 
 /* Light Gray / hsl( 0, 0%, 70% ) / rgb( 179, 179, 179 ) / #b3b3b3 */
 
+hr {
+	background: #b3b3b3;
+	background: rgb( 179, 179, 179 );
+	background: hsl( 0, 0%, 70% );
+}
+
+fieldset {
+	border: 0.125rem solid #b3b3b3;
+	border-color: rgb( 179, 179, 179 );
+	border-color: hsl( 0, 0%, 70% );
+}
+
 /* Lighter Gray / hsl( 0, 0%, 80% ) / rgb( 204, 204, 204 ) / #ccc */
 
 tfoot {
@@ -303,7 +315,8 @@ table {
 input,
 textarea,
 button,
-input[type="button"] {
+input[type="button"],
+hr {
 	border: none;
 }
 
@@ -411,13 +424,30 @@ table {
 
 /* Height */
 
+hr {
+	height: 0.125rem;
+}
+
 /* Padding */
 
 /* 0 */
 
 /* rem */
 
-body {
+input[type="text"],
+input[type="password"],
+input[type="button"],
+textarea,
+button {
+	padding: 0.25rem;
+}
+
+legend {
+	padding: 0 0.5rem;
+}
+
+body,
+fieldset {
 	padding: 1rem;
 }
 
@@ -441,6 +471,10 @@ ol ol {
 
 /* rem */
 
+hr {
+	margin: 1rem 0;
+}
+
 /* em */
 
 dd + dt {
@@ -451,7 +485,8 @@ p,
 ul,
 ol,
 dl,
-table {
+table,
+form {
 	margin: 0 0 1em;
 }
 
@@ -487,6 +522,10 @@ blockquote p {
 /* Overflow */
 
 /* Vertical Align */
+
+label {
+	vertical-align: top;
+}
 
 /* Z-Index */
 
