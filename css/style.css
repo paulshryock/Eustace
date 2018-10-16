@@ -468,11 +468,23 @@ table {
 
 /* Width */
 
+/* Min-Width */
+
+/* Max-Width */
+
+img {
+	max-width: 100%;
+}
+
 /* Height */
 
 hr {
 	height: 0.125rem;
 }
+
+/* Min-Height */
+
+/* Max-Height */
 
 /* Padding */
 
