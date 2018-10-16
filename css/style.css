@@ -232,6 +232,10 @@ button {
 
 /* Text Align */
 
+th {
+	text-align: left;
+}
+
 blockquote {
 	text-align: center;
 }
@@ -396,7 +400,8 @@ input,
 textarea,
 button,
 input[type="button"],
-hr {
+hr,
+iframe {
 	border: none;
 }
 
@@ -493,6 +498,12 @@ tfoot td:last-child {
 	border-bottom-right-radius: 1em;
 }
 
+/* Border Collapse */
+
+table {
+	border-collapse: collapse;
+}
+
 /* Border Spacing */
 
 table {
@@ -527,11 +538,25 @@ pre code {
 
 /* Max-Width */
 
-img {
+img,
+embed,
+iframe,
+object,
+audio,
+video {
 	max-width: 100%;
 }
 
 /* Height */
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+	height: auto;
+}
 
 hr {
 	height: 0.125rem;

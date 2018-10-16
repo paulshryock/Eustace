@@ -12,6 +12,7 @@ The humans responsible & technology colophon
 - http://www.robotstxt.org/
 - http://humanstxt.org/
 - https://codepen.io/ericrasch/pen/qIiyK
+- https://jgthms.com/minireset.css/
 
 ## Technology Colophon
 
