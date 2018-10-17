@@ -395,12 +395,6 @@ table {
 
 /* Off White / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
 
-thead {
-	color: #f2f2f2;
-	color: rgb( 242, 242, 242 );
-	color: hsl( 0, 0%, 95% );
-}
-
 body,
 tr:nth-of-type(even) {
 	background: #f2f2f2;
@@ -410,6 +404,7 @@ tr:nth-of-type(even) {
 
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
 
+thead,
 code {
 	color: #fff;
 	color: rgb( 255, 255, 255 );
