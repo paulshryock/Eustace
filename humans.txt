@@ -13,10 +13,12 @@ The humans responsible & technology colophon
 - http://humanstxt.org/
 - https://codepen.io/ericrasch/pen/qIiyK
 - https://jgthms.com/minireset.css/
+- https://css-tricks.com/almanac/properties/q/quotes/
 
 ## Technology Colophon
 
 - Apache
+- Chrome
 - CSS
 - Git
 - GitHub
