@@ -395,12 +395,6 @@ table {
 
 /* Off White / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
 
-thead {
-	color: #f2f2f2;
-	color: rgb( 242, 242, 242 );
-	color: hsl( 0, 0%, 95% );
-}
-
 body,
 tr:nth-of-type(even) {
 	background: #f2f2f2;
@@ -410,6 +404,7 @@ tr:nth-of-type(even) {
 
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
 
+thead,
 code {
 	color: #fff;
 	color: rgb( 255, 255, 255 );
@@ -637,7 +632,10 @@ pre code {
 /* em */
 
 th,
-td,
+td {
+	padding: 0.5em;
+}
+
 caption {
 	padding: 1em;
 }
@@ -650,6 +648,15 @@ ul,
 ol,
 dd {
 	padding: 0 0 0 2em;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	th,
+	td {
+		padding: 1em;
+	}
+
 }
 
 /* Margin */
@@ -681,6 +688,11 @@ h1 {
 	margin: 0 0 0.5em;
 }
 
+table,
+form {
+	margin: 2em 0;
+}
+
 dd + dt {
 	margin: 1em 0 0;
 }
@@ -688,9 +700,7 @@ dd + dt {
 p,
 ul,
 ol,
-dl,
-table,
-form {
+dl {
 	margin: 0 0 1em;
 }
 
