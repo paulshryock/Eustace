@@ -109,9 +109,9 @@ branch. Pull requests are welcome.
 
 ## Links
 
-Even though this information can be found inside the project on machine-readable
+<!-- Even though this information can be found inside the project on machine-readable
 format like in a .json file, it's good to include a summary of most useful
-links to humans using your project. You can include links like:
+links to humans using your project. You can include links like: -->
 
 - Project homepage: https://paulshryock.github.io/Hello-World-Front-End/
 - Repository: https://github.com/paulshryock/Hello-World-Front-End
