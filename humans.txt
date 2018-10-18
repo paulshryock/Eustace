@@ -12,9 +12,10 @@ The humans responsible & technology colophon
 - http://www.robotstxt.org/
 - http://humanstxt.org/
 - https://codepen.io/ericrasch/pen/qIiyK
+- http://www.a11ymatters.com/patterns/
 - https://jgthms.com/minireset.css/
-- https://css-tricks.com/almanac/properties/q/quotes/
 - github.com/necolas/normalize.css
+- https://css-tricks.com/almanac/properties/q/quotes/
 - https://abookapart.com/products/flexible-typesetting
 
 ## Technology Colophon
