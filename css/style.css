@@ -261,7 +261,8 @@ q {
 
 nav a,
 nav a:link,
-nav a:visited {
+nav a:visited,
+header h1 a {
 	text-decoration: none;
 }
 
@@ -567,7 +568,9 @@ html {
 
 kbd,
 code,
-details {
+details,
+button,
+.skip-link {
 	border-radius: 0.25em;
 }
 
