@@ -14,7 +14,30 @@ let browser = {};
 	*/
 browser.init = function() {
 
-	//
+	browser.addEventListeners();
+
+};
+
+/**
+	* Swap html element classes: `.no-js` to `.js`
+	*
+	*/
+browser.swapHTMLClasses = function() {
+
+	let el = document.querySelector( 'html' );
+
+	el.classList.toggle( 'no-js' );
+	el.classList.toggle( 'js' );
+
+};
+
+/**
+	* Add browser event listners
+	*
+	*/
+browser.addEventListeners = function() {
+
+	document.addEventListener( 'load', browser.swapHTMLClasses, false );
 
 };
 
