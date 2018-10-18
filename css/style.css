@@ -358,7 +358,8 @@ q:after {
 
 /* Darkest Gray / hsl( 0, 0%, 10% ) / rgb( 26, 26, 26 ) / #1a1a1a */
 
-body {
+body,
+button {
 	color: #1a1a1a;
 	color: rgb( 26, 26, 26 );
 	color: hsl( 0, 0%, 10% );
@@ -448,7 +449,8 @@ code {
 }
 
 table,
-kbd {
+kbd,
+button {
 	background: #fff;
 	background: rgb( 255, 255, 255 );
 	background: hsl( 0, 0%, 100% );
