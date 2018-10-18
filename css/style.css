@@ -477,21 +477,22 @@ code {
 
 table,
 kbd,
-button {
+button,
+.skip-link {
 	background: #fff;
 	background: rgb( 255, 255, 255 );
 	background: hsl( 0, 0%, 100% );
 }
 
-.skip-link {
-	background: #fff;
-	background: rgba( 255, 255, 255, 0.75 );
-	background: hsla( 0, 0%, 100%, 0.75 );
-}
-
 /**
 	* Colorless / Transparent
 	*/
+
+/* Webkit Appearance */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 button,
 [type="button"],
@@ -659,10 +660,20 @@ nav li {
 	display: inline-block;
 }
 
+details,
 pre code,
 .navigation li,
 .navigation a {
 	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+[hidden],
+template {
+	display: none;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
@@ -701,8 +712,10 @@ embed,
 iframe,
 object,
 audio,
-video {
-	height: auto;
+video,
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
 }
 
 hr {
@@ -733,6 +746,8 @@ hr {
 
 /* 0 */
 
+[type="checkbox"],
+[type="radio"],
 nav ul {
 	padding: 0;
 }
@@ -912,6 +927,10 @@ sub {
 
 /* Overflow */
 
+textarea {
+  overflow: auto;
+}
+
 button,
 input {
 	overflow: visible;
@@ -936,7 +955,8 @@ label {
 }
 
 sub,
-sup {
+sup,
+progress {
   vertical-align: baseline;
 }
 
