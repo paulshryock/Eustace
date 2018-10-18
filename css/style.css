@@ -394,7 +394,8 @@ hr {
 	background: hsl( 0, 0%, 70% );
 }
 
-fieldset {
+fieldset,
+details {
 	border: 0.125rem solid #b3b3b3;
 	border-color: rgb( 179, 179, 179 );
 	border-color: hsl( 0, 0%, 70% );
@@ -530,7 +531,8 @@ html {
 /* Border Radius */
 
 kbd,
-code {
+code,
+details {
 	border-radius: 0.25em;
 }
 
@@ -655,7 +657,8 @@ legend {
 
 body,
 fieldset,
-pre code {
+pre code,
+details {
 	padding: 1rem;
 }
 
