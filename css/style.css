@@ -261,7 +261,8 @@ q {
 
 nav a,
 nav a:link,
-nav a:visited {
+nav a:visited,
+header h1 a {
 	text-decoration: none;
 }
 
@@ -453,6 +454,12 @@ kbd {
 	background: hsl( 0, 0%, 100% );
 }
 
+.skip-link {
+	background: #fff;
+	background: rgba( 255, 255, 255, 0.75 );
+	background: hsla( 0, 0%, 100%, 0.75 );
+}
+
 /**
 	* Colorless / Transparent
 	*/
@@ -561,7 +568,9 @@ html {
 
 kbd,
 code,
-details {
+details,
+button,
+.skip-link {
 	border-radius: 0.25em;
 }
 
@@ -694,7 +703,8 @@ input[type="text"],
 input[type="password"],
 input[type="button"],
 textarea,
-button {
+button,
+.skip-link {
 	padding: 0.25rem;
 }
 
@@ -819,6 +829,26 @@ blockquote p {
 /**
 	* Position
 	*/
+
+.skip-link {
+	position: absolute;
+}
+
+/* Top */
+
+.skip-link:focus {
+	top: 0.5rem;
+}
+
+.skip-link {
+	top: -3rem;
+}
+
+/* Top */
+
+.skip-link:focus {
+	left: 0.5rem;
+}
 
 /* Overflow */
 
