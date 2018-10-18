@@ -41,6 +41,14 @@
 ****************************************************/
 
 /**
+	* Viewport
+	*/
+
+@viewport {
+	width: device-width;
+}
+
+/**
 	* Typography
 	*/
 
