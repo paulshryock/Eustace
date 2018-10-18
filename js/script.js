@@ -19,7 +19,7 @@ browser.init = function() {
 };
 
 /**
-	* Swap html element classes: `.no-js` to `.js`
+	* Swaps html element classes: `.no-js` to `.js`
 	*
 	*/
 browser.swapHTMLClasses = function() {
@@ -32,7 +32,7 @@ browser.swapHTMLClasses = function() {
 };
 
 /**
-	* Add browser event listners
+	* Adds browser event listners
 	*
 	*/
 browser.addEventListeners = function() {
@@ -68,7 +68,49 @@ a11y.init = function() {
 };
 
 /**
-	* Add pagination link labels
+	* Adds mobile navigation menu toggle button
+	*
+	*/
+a11y.addMobileNavigationMenuToggleButton = function() {
+
+	let nav = document.querySelector('.navigation'),
+			menu = document.querySelector('.navigation ul'),
+			button = document.createElement( 'button' );
+
+	button.textContent = 'Menu';
+	button.setAttribute( 'aria-expanded', 'false' );
+
+	button = nav.insertBefore( button, menu );
+
+};
+
+/**
+	* Adds mobile navigation
+	*
+	*/
+a11y.addMobileNavigation = function() {
+
+	a11y.addMobileNavigationMenuToggleButton();
+
+	let button = document.querySelector('.navigation button'),
+			menu = document.querySelector('.navigation ul'),
+			links = document.querySelectorAll('.navigation ul a');
+
+	button.addEventListener('click', function(){
+	  if (menu.classList.contains('is-active')) {
+	    this.setAttribute('aria-expanded', 'false');
+	    menu.classList.remove('is-active');
+	  } else {
+	    menu.classList.add('is-active'); 
+	    this.setAttribute('aria-expanded', 'true');
+	    links[0].focus();
+	  }
+	});
+
+};
+
+/**
+	* Adds pagination link labels
 	*
 	*/
 a11y.addPaginationLinkLabels = function() {
@@ -90,12 +132,13 @@ a11y.addPaginationLinkLabels = function() {
 };
 
 /**
-	* Add a11y event listners
+	* Adds a11y event listners
 	*
 	*/
 a11y.addEventListeners = function() {
 
 	window.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
+	window.addEventListener( 'load', a11y.addMobileNavigation, false );
 
 };
 

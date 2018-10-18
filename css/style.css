@@ -54,15 +54,17 @@
 
 /* Font Face */
 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i|IBM+Plex+Sans:400,400i,700,700i|IBM+Plex+Serif:400,400i,700,700i');
+
 /* Font Family */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 blockquote p,
 q {
-	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "IBM Plex Serif", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 pre,
@@ -72,7 +74,7 @@ tt,
 samp,
 var,
 footer p {
-	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-family: "IBM Plex Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
 /* Font Size */
@@ -282,8 +284,21 @@ th {
 	text-align: left;
 }
 
-blockquote {
+.navigation {
+	text-align: right;
+}
+
+blockquote,
+.navigation ul {
 	text-align: center;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.navigation ul {
+		text-align: right;
+	}
+
 }
 
 /* Letter Spacing */
@@ -479,6 +494,22 @@ abbr[title] {
 
 /* Opacity */
 
+.navigation ul {
+	opacity: 0;
+}
+
+.navigation .is-active {
+	opacity: 1;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.navigation ul {
+		opacity: 1;
+	}
+
+}
+
 /**
 	* Background Images
 	*/
@@ -503,6 +534,10 @@ input {
 /* Transform */
 
 /* Transition */
+
+.navigation ul {
+	transition: all 0.5s;
+}
 
 /* Content */
 
@@ -586,6 +621,10 @@ pre code {
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
+	.navigation button {
+		display: none;
+	}
+
 	nav li {
 		display: inline-block;
 	}
@@ -627,6 +666,22 @@ hr {
 /* Min-Height */
 
 /* Max-Height */
+
+.navigation ul {
+	max-height: 0;
+}
+
+.navigation .is-active {
+	max-height: 100vh;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.navigation ul {
+		max-height: none;
+	}
+
+}
 
 /* Padding */
 
@@ -770,6 +825,18 @@ blockquote p {
 	*/
 
 /* Overflow */
+
+.navigation ul {
+	overflow: hidden;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.navigation ul {
+		overflow: auto;
+	}
+
+}
 
 /* Vertical Align */
 
