@@ -453,6 +453,12 @@ kbd {
 	background: hsl( 0, 0%, 100% );
 }
 
+.skip-link {
+	background: #fff;
+	background: rgba( 255, 255, 255, 0.75 );
+	background: hsla( 0, 0%, 100%, 0.75 );
+}
+
 /**
 	* Colorless / Transparent
 	*/
@@ -694,7 +700,8 @@ input[type="text"],
 input[type="password"],
 input[type="button"],
 textarea,
-button {
+button,
+.skip-link {
 	padding: 0.25rem;
 }
 
@@ -819,6 +826,26 @@ blockquote p {
 /**
 	* Position
 	*/
+
+.skip-link {
+	position: absolute;
+}
+
+/* Top */
+
+.skip-link:focus {
+	top: 0.5rem;
+}
+
+.skip-link {
+	top: -3rem;
+}
+
+/* Top */
+
+.skip-link:focus {
+	left: 0.5rem;
+}
 
 /* Overflow */
 
