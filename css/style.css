@@ -79,6 +79,12 @@ footer p {
 
 /* Font Size */
 
+/* 0 */
+
+nav ul {
+	font-size: 0;
+}
+
 /* % */
 
 :root {
@@ -148,7 +154,8 @@ select,
 button,
 pre,
 h5,
-h6 {
+h6,
+nav li {
 	font-size: 1rem;
 }
 
@@ -284,21 +291,8 @@ th {
 	text-align: left;
 }
 
-.navigation {
-	text-align: right;
-}
-
-blockquote,
-.navigation ul {
+blockquote {
 	text-align: center;
-}
-
-@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
-
-	.navigation ul {
-		text-align: right;
-	}
-
 }
 
 /* Letter Spacing */
@@ -611,21 +605,24 @@ table {
 
 /* Display */
 
-kbd {
+kbd,
+nav li {
 	display: inline-block;
 }
 
-pre code {
+pre code,
+.navigation li,
+.navigation a {
 	display: block;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	.navigation button {
+	nav button {
 		display: none;
 	}
 
-	nav li {
+	.navigation li {
 		display: inline-block;
 	}
 
@@ -710,7 +707,6 @@ legend {
 	padding: 0 0.5rem;
 }
 
-body,
 fieldset,
 pre code,
 details {
