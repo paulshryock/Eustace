@@ -107,19 +107,26 @@ footer p {
 
 }
 
-/* rem */
-
 sup,
 sub { 
-	font-size: 0.75rem;
+	font-size: 75%;
 }
+
+small {
+	font-size: 85%;
+}
+
+big {
+	font-size: 112.5%;
+}
+
+/* rem */
 
 code,
 kbd,
 tt,
 samp,
 var,
-small,
 footer p {
 	font-size: 0.85rem;
 }
@@ -129,13 +136,13 @@ input,
 textarea,
 select,
 button,
+pre,
 h5,
 h6 {
 	font-size: 1rem;
 }
 
-h4,
-big {
+h4 {
 	font-size: 1.125rem;
 }
 
@@ -178,6 +185,10 @@ h1 {
 
 /* Line Height */
 
+html {
+	line-height: 1;
+}
+
 h1,
 h2,
 h3,
@@ -208,13 +219,17 @@ h3,
 h4,
 h5,
 h6,
-strong,
-b,
 th,
 dt,
 cite,
 legend {
 	font-weight: bold;
+}
+
+strong,
+b,
+samp {
+	font-weight: bolder;
 }
 
 /* Font Style */
@@ -234,12 +249,14 @@ nav a:visited {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+abbr[title] {
 	text-decoration: underline;
 }
 
 abbr,
-acronym {
+acronym,
+abbr[title] {
 	text-decoration: underline dotted;
 }
 
@@ -424,6 +441,10 @@ kbd {
 
 /* Background */
 
+a {
+  background-color: none;
+}
+
 /* Border */
 
 input,
@@ -436,7 +457,8 @@ iframe {
 }
 
 tfoot th,
-tfoot td {
+tfoot td,
+abbr[title] {
 	border-bottom: none;
 }
 
