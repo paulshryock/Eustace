@@ -1,4 +1,4 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+<!--![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)-->
 
 # Hello World Front End
 > Start from scratch without reinventing the wheel
@@ -61,9 +61,11 @@ packagemanager deploy awesome-project -s server.com -u username -p password
 
 And again you'd need to tell what the previous code actually does. -->
 
-<!-- ## Features -->
+## Features
 
-## Priorities
+- [Accessible Patterns](http://www.a11ymatters.com/patterns/)
+
+## Qualities
 
 - Accessible
 - Client-agnostic
