@@ -77,6 +77,14 @@ footer p {
 	font-family: "IBM Plex Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 /* Font Size */
 
 /* 0 */
@@ -132,6 +140,14 @@ small {
 	font-size: 85%;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+}
+
 big {
 	font-size: 112.5%;
 }
@@ -148,10 +164,6 @@ footer p {
 }
 
 body,
-input,
-textarea,
-select,
-button,
 pre,
 h5,
 h6,
@@ -202,6 +214,11 @@ h1 {
 
 /* Line Height */
 
+sub,
+sup {
+  line-height: 0;
+}
+
 html {
 	line-height: 1;
 }
@@ -224,8 +241,13 @@ body,
 p,
 ul,
 ol,
-dl {
-	line-height: 1.4;
+dl,
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 1.4;
 }
 
 /* Font Weight */
@@ -279,6 +301,11 @@ abbr[title] {
 }
 
 /* Text Transform */
+
+button,
+select {
+  text-transform: none;
+}
 
 caption,
 legend,
@@ -466,6 +493,13 @@ button {
 	* Colorless / Transparent
 	*/
 
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
 /* Background */
 
 a {
@@ -473,6 +507,10 @@ a {
 }
 
 /* Border */
+
+img {
+	border-style: none;
+}
 
 input,
 textarea,
@@ -763,8 +801,13 @@ body,
 ul ul,
 ol ol,
 dd,
-pre code {
-	margin: 0;
+pre code,
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
 }
 
 /* rem */
@@ -836,7 +879,16 @@ blockquote p {
 	position: absolute;
 }
 
+sub,
+sup {
+  position: relative;
+}
+
 /* Top */
+
+sup {
+  top: -0.5em;
+}
 
 .skip-link:focus {
 	top: 0.5rem;
@@ -846,13 +898,24 @@ blockquote p {
 	top: -3rem;
 }
 
-/* Top */
+/* Bottom */
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Left */
 
 .skip-link:focus {
 	left: 0.5rem;
 }
 
 /* Overflow */
+
+button,
+input {
+	overflow: visible;
+}
 
 .js .navigation ul {
 	overflow: hidden;
@@ -870,6 +933,11 @@ blockquote p {
 
 label {
 	vertical-align: top;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
 }
 
 /* Z-Index */
