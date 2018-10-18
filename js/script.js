@@ -37,7 +37,7 @@ browser.swapHTMLClasses = function() {
 	*/
 browser.addEventListeners = function() {
 
-	document.addEventListener( 'load', browser.swapHTMLClasses, false );
+	window.addEventListener( 'load', browser.swapHTMLClasses, false );
 
 };
 
@@ -95,7 +95,7 @@ a11y.addPaginationLinkLabels = function() {
 	*/
 a11y.addEventListeners = function() {
 
-	document.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
+	window.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
 
 };
 
