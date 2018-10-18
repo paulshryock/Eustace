@@ -27,13 +27,19 @@
   </head>
   <body>
 
+    <!--
+      -- Accessible Mobile Navigation
+      -- 
+      -- http://www.a11ymatters.com/pattern/mobile-nav/
+      -->
     <nav role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="test.html">Test</a></li>
-        <li><a href="kitchen-sink.html">Kitchen Sink</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+      <button id="toggle" aria-expanded="false">Menu</button>
+      <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="test.html">Test</a></li>
+      <li><a href="kitchen-sink.html">Kitchen Sink</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
