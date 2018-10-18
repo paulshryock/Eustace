@@ -1,3 +1,33 @@
+/******************************************
+	* Browser
+	*****************************************/
+
+/**
+	* The main browser object
+	*
+	*/
+let browser = {};
+
+/**
+	* Initializes the main browser object
+	*
+	*/
+browser.init = function() {
+
+	//
+
+};
+
+/**
+	* Initialize the main browser object
+	*
+	*/
+browser.init();
+
+/******************************************
+	* Accessibility
+	*****************************************/
+
 /**
 	* The main a11y object
 	*
@@ -10,17 +40,17 @@ let a11y = {};
 	*/
 a11y.init = function() {
 
-	a11y.labelPaginationLinks( '.pagination a' );
+	a11y.addEventListeners();
 
 };
 
 /**
-	* Labels pagination links
+	* Add pagination link labels
 	*
 	*/
-a11y.labelPaginationLinks = function( selector ) {
+a11y.addPaginationLinkLabels = function() {
 
-	let links = document.querySelectorAll( selector );
+	let links = document.querySelectorAll( '.pagination a' );
 
 	for (var i = 0; i < links.length; i++) {
 
@@ -33,6 +63,16 @@ a11y.labelPaginationLinks = function( selector ) {
 
 		links[i].setAttribute('aria-label', string);
 	}
+
+};
+
+/**
+	* Add a11y event listners
+	*
+	*/
+a11y.addEventListeners = function() {
+
+	document.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
 
 };
 
