@@ -455,6 +455,7 @@ tfoot {
 	background: hsl( 0, 0%, 80% );
 }
 
+button,
 kbd {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 80% );
 }
@@ -843,6 +844,10 @@ code {
 	padding: 0 0.25rem;
 }
 
+nav a {
+	padding: 0.5rem;
+}
+
 legend {
 	padding: 0 0.5rem;
 }
@@ -907,6 +912,10 @@ textarea,
 kbd,
 code {
 	margin: 0 0.125rem;
+}
+
+nav ul {
+	margin: 0 -0.5rem;
 }
 
 hr {
@@ -1042,6 +1051,15 @@ progress {
 /**
 	* Flexbox
 	*/
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	nav ul {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+}
 
 /**
 	* Grid
