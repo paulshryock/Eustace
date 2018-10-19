@@ -107,7 +107,7 @@ Copy-paste as many of these as you need. -->
 
 ## Contributing
 
-If you'd like to contribute, please fork the repository and use a feature
+If you'd like to contribute, please read the [Code of Conduct](https://github.com/paulshryock/Hello-World-Front-End/blob/master/CODE_OF_CONDUCT.md), then fork the repository and use a feature
 branch. Pull requests are welcome.
 
 ## Links
