@@ -693,6 +693,11 @@ table {
 
 /* Display */
 
+[hidden],
+template {
+	display: none;
+}
+
 kbd,
 nav li {
 	display: inline-block;
@@ -711,11 +716,6 @@ legend {
 
 summary {
 	display: list-item;
-}
-
-[hidden],
-template {
-	display: none;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
