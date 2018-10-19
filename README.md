@@ -74,7 +74,7 @@ And again you'd need to tell what the previous code actually does. -->
 - Client-agnostic
 - Content-agnostic
 - Device-agnostic
-- Flexibile
+- Flexible
 - Inclusive
 - Mobile-first
 - Performant

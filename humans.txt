@@ -13,6 +13,8 @@ The humans responsible & technology colophon
 - http://humanstxt.org/
 - https://codepen.io/ericrasch/pen/qIiyK
 - http://www.a11ymatters.com/patterns/
+- http://khan.github.io/tota11y/
+- https://inclusive-components.design/
 - https://jgthms.com/minireset.css/
 - github.com/necolas/normalize.css
 - https://css-tricks.com/almanac/properties/q/quotes/

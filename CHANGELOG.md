@@ -4,14 +4,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Roadmap / Unreleased]
-
+## X.X.X - XXXX-XX-XX
 ### Added
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [Roadmap / Unreleased]
+- Add Inclusive Components
+	- [Cards](https://inclusive-components.design/cards/)
+	- [Data Tables](https://inclusive-components.design/data-tables/)
+	- [Notifications](https://inclusive-components.design/notifications/)
+	- [A Content Slider](https://inclusive-components.design/a-content-slider/)
+	- [Collapsible Sections](https://inclusive-components.design/collapsible-sections/)
+	- [Tabbed Interfaces](https://inclusive-components.design/tabbed-interfaces/)
+	- [A Theme Switcher](https://inclusive-components.design/a-theme-switcher/)
+	- [Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/)
+	- [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
+	- [A Todo List](https://inclusive-components.design/a-todo-list/)
+	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
 
 ## 1.0.0 - 2018-10-19
 
