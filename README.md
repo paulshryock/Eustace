@@ -5,6 +5,20 @@
 
 This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.
 
+The goal is for every project to possess the following qualities:
+
+- Accessible
+- Client-agnostic
+- Content-agnostic
+- Device-agnostic
+- Flexible
+- Inclusive
+- Mobile-first
+- Performant
+- Responsive
+- Secure
+- Simple
+
 ## Installing / Getting started
 
 <!-- A quick introduction of the minimal setup you need to get a hello world up &
@@ -67,20 +81,6 @@ And again you'd need to tell what the previous code actually does. -->
 	- Mobile navigation
 	- Skip navigation link
 	- Pagination
-
-## Qualities
-
-- Accessible
-- Client-agnostic
-- Content-agnostic
-- Device-agnostic
-- Flexible
-- Inclusive
-- Mobile-first
-- Performant
-- Responsive
-- Secure
-- Simple
 
 <!-- ## Configuration
 
