@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.0 - 2018-10-18
+## 1.0.0 - 2018-10-19
 
 ### Added
 - Add HTML
@@ -24,3 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- Element defaults
 - Add `robots.txt` and `humans.txt`
 - Add `LICENSE`, `README.md`, and `CHANGELOG.md`
+- Add Accessibile patterns
+	- Mobile navigation
+	- Skip navigation link
+	- Pagination
