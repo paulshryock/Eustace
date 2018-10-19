@@ -68,127 +68,6 @@ a11y.init = function() {
 };
 
 /**
-	* Adds mobile navigation menu toggle button
-	*
-	*/
-a11y.addMobileNavigationMenuToggleButton = function() {
-	console.log( 'a11y.addMobileNavigationMenuToggleButton()' );
-
-	let nav = document.querySelector('.site-navigation'),
-			menu = document.querySelector('.site-navigation ul'),
-			button = document.createElement( 'button' ),
-			mq = window.matchMedia( '(max-width: 37.5rem)' ),
-			addOrRemoveButton;
-
-	button.textContent = 'Menu';
-	button.setAttribute( 'aria-expanded', 'false' );
-
-	if (mq.matches) {
-		button = nav.insertBefore( button, menu );
-	}
-
-	addOrRemoveButton = function( mq ) {
-		console.log( 'addOrRemoveButton( mq )' );
-
-		if (mq.matches) {
-			button = nav.insertBefore( button, menu );
-		} else {
-			button = nav.removeChild( button );
-		}
-
-	};
-
-	mq.addListener( addOrRemoveButton );
-
-};
-
-/**
-	* Hides mobile navigation menu
-	*
-	*/
-a11y.hideMobileNavigationMenu = function() {
-	console.log( 'a11y.hideMobileNavigationMenu()' );
-
-	let menu = document.querySelector('.site-navigation ul'),
-			mq = window.matchMedia( '(max-width: 37.5rem)' ),
-			hideOrShowMenu;
-
-	if (mq.matches) {
-		menu.setAttribute( 'hidden', '' );
-	}
-
-	hideOrShowMenu = function( mq ) {
-		console.log( 'hideOrShowMenu( mq )' );
-
-		if (mq.matches) {
-			menu.setAttribute( 'hidden', '' );
-		} else {
-	    menu.removeAttribute( 'hidden' );
-		}
-
-	};
-
-	mq.addListener( hideOrShowMenu );
-
-};
-
-/**
-	* Adds mobile navigation
-	*
-	*/
-a11y.addMobileNavigation = function() {
-	console.log( 'a11y.addMobileNavigation()' );
-
-	a11y.addMobileNavigationMenuToggleButton();
-	a11y.hideMobileNavigationMenu();
-
-	let button = document.querySelector('.site-navigation button'),
-			menu = document.querySelector('.site-navigation ul'),
-			links = document.querySelectorAll('.site-navigation ul a'),
-			mq = window.matchMedia( '(max-width: 37.5rem)' ),
-			buttonClickListener;
-
-	button.addEventListener('click', function(){
-	  if (menu.classList.contains('is-active')) {
-	    this.setAttribute('aria-expanded', 'false');
-	    menu.classList.remove('is-active');
-	    menu.setAttribute( 'hidden', '' );
-	  } else {
-	    menu.classList.add('is-active'); 
-	    this.setAttribute('aria-expanded', 'true');
-	    links[0].focus();
-	    menu.removeAttribute( 'hidden' );
-	  }
-	});
-
-	buttonClickListener = function( mq ) {
-		console.log( 'buttonClickListener( mq )' );
-
-		if (mq.matches) {
-			console.log( button );
-
-			button.addEventListener('click', function(){
-			  if (menu.classList.contains('is-active')) {
-			    this.setAttribute('aria-expanded', 'false');
-			    menu.setAttribute( 'hidden', '' );
-			    menu.classList.remove('is-active');
-			  } else {
-			    menu.removeAttribute( 'hidden' );
-			    menu.classList.add('is-active'); 
-			    this.setAttribute('aria-expanded', 'true');
-			    links[0].focus();
-			  }
-			});
-
-		}
-
-	};
-
-	mq.addListener( buttonClickListener );
-
-};
-
-/**
 	* Adds pagination link labels
 	*
 	*/
@@ -216,7 +95,6 @@ a11y.addPaginationLinkLabels = function() {
 	*/
 a11y.addEventListeners = function() {
 
-	window.addEventListener( 'load', a11y.addMobileNavigation, false );
 	window.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
 
 };
@@ -226,3 +104,160 @@ a11y.addEventListeners = function() {
 	*
 	*/
 a11y.init();
+
+/******************************************
+	* Navigation
+	*****************************************/
+
+/**
+	* The main navigation object
+	*
+	*/
+let navigation = {};
+
+/**
+	* Initializes the main navigation object
+	*
+	*/
+navigation.init = function() {
+
+	navigation.addEventListeners();
+
+};
+
+/**
+	* Adds mobile navigation menu toggle button
+	*
+	*/
+navigation.addNavButton = function() {
+
+	let nav = document.querySelector('.site-navigation'),
+			menu = document.querySelector('.site-navigation ul'),
+			button = document.createElement( 'button' );
+
+	button.textContent = 'Menu';
+	button.setAttribute( 'aria-expanded', 'false' );
+
+	button = nav.insertBefore( button, menu );
+
+};
+
+/**
+	* Removes mobile navigation menu toggle button
+	*
+	*/
+navigation.removeNavButton = function() {
+
+	let nav = document.querySelector('.site-navigation'),
+			button = document.querySelector( '.site-navigation button' );
+
+	if (button) {
+		button = nav.removeChild( button );
+	}
+
+};
+
+/**
+	* Hides mobile navigation menu
+	*
+	*/
+navigation.hideNavMenu = function() {
+
+	let menu = document.querySelector('.site-navigation ul');
+
+	menu.setAttribute( 'hidden', '' );
+  menu.classList.remove('is-active');
+
+};
+
+/**
+	* Shows mobile navigation menu
+	*
+	*/
+navigation.showNavMenu = function() {
+
+	let menu = document.querySelector('.site-navigation ul');
+
+	menu.removeAttribute( 'hidden' );
+  menu.classList.add('is-active');
+
+};
+
+/**
+	* Toggles navigation button and menu elements' states
+	*
+	*/
+navigation.toggleNavElementsStates = function() {
+
+	let menu = document.querySelector('.site-navigation ul'),
+			links = document.querySelectorAll('.site-navigation ul a');
+
+  if (menu.classList.contains('is-active')) {
+    this.setAttribute('aria-expanded', 'false');
+    navigation.hideNavMenu();
+  } else {
+    this.setAttribute('aria-expanded', 'true');
+    navigation.showNavMenu();
+    links[0].focus();
+  }
+
+};
+
+/**
+	* Toggles navigation button and menu elements
+	*
+	*/
+navigation.toggleNavElements = function( mq ) {
+
+	if (mq.matches) { // Tablet and up
+
+		let button = document.querySelector( '.site-navigation button' );
+
+		if (button) {
+			button.removeEventListener( 'click', navigation.toggleNavElementsStates, false );
+		}
+		navigation.removeNavButton();
+		navigation.showNavMenu();
+
+	} else { // Mobile
+
+		navigation.addNavButton();
+		let button = document.querySelector( '.site-navigation button' );
+
+		if (button) {
+			button.addEventListener( 'click', navigation.toggleNavElementsStates, false );
+		}
+		navigation.hideNavMenu();
+
+	}
+
+};
+
+/**
+	* Adds mobile navigation
+	*
+	*/
+navigation.addMobileNavigation = function() {
+
+	let mq = window.matchMedia( '(min-width: 37.5rem)' );
+
+	navigation.toggleNavElements( mq ); // Call listener function at run time
+	mq.addListener( navigation.toggleNavElements ); // Attach listener function on state changes
+
+};
+
+/**
+	* Adds navigation event listners
+	*
+	*/
+navigation.addEventListeners = function() {
+
+	window.addEventListener( 'load', navigation.addMobileNavigation, false );
+
+};
+
+/**
+	* Initialize the main navigation object
+	*
+	*/
+navigation.init();
