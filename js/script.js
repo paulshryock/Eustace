@@ -73,8 +73,8 @@ a11y.init = function() {
 	*/
 a11y.addMobileNavigationMenuToggleButton = function() {
 
-	let nav = document.querySelector('.navigation'),
-			menu = document.querySelector('.navigation ul'),
+	let nav = document.querySelector('.site-navigation'),
+			menu = document.querySelector('.site-navigation ul'),
 			button = document.createElement( 'button' );
 
 	button.textContent = 'Menu';
@@ -92,9 +92,9 @@ a11y.addMobileNavigation = function() {
 
 	a11y.addMobileNavigationMenuToggleButton();
 
-	let button = document.querySelector('.navigation button'),
-			menu = document.querySelector('.navigation ul'),
-			links = document.querySelectorAll('.navigation ul a');
+	let button = document.querySelector('.site-navigation button'),
+			menu = document.querySelector('.site-navigation ul'),
+			links = document.querySelectorAll('.site-navigation ul a');
 
 	button.addEventListener('click', function(){
 	  if (menu.classList.contains('is-active')) {
