@@ -25,6 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
 	- [A Todo List](https://inclusive-components.design/a-todo-list/)
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
+- Style elements
+	- Accessible colors
+
+## 1.0.1 - XXXX-XX-XX
+
+### Changed
+- Style elements
+	- Hyperlinks
 
 ## 1.0.0 - 2018-10-19
 

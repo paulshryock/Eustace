@@ -493,6 +493,33 @@ button,
 }
 
 /**
+	* Order for styling hyperlinks
+	*
+	* :link, :visited, :hover, :focus, :active
+	* “Lord Vader Hates Furry Animals”
+	*/
+
+/* Blue / hsl( 240, 100%, 47% ) / rgb( 0, 0, 238 ) / #00e */
+
+a:link,
+a:visited {
+	color: hsl( 240, 100%, 47% );
+}
+
+/* Purple / hsl( 271, 68%, 32% ) / rgb( 85, 26, 139 ) / #551a8b */
+
+a:hover,
+a:focus {
+	color: hsl( 271, 68%, 32% );
+}
+
+/* Red / hsl( 0, 100%, 50% ) / rgb( 255, 0, 0 ) / #f00 / red */
+
+a:active {
+	color: hsl( 0, 100%, 50% );
+}
+
+/**
 	* Colorless / Transparent
 	*/
 
