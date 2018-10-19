@@ -64,6 +64,9 @@ And again you'd need to tell what the previous code actually does. -->
 ## Features
 
 - [Accessible Patterns](http://www.a11ymatters.com/patterns/)
+	- Mobile navigation
+	- Skip navigation link
+	- Pagination
 
 ## Qualities
 
