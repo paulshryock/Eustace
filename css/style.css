@@ -191,7 +191,7 @@ h2,
 }
 
 h1,
-.home h2 {
+.page-title {
 	font-size: 2rem;
 }
 
@@ -214,7 +214,7 @@ h1,
 	}
 
 	h1,
-	.home h2 {
+	.page-title {
 		font-size: 3rem;
 	}
 
@@ -995,7 +995,7 @@ dl {
 }
 
 h1,
-.home h2 {
+.page-title {
 	margin: 1em 0 0.5em;
 }
 
