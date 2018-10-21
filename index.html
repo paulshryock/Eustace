@@ -6,7 +6,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<!-- Page-specific information -->
-		<title>Page Title</title>
+		<title>Hello World</title>
 		<meta name="description" content="A description of the page">
 		<meta name="robots" content="index,follow">
 		<link rel="author" href="humans.txt">
@@ -15,16 +15,16 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<!-- Favicons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
 
   </head>
-  <body>
+  <body class="home">
 
 		<!--
 			-- Accessible Skip Navigation Link
@@ -33,13 +33,13 @@
 			-->
     <a class="skip-link" href="#content">Skip to content</a>
 
-		<!-- <header role="banner" class="container site-header">
+		<header role="banner" class="container site-header">
 			<h1 class="site-title">
-				<a href="index.html">
-					Site Title
+				<a href="/">
+					Hello World
 				</a>
 			</h1>
-		</header> -->
+		</header>
 
 		<!--
 			-- Accessible Mobile Navigation
@@ -48,22 +48,30 @@
 			-->
 		<nav role="navigation" class="container site-navigation">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="test.html">Test</a></li>
-				<li><a href="kitchen-sink.html">Kitchen Sink</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/components.html">Components</a></li>
+				<li><a href="/kitchen-sink.html">Kitchen Sink</a></li>
+				<li><a href="/archive.html">Blog</a></li>
+				<li><a href="/single.html">Article</a></li>
 			</ul>
 		</nav><!-- .container .site-navigation -->
 
-	<!-- <main id="content" class="container">
+	<main id="content" class="container">
+
+		<article>
+			<header>
+				<h2>Start from scratch without reinventing the wheel</h2>
+			</header>
+			<p>This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.</p>
+			<a href="/components.html">See available components</a>
+		</article>
+
 	</main>
 	
 	<footer role="contentinfo" class="container">
-	  <p>&copy 2018 Site Title. All rights reserved.</p>
-	</footer> -->
+	  <p>&copy 2018 Hello World. All rights reserved.</p>
+	</footer>
 
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/vendor/tota11y.min.js"></script>
   </body>
 </html>

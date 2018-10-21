@@ -185,11 +185,13 @@ caption {
 	font-size: 1.25rem;
 }
 
-h2 {
+h2,
+.site-title {
 	font-size: 1.5rem;
 }
 
-h1 {
+h1,
+.home h2 {
 	font-size: 2rem;
 }
 
@@ -206,11 +208,13 @@ h1 {
 		font-size: 1.5rem;
 	}
 
-	h2 {
+	h2,
+	.site-title {
 		font-size: 2rem;
 	}
 
-	h1 {
+	h1,
+	.home h2 {
 		font-size: 3rem;
 	}
 
@@ -229,6 +233,10 @@ html {
 
 h1,
 h2,
+.site-title {
+	line-height: 1.1;
+}
+
 h3,
 h4 {
 	line-height: 1.2;
@@ -247,6 +255,7 @@ ul,
 ol,
 dl,
 button,
+.button,
 input,
 optgroup,
 select,
@@ -265,7 +274,8 @@ h6,
 th,
 dt,
 cite,
-legend {
+legend,
+.site-title {
 	font-weight: bold;
 }
 
@@ -288,7 +298,9 @@ q {
 nav a,
 nav a:link,
 nav a:visited,
-header h1 a {
+header h1 a,
+.site-title a,
+.button {
 	text-decoration: none;
 }
 
@@ -306,14 +318,16 @@ abbr[title] {
 
 /* Text Transform */
 
-button,
 select {
   text-transform: none;
 }
 
 caption,
 legend,
-button {
+label,
+button,
+.button,
+input[type="button"] {
 	text-transform: capitalize;
 }
 
@@ -394,7 +408,12 @@ q:after {
 /* Darkest Gray / hsl( 0, 0%, 10% ) / rgb( 26, 26, 26 ) / #1a1a1a */
 
 body,
-button {
+button,
+.button:link,
+.button:visited,
+.button:hover,
+.button:focus,
+.button:active {
 	color: #1a1a1a;
 	color: rgb( 26, 26, 26 );
 	color: hsl( 0, 0%, 10% );
@@ -456,6 +475,7 @@ tfoot {
 }
 
 button,
+.button,
 kbd {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 80% );
 }
@@ -487,6 +507,7 @@ code {
 table,
 kbd,
 button,
+.button,
 .skip-link {
 	background: #fff;
 	background: rgb( 255, 255, 255 );
@@ -500,19 +521,21 @@ button,
 	* “Lord Vader Hates Furry Animals”
 	*/
 
-/* Blue / hsl( 240, 100%, 47% ) / rgb( 0, 0, 238 ) / #00e */
+/* Blue / hsl( 240, 100%, 55% ) / rgb( 26, 26, 255 ) / #1a1aff */
 
 a:link,
 a:visited {
-	color: hsl( 240, 100%, 47% );
+	color: hsl( 240, 100%, 55% );
 }
 
-/* Purple / hsl( 271, 68%, 32% ) / rgb( 85, 26, 139 ) / #551a8b */
+/* Purple / hsl( 280, 100%, 37% ) / rgb( 126, 0, 189 ) / #7e00bd */
 
 a:hover,
 a:focus {
-	color: hsl( 271, 68%, 32% );
+	color: hsl( 280, 100%, 37% );
 }
+
+/* Purple / hsl( 271, 68%, 32% ) / rgb( 85, 26, 139 ) / #551a8b */
 
 /* Red / hsl( 0, 100%, 50% ) / rgb( 255, 0, 0 ) / #f00 / red */
 
@@ -551,10 +574,22 @@ legend {
 /* Background */
 
 a {
-  background-color: none;
+  background-color: transparent;
 }
 
 /* Border */
+
+/* none */
+
+input,
+textarea,
+button,
+input[type="button"],
+hr,
+iframe,
+.pagination a[aria-current="true"] {
+	border: none;
+}
 
 img,
 button::-moz-focus-inner,
@@ -564,19 +599,16 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
-input,
-textarea,
-button,
-input[type="button"],
-hr,
-iframe {
-	border: none;
-}
-
 tfoot th,
 tfoot td,
 abbr[title] {
 	border-bottom: none;
+}
+
+/* rem */
+
+.pagination a {
+	border: 0.0625rem solid;
 }
 
 /* Outline */
@@ -639,8 +671,12 @@ input {
 
 /* Transition */
 
+a {
+	transition: color 200ms ease;
+}
+
 .js .site-navigation ul {
-	transition: all 0.5s;
+	transition: all 500ms;
 }
 
 /* Content */
@@ -673,8 +709,10 @@ kbd,
 code,
 details,
 button,
+.button,
 input[type="text"],
 input[type="password"],
+input[type="button"],
 textarea,
 .skip-link {
 	border-radius: 0.25em;
@@ -727,7 +765,8 @@ template {
 }
 
 kbd,
-nav li {
+nav li,
+.button {
 	display: inline-block;
 }
 
@@ -766,6 +805,8 @@ summary {
 
 /* Max Width */
 
+/* % */
+
 img,
 embed,
 iframe,
@@ -774,6 +815,12 @@ audio,
 video,
 legend {
   max-width: 100%;
+}
+
+/* ch */
+
+article {
+	max-width: 65ch;
 }
 
 /* Height */
@@ -835,6 +882,7 @@ input[type="password"],
 input[type="button"],
 textarea,
 button,
+.button,
 .skip-link {
 	padding: 0.25rem;
 }
@@ -907,7 +955,13 @@ textarea,
   margin: 0;
 }
 
+/* auto */
+
 /* rem */
+
+.pagination a {
+	margin: 0 0.125rem;
+}
 
 kbd,
 code {
@@ -923,10 +977,6 @@ hr {
 }
 
 /* em */
-
-h1 {
-	margin: 0 0 0.5em;
-}
 
 table,
 form {
@@ -944,8 +994,17 @@ dl {
 	margin: 0 0 1em;
 }
 
+h1,
+.home h2 {
+	margin: 1em 0 0.5em;
+}
+
 blockquote {
 	margin: 2em;
+}
+
+.pagination {
+	margin: 2em 0;
 }
 
 h2,
@@ -1059,8 +1118,21 @@ progress {
 		justify-content: flex-start;
 	}
 
+	.pagination ul {
+		justify-content: center;
+	}
+
 }
 
 /**
 	* Grid
 	*/
+
+body {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+body > * {
+	grid-column: 2;
+}

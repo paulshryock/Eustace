@@ -33,6 +33,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Style elements
 	- Hyperlinks
+	- Articles
+- Rename `test.html` to `components.html`
+- Update navigation
+	- Remove dead links
+	- Update href attributes
 
 ## 1.0.0 - 2018-10-19
 
