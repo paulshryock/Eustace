@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" class="no-js">
-  <head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<!-- Page-specific information -->
-		<title>Hello World</title>
+		<title>Article | Hello World</title>
 		<meta name="description" content="A description of the page">
 		<meta name="robots" content="index,follow">
 		<link rel="author" href="humans.txt">
@@ -23,8 +23,8 @@
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
 
-  </head>
-  <body class="home">
+	</head>
+	<body class="single">
 
 		<!--
 			-- Accessible Skip Navigation Link
@@ -33,13 +33,14 @@
 			-->
     <a class="skip-link" href="#content">Skip to content</a>
 
+		<!-- Site Header -->
 		<header role="banner" class="container site-header">
-			<h1 class="site-title">
+			<p class="site-title">
 				<a href="/">
 					Hello World
 				</a>
-			</h1>
-		</header>
+			</p>
+		</header><!-- .container .site-header -->
 
 		<!--
 			-- Accessible Mobile Navigation
@@ -55,25 +56,35 @@
 				<li><a href="/single.html">Article</a></li>
 			</ul>
 		</nav><!-- .container .site-navigation -->
+			
+		<main>
 
-	<main>
+			<article class="container">
+				<header>
+					<h1 class="page-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+					<p>Written by <span class="meta">Jessica Johnson</span></p>
+					<p>Published on <time class="meta">January 1st, 2018</time></p>
+				</header>
+				<div class="article-content">
+					<img src="https://picsum.photos/1600/900/?random
+" alt="Placeholder image">
+					<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+					<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+					<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+					<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+				</div>
+				<footer>
+					<p><a href="archive.html">Read more articles about <span class="meta">this topic</span></a></p>
+				</footer>
+			</article><!-- .container -->
 
-		<article>
-			<header class="container">
-				<h2 class="page-title">Start from scratch without reinventing the wheel</h2>
-			</header><!-- .container -->
-			<div class="container article-content">
-				<p>This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.</p>
-				<a href="/components.html">See available components</a>
-			</div><!-- .container .article-content -->
-		</article>
+		</main>
 
-	</main>
-	
-	<footer role="contentinfo" class="container">
-	  <p>&copy 2018 Hello World. All rights reserved.</p>
-	</footer><!-- .container -->
+		<footer role="contentinfo" class="container">
+			<p>&copy 2018 Hello World. All rights reserved.</p>
+		</footer><!-- .container -->
 
 		<script type="text/javascript" src="js/script.js"></script>
-  </body>
+	</body><!-- .single -->
 </html>
