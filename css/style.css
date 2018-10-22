@@ -1032,6 +1032,10 @@ hr {
 	margin: 1rem 0;
 }
 
+article img {
+	margin: 0 0 2rem;
+}
+
 .single article footer {
 	margin: 4rem 0 0;
 }
