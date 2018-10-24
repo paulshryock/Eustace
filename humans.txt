@@ -4,21 +4,22 @@ The humans responsible & technology colophon
 
 ## Team
 
-- Paul Shryock -- Lead Front End Developer -- @paul_shryock
+- [Paul Shryock](https://pshry.com/) -- Lead Front End Developer
 
 ## Thanks
 
-- https://gethead.info/
-- http://www.robotstxt.org/
-- http://humanstxt.org/
-- https://codepen.io/ericrasch/pen/qIiyK
-- http://www.a11ymatters.com/patterns/
-- http://khan.github.io/tota11y/
-- https://inclusive-components.design/
-- https://jgthms.com/minireset.css/
-- github.com/necolas/normalize.css
-- https://css-tricks.com/almanac/properties/q/quotes/
-- https://abookapart.com/products/flexible-typesetting
+- [Josh Buchea](https://gethead.info/)
+- [Web Robot Pages](http://www.robotstxt.org/)
+- [humans.txt](http://humanstxt.org/)
+- [Eric Rasch](https://codepen.io/ericrasch/pen/qIiyK)
+- [Ahmad Shadeed](http://www.a11ymatters.com/patterns/)
+- [Khan Academy](http://khan.github.io/tota11y/)
+- [Heydon Pickering](https://inclusive-components.design/)
+- [Jeremy Thomas](https://jgthms.com/minireset.css/)
+- [Nicolas Gallagher](github.com/necolas/normalize.css)
+- [Sarah Cope](https://css-tricks.com/almanac/properties/q/quotes/)
+- [Tim Brown](https://abookapart.com/products/flexible-typesetting)
+- [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
 
 ## Technology Colophon
 
@@ -28,5 +29,6 @@ The humans responsible & technology colophon
 - Git
 - GitHub
 - HTML
+- JavaScript
 - LiveReload
 - Sublime Text

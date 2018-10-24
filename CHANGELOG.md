@@ -38,6 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update navigation
 	- Remove dead links
 	- Update href attributes
+- Customize console.log()
+- Update `humans.txt`
 
 ## 1.0.0 - 2018-10-19
 
