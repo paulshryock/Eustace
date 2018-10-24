@@ -19,6 +19,41 @@ browser.init = function() {
 };
 
 /**
+	* Customizes console.log()
+	*
+	*/
+browser.log = function ( message, color='black' ) {
+	switch (color) {
+		case 'success':  
+			color = 'Green'
+			break
+		case 'info':     
+			color = 'Blue'  
+			break;
+		case 'error':
+			color = 'Red'   
+			break;
+		case 'warning':
+			color = 'Orange' 
+			break;
+		default: 
+			color = color
+	}
+	console.log( `%c${message}`, `color:${color}` )
+
+	// These are available too:
+	// console.error()
+	// console.warn()
+	// console.table()
+}
+
+// browser.log('Hello World!')
+// browser.log('Success!', 'success')
+// browser.log('Error!', 'error')
+// browser.log('Warning!', 'warning')
+// browser.log('Info...', 'info')
+
+/**
 	* Swaps html element classes: `.no-js` to `.js`
 	*
 	*/
@@ -75,16 +110,20 @@ a11y.addPaginationLinkLabels = function() {
 
 	let links = document.querySelectorAll( '.pagination a' );
 
-	for (var i = 0; i < links.length; i++) {
+	if ( 0 < links.length ) {
 
-		let counter = i + 1,
-				string = "Go to Page " + counter;
+		for (var i = 0; i < links.length; i++) {
 
-		if (links[i].getAttribute('aria-current')) {
-			string = "Page " + counter + ", Current Page";
+			let counter = i + 1,
+					string = "Go to Page " + counter;
+
+			if (links[i].getAttribute('aria-current')) {
+				string = "Page " + counter + ", Current Page";
+			}
+
+			links[i].setAttribute('aria-label', string);
 		}
 
-		links[i].setAttribute('aria-label', string);
 	}
 
 };
