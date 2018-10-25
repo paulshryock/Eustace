@@ -391,6 +391,15 @@ ol ol ol {
 	list-style: lower-roman;
 }
 
+/*summary {
+  list-style-image: url(right-arrow.svg);
+}
+
+summary::-webkit-details-marker {
+  background: url(right-arrow.svg);
+  color: transparent;
+}*/
+
 /* Quotes */
 
 q {
@@ -695,7 +704,8 @@ button:-moz-focusring,
 /* Cursor */
 
 button,
-input {
+input,
+summary {
 	cursor: pointer;
 }
 
@@ -952,7 +962,8 @@ legend {
 
 fieldset,
 pre code,
-details,
+details[open],
+details:not([open]) summary,
 .container {
 	padding: 1rem;
 }
@@ -1068,8 +1079,9 @@ blockquote {
 	margin: 2em;
 }
 
-table,
-form {
+details,
+form,
+table {
 	margin: 2em 0;
 }
 
@@ -1086,10 +1098,6 @@ h6 {
 }
 
 /* Margin Top */
-
-table + table {
-	margin-top: 2em;
-}
 
 /* Margin Bottom */
 
