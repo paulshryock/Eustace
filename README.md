@@ -81,6 +81,11 @@ And again you'd need to tell what the previous code actually does. -->
 	- Mobile navigation
 	- Skip navigation link
 	- Pagination
+- Components
+	- Accordion
+	- Blockquote
+	- Code
+	- Pagination
 
 <!-- ## Configuration
 
