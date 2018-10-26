@@ -78,9 +78,9 @@ And again you'd need to tell what the previous code actually does. -->
 ## Features
 
 - [Accessible Patterns](http://www.a11ymatters.com/patterns/)
-	- Mobile navigation
-	- Skip navigation link
-	- Pagination
+	- [Mobile navigation](http://www.a11ymatters.com/pattern/mobile-nav/)
+	- [Skip navigation link](http://www.a11ymatters.com/pattern/skip-link/)
+	- [Pagination](http://www.a11ymatters.com/pattern/pagination/)
 - [Inclusive Components](https://inclusive-components.design/)
 	- [Cards](https://inclusive-components.design/cards/)
 - Additional Components
