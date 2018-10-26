@@ -81,7 +81,9 @@ And again you'd need to tell what the previous code actually does. -->
 	- Mobile navigation
 	- Skip navigation link
 	- Pagination
-- Components
+- [Inclusive Components](https://inclusive-components.design/)
+	- [Cards](https://inclusive-components.design/cards/)
+- Additional Components
 	- Accordion
 	- Blockquote
 	- Code

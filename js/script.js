@@ -122,6 +122,25 @@ a11y.init = function() {
 };
 
 /**
+	* Requires minimum click time to trigger card link click
+	*
+	*/
+a11y.requireCardClickTime = function() {
+	const cards = document.querySelectorAll( '.card' );  
+	Array.prototype.forEach.call( cards, card => {  
+    let down, up, link = card.querySelector( 'h2 a' );
+    card.onmousedown = () => down = +new Date();
+    card.onmouseup = () => {
+      up = +new Date();
+      if ( (up - down) < 200 ) {
+        link.click();
+      }
+    }
+		card.style.cursor = 'pointer';
+	} );
+};
+
+/**
 	* Adds pagination link labels
 	*
 	*/
@@ -153,6 +172,7 @@ a11y.addPaginationLinkLabels = function() {
 	*/
 a11y.addEventListeners = function() {
 
+	window.addEventListener( 'load', a11y.requireCardClickTime, false );
 	window.addEventListener( 'load', a11y.addPaginationLinkLabels, false );
 
 };
