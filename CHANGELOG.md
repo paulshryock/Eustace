@@ -30,6 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.1 - XXXX-XX-XX
 
+### Added
+- Add smooth scrolling for ID links
+- Add Releases to `README.md`
+
 ### Changed
 - Style elements
 	- Hyperlinks
@@ -40,6 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- Update href attributes
 - Customize console.log()
 - Update `humans.txt`
+
+### Removed
+- Banish .DS_Store
 
 ## 1.0.0 - 2018-10-19
 
