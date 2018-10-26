@@ -24,7 +24,7 @@
 
 }
 
-@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 37.5rem / 900px */
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 56.25rem / 900px */
 
 }
 
@@ -74,7 +74,8 @@ tt,
 samp,
 var,
 article header p,
-footer p {
+footer p,
+.card footer {
 	font-family: "IBM Plex Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
@@ -112,7 +113,7 @@ nav ul {
 
 }
 
-@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 37.5rem / 900px */
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 56.25rem / 900px */
 
 	:root {
 		font-size: calc( 1.25 * 100% ); /* 1.25 * 16px = 20px base rem unit */
@@ -141,7 +142,8 @@ sub {
 	font-size: 75%;
 }
 
-small {
+small,
+.card footer {
 	font-size: 85%;
 }
 
@@ -309,14 +311,21 @@ nav a,
 nav a:link,
 nav a:visited,
 header h1 a,
+.button,
 .site-title a,
-.button {
+.card a {
+	text-decoration: none;
+}
+
+/* This selector fails in some browsers; keep it isolated */
+.card:focus-within a:focus {
 	text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus,
-abbr[title] {
+abbr[title],
+.card a:focus {
 	text-decoration: underline;
 }
 
@@ -363,7 +372,8 @@ legend {
 /* List Styles */
 
 nav ul,
-.articles {
+.articles,
+.cards {
 	list-style: none;
 }
 
@@ -483,6 +493,14 @@ kbd:focus {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
 
+.card:hover {
+	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
+}
+
+.card:focus-within {
+	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
+}
+
 /* Medium Light Gray / hsl( 0, 0%, 60% ) / rgb( 153, 153, 153 ) / #999 */
 
 /* Light Gray / hsl( 0, 0%, 70% ) / rgb( 179, 179, 179 ) / #b3b3b3 */
@@ -494,7 +512,8 @@ hr {
 }
 
 fieldset,
-details {
+details,
+.card {
 	border: 0.125rem solid #b3b3b3;
 	border-color: rgb( 179, 179, 179 );
 	border-color: hsl( 0, 0%, 70% );
@@ -656,10 +675,17 @@ abbr[title] {
 
 /* Outline */
 
+/* This selector fails in some browsers; keep it isolated */
 :focus:not(:focus-visible) {
 	outline: none;
 }
 
+/* This selector fails in some browsers; keep it isolated */
+.card:focus-within a:focus {
+	outline: none;
+}
+
+/* This selector fails in some browsers; keep it isolated */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -770,17 +796,20 @@ textarea,
 }
 
 table,
-fieldset {
+fieldset,
+.card {
 	border-radius: 1em;
 }
 
 thead th:first-child,
-thead td:first-child {
+thead td:first-child,
+.card img {
 	border-top-left-radius: 1em;
 }
 
 thead th:last-child,
-thead td:last-child {
+thead td:last-child,
+.card img {
 	border-top-right-radius: 1em;
 }
 
@@ -807,6 +836,10 @@ table {
 }
 
 /* Object Fit */
+
+.card__image img {
+  object-fit: cover;
+}
 
 /* Display */
 
@@ -852,6 +885,12 @@ summary {
 
 /* Width */
 
+/* % */
+
+.card__image img {
+  width: 100%;
+}
+
 /* Min Width */
 
 /* Max Width */
@@ -875,11 +914,14 @@ main ul,
 main ol,
 main dl,
 article,
-.container {
+.container/*,
+.card__text*/ {
 	max-width: 65ch;
 }
 
 /* Height */
+
+/* auto */
 
 img,
 embed,
@@ -892,17 +934,33 @@ video,
   height: auto;
 }
 
+/* % */
+
+.card__image img {
+  height: 100%;
+}
+
+/* rem */
+
 hr {
 	height: 0.125rem;
+}
+
+.card__image {
+  height: 10rem;
 }
 
 /* Min Height */
 
 /* Max Height */
 
+/* 0 */
+
 .js .site-navigation ul {
 	max-height: 0;
 }
+
+/* vh */
 
 .js .site-navigation .is-active {
 	max-height: 100vh;
@@ -924,7 +982,8 @@ legend,
 [type="checkbox"],
 [type="radio"],
 nav ul,
-.articles {
+.articles,
+.cards {
   padding: 0;
 }
 
@@ -964,7 +1023,8 @@ fieldset,
 pre code,
 details[open],
 details:not([open]) summary,
-.container {
+.container,
+.card__text {
 	padding: 1rem;
 }
 
@@ -1015,7 +1075,8 @@ optgroup,
 select,
 textarea,
 article header p:first-of-type,
-.site-title {
+.site-title,
+.cards p {
   margin: 0;
 }
 
@@ -1050,12 +1111,24 @@ article img {
 	margin: 0 0 2rem;
 }
 
+.card {
+	margin: 2rem 0.5rem;
+}
+
 .single article footer {
 	margin: 4rem 0 0;
 }
 
 .single article header {
 	margin: 0 0 4rem;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.card {
+		margin: 1rem 0.5rem;
+	}
+
 }
 
 /* em */
@@ -1101,7 +1174,33 @@ h6 {
 
 /* Margin Top */
 
+/* 0 */
+
+.card__text > * {
+	margin-top: 0;
+}
+
+/* auto */
+
+.card__text :last-child {
+  margin-top: auto;
+}
+
+/* rem */
+
+.card__text > * + * {
+  margin-top: 1rem;
+}
+
 /* Margin Bottom */
+
+/* rem */
+
+.card__text :nth-last-child(2) {
+  margin-bottom: 1rem;
+}
+
+/* em */
 
 blockquote p {
 	margin-bottom: 0.5em;
@@ -1191,6 +1290,17 @@ progress {
 	* Flexbox
 	*/
 
+.card,
+.card__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__text {
+  flex-grow: 1;
+  order: 1;
+}
+
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
 	nav ul {
@@ -1217,7 +1327,21 @@ body > * {
 	grid-column: 2 / -2;
 }
 
-@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 37.5rem / 900px */
+.cards {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 15rem, 1fr ) );
+  grid-gap: 2rem;
+}
+
+@media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
+
+	.cards {
+	  grid-gap: 1rem;
+	}
+
+}
+
+@media screen and (min-width: 56.25rem) { /* Tablet Landscape / 56.25rem / 900px */
 
 	.site-header {
 		grid-column: 2 / span 1;
@@ -1231,5 +1355,19 @@ body > * {
 	.site-navigation {
 		align-self: center;
 	}
+
+}
+
+/* Supports Grid */
+
+@supports (display: grid) {
+
+	/* Margin */
+
+	/* 0 */
+
+  .card {
+  	margin: 0;
+  }
 
 }

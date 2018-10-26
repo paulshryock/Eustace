@@ -4,17 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## X.X.X - XXXX-XX-XX
-### Added
-### Changed
-### Deprecated
-### Removed
-### Fixed
-### Security
-
 ## [Roadmap / Unreleased]
 - Add Inclusive Components
-	- [Cards](https://inclusive-components.design/cards/)
 	- [Data Tables](https://inclusive-components.design/data-tables/)
 	- [Notifications](https://inclusive-components.design/notifications/)
 	- [A Content Slider](https://inclusive-components.design/a-content-slider/)
@@ -28,11 +19,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style elements
 	- Accessible colors
 
-## 1.0.1 - XXXX-XX-XX
+## X.X.X - XXXX-XX-XX
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## 1.0.1 - 2018-10-26
 
 ### Added
 - Add smooth scrolling for ID links
 - Add Releases to `README.md`
+- Add [Cards](https://inclusive-components.design/cards/)
 
 ### Changed
 - Style elements
