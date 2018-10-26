@@ -67,12 +67,31 @@ browser.swapHTMLClasses = function() {
 };
 
 /**
+	* Adds smooth scrolling to ID links
+	*
+	*/
+browser.addSmoothScrolling = function() {
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
+}
+
+/**
 	* Adds browser event listners
 	*
 	*/
 browser.addEventListeners = function() {
 
 	window.addEventListener( 'load', browser.swapHTMLClasses, false );
+	window.addEventListener( 'load', browser.addSmoothScrolling, false );
 
 };
 
