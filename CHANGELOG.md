@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Roadmap / Unreleased]
-- Add Inclusive Components
+- Add [Inclusive Components](https://inclusive-components.design/)
 	- [Data Tables](https://inclusive-components.design/data-tables/)
 	- [Notifications](https://inclusive-components.design/notifications/)
 	- [A Content Slider](https://inclusive-components.design/a-content-slider/)
@@ -32,7 +32,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add smooth scrolling for ID links
 - Add Releases to `README.md`
-- Add [Cards](https://inclusive-components.design/cards/)
+- Add Components
+	- Accordion
+	- Blockquote
+	- Code
+- Add [Inclusive Components](https://inclusive-components.design/)
+	- [Cards](https://inclusive-components.design/cards/)
 
 ### Changed
 - Style elements
