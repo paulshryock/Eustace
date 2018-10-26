@@ -19,8 +19,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style elements
 	- Accessible colors
 
-## X.X.X - XXXX-XX-XX
+## X.X.X - XXXX-XX-XX - XXXXXX
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## 1.0.2 - XXXX-XX-XX - XXXXXX
+### Added
+- Add main content id 
 ### Changed
 ### Deprecated
 ### Removed
