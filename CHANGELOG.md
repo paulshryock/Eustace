@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.1 - XXXX-XX-XX
+## 1.0.1 - 2018-10-26
 
 ### Added
 - Add smooth scrolling for ID links
