@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.1 - 2018-10-26
+## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 
 ### Added
 - Add smooth scrolling for ID links
@@ -53,7 +53,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Banish .DS_Store
 
-## 1.0.0 - 2018-10-19
+## 1.0.0 - 2018-10-19 - Initial Release
 
 ### Added
 - Add HTML
