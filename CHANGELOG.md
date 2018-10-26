@@ -55,6 +55,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.0 - 2018-10-19 - Initial Release
 
+This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project. The goal is for every project to possess the following qualities: Accessible, Client-agnostic, Content-agnostic, Device-agnostic, Flexible, Inclusive, Mobile-first, Performant, Responsive, Secure, and Simple.
+
 ### Added
 - Add HTML
 	- Boilerplate elements and meta tags
@@ -64,7 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- Element defaults
 - Add `robots.txt` and `humans.txt`
 - Add `LICENSE`, `README.md`, and `CHANGELOG.md`
-- Add Accessibile patterns
-	- Mobile navigation
-	- Skip navigation link
-	- Pagination
+- Add [Accessible Patterns](http://www.a11ymatters.com/patterns/)
+	- [Mobile navigation](http://www.a11ymatters.com/pattern/mobile-nav/)
+	- [Skip navigation link](http://www.a11ymatters.com/pattern/skip-link/)
+	- [Pagination](http://www.a11ymatters.com/pattern/pagination/)
