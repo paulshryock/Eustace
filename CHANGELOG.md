@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.2 - XXXX-XX-XX - XXXXXX
+## 1.0.3 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
 ### Added
 - Add main content id
 - Add button_cta
