@@ -1288,7 +1288,7 @@ input {
 	overflow: hidden;
 }
 
-html {
+body {
 	overflow-y: scroll;
 }
 
