@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style article images
 - Rename .site-navigation to .navigation
 - Rename Articles template to Archive
+- Update components list markup
 
 ## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 
