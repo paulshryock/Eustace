@@ -31,6 +31,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## 1.0.3 - XXXX-XX-XX - XXXXXX
+
+### Removed
+- Remove navigation items from `template.html`
+
 ## 1.0.2 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
 
 ### Added
