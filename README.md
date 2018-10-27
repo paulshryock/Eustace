@@ -5,7 +5,7 @@
 
 This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.
 
-![Screenshot](url "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/paulshryock/Hello-World-Front-End/master/img/screenshot.png "Screenshot")
 
 
 The goal is for every project to possess the following qualities:
