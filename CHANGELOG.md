@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- Accessible colors
 	- Responsive forms
 	- Responsive tables
+	- button_cta shadow
 
 ## X.X.X - XXXX-XX-XX - XXXXXX
 ### Added
@@ -31,7 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.2 - XXXX-XX-XX - XXXXXX
 ### Added
-- Add main content id 
+- Add main content id
+- Add button_cta
 
 ### Changed
 - Style article images
