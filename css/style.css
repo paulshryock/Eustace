@@ -724,17 +724,17 @@ button:-moz-focusring,
 
 /* Opacity */
 
-.js .site-navigation ul {
+.js .navigation ul {
 	opacity: 0;
 }
 
-.js .site-navigation .is-active {
+.js .navigation .is-active {
 	opacity: 1;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	.js .site-navigation ul {
+	.js .navigation ul {
 		opacity: 1;
 	}
 
@@ -777,7 +777,7 @@ kbd {
 	transition: box-shadow 200ms ease;
 }
 
-.js .site-navigation ul {
+.js .navigation ul {
 	transition: all 500ms;
 }
 
@@ -881,8 +881,8 @@ nav li,
 
 details,
 pre code,
-.site-navigation li,
-.site-navigation a {
+.navigation li,
+.navigation a {
 	display: block;
 }
 
@@ -900,7 +900,7 @@ summary {
 		display: none;
 	}
 
-	.site-navigation li {
+	.navigation li {
 		display: inline-block;
 	}
 
@@ -981,19 +981,19 @@ hr {
 
 /* 0 */
 
-.js .site-navigation ul {
+.js .navigation ul {
 	max-height: 0;
 }
 
 /* vh */
 
-.js .site-navigation .is-active {
+.js .navigation .is-active {
 	max-height: 100vh;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	.js .site-navigation ul {
+	.js .navigation ul {
 		max-height: none;
 	}
 
@@ -1284,13 +1284,13 @@ input {
 	overflow: visible;
 }
 
-.js .site-navigation ul {
+.js .navigation ul {
 	overflow: hidden;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	.js .site-navigation ul {
+	.js .navigation ul {
 		overflow: auto;
 	}
 
@@ -1371,12 +1371,12 @@ body > * {
 		grid-column: 2 / span 1;
 	}
 
-	.site-navigation {
+	.navigation {
 		grid-column: 3 / span 1;
 	}
 
 	.site-header,
-	.site-navigation {
+	.navigation {
 		align-self: center;
 	}
 

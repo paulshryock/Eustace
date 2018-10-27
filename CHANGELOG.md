@@ -36,9 +36,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add main content id
 - Add button_cta
 - Add screenshot
+- Add `templates.html`
 
 ### Changed
 - Style article images
+- Rename .site-navigation to .navigation
+- Rename Articles template to Archive
 
 ## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 
