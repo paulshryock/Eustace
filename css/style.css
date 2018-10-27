@@ -1036,7 +1036,8 @@ code {
 	padding: 0 0.25rem;
 }
 
-nav a {
+nav a,
+.button_cta {
 	padding: 0.5rem;
 }
 
