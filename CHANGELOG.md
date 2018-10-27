@@ -30,11 +30,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 1.0.2 - XXXX-XX-XX - XXXXXX
 ### Added
 - Add main content id 
+
 ### Changed
-### Deprecated
-### Removed
-### Fixed
-### Security
+- Style article images
 
 ## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 

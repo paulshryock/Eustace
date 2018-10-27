@@ -1069,8 +1069,6 @@ dd,
 pre code,
 button,
 input,
-article button img,
-article .button img,
 optgroup,
 select,
 textarea,
@@ -1105,10 +1103,6 @@ nav ul {
 
 hr {
 	margin: 1rem 0;
-}
-
-article img {
-	margin: 0 0 2rem;
 }
 
 .card {
@@ -1190,6 +1184,10 @@ h6 {
 
 .card__text > * + * {
   margin-top: 1rem;
+}
+
+article img + * {
+	margin-top: 2rem;
 }
 
 /* Margin Bottom */
