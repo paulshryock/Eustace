@@ -36,6 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Remove navigation items from `template.html`
 
+### Fixed
+- Fix scroll jump
+
 ## 1.0.2 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
 
 ### Added
