@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Roadmap / Unreleased]
+- Add `templates.html`
 - Add [Inclusive Components](https://inclusive-components.design/)
 	- [Data Tables](https://inclusive-components.design/data-tables/)
 	- [Notifications](https://inclusive-components.design/notifications/)
@@ -18,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
 - Style elements
 	- Accessible colors
+	- Responsive forms
+	- Responsive tables
+	- button_cta shadow
 
 ## X.X.X - XXXX-XX-XX - XXXXXX
 ### Added
@@ -29,12 +33,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.2 - XXXX-XX-XX - XXXXXX
 ### Added
-- Add main content id 
+- Add main content id
+- Add button_cta
+
 ### Changed
-### Deprecated
-### Removed
-### Fixed
-### Security
+- Style article images
 
 ## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 

@@ -552,7 +552,11 @@ tr:nth-of-type(even) {
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
 
 thead,
-code {
+code,
+.button_cta:link,
+.button_cta:visited,
+.button_cta:hover,
+.button_cta:focus {
 	color: #fff;
 	color: rgb( 255, 255, 255 );
 	color: hsl( 0, 0%, 100% );
@@ -585,6 +589,13 @@ a:visited {
 	color: hsl( 240, 100%, 55% );
 }
 
+.button_cta:link,
+.button_cta:visited {
+	background: #1a1aff;
+	background: rgb( 26, 26, 255 );
+	background: hsl( 240, 100%, 55% );
+}
+
 /* Purple / hsl( 280, 100%, 37% ) / rgb( 126, 0, 189 ) / #7e00bd */
 
 a:hover,
@@ -592,6 +603,13 @@ a:focus {
 	color: #7e00bd;
 	color: rgb( 126, 0, 189 );
 	color: hsl( 280, 100%, 37% );
+}
+
+.button_cta:hover,
+.button_cta:focus {
+	background: #7e00bd;
+	background: rgb( 126, 0, 189 );
+	background: hsl( 280, 100%, 37% );
 }
 
 /* Purple / hsl( 271, 68%, 32% ) / rgb( 85, 26, 139 ) / #551a8b */
@@ -603,6 +621,13 @@ a:active {
 	color: #f00;
 	color: rgb( 255, 0, 0 );
 	color: hsl( 0, 100%, 50% );
+}
+
+.button_cta:active {
+	background: red;
+	background: #f00;
+	background: rgb( 255, 0, 0 );
+	background: hsl( 0, 100%, 50% );
 }
 
 /**
@@ -1069,8 +1094,6 @@ dd,
 pre code,
 button,
 input,
-article button img,
-article .button img,
 optgroup,
 select,
 textarea,
@@ -1105,10 +1128,6 @@ nav ul {
 
 hr {
 	margin: 1rem 0;
-}
-
-article img {
-	margin: 0 0 2rem;
 }
 
 .card {
@@ -1190,6 +1209,10 @@ h6 {
 
 .card__text > * + * {
   margin-top: 1rem;
+}
+
+article img + * {
+	margin-top: 2rem;
 }
 
 /* Margin Bottom */
