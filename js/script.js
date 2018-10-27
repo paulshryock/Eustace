@@ -209,8 +209,8 @@ navigation.init = function() {
 	*/
 navigation.addNavButton = function() {
 
-	let nav = document.querySelector('.site-navigation'),
-			menu = document.querySelector('.site-navigation ul'),
+	let nav = document.querySelector('.navigation'),
+			menu = document.querySelector('.navigation ul'),
 			button = document.createElement( 'button' );
 
 	button.textContent = 'Menu';
@@ -226,8 +226,8 @@ navigation.addNavButton = function() {
 	*/
 navigation.removeNavButton = function() {
 
-	let nav = document.querySelector('.site-navigation'),
-			button = document.querySelector( '.site-navigation button' );
+	let nav = document.querySelector('.navigation'),
+			button = document.querySelector( '.navigation button' );
 
 	if (button) {
 		button = nav.removeChild( button );
@@ -241,7 +241,7 @@ navigation.removeNavButton = function() {
 	*/
 navigation.hideNavMenu = function() {
 
-	let menu = document.querySelector('.site-navigation ul');
+	let menu = document.querySelector('.navigation ul');
 
 	menu.setAttribute( 'hidden', '' );
   menu.classList.remove('is-active');
@@ -254,7 +254,7 @@ navigation.hideNavMenu = function() {
 	*/
 navigation.showNavMenu = function() {
 
-	let menu = document.querySelector('.site-navigation ul');
+	let menu = document.querySelector('.navigation ul');
 
 	menu.removeAttribute( 'hidden' );
   menu.classList.add('is-active');
@@ -267,8 +267,8 @@ navigation.showNavMenu = function() {
 	*/
 navigation.toggleNavElementsStates = function() {
 
-	let menu = document.querySelector('.site-navigation ul'),
-			links = document.querySelectorAll('.site-navigation ul a');
+	let menu = document.querySelector('.navigation ul'),
+			links = document.querySelectorAll('.navigation ul a');
 
   if (menu.classList.contains('is-active')) {
     this.setAttribute('aria-expanded', 'false');
@@ -289,7 +289,7 @@ navigation.toggleNavElements = function( mq ) {
 
 	if (mq.matches) { // Tablet and up
 
-		let button = document.querySelector( '.site-navigation button' );
+		let button = document.querySelector( '.navigation button' );
 
 		if (button) {
 			button.removeEventListener( 'click', navigation.toggleNavElementsStates, false );
@@ -300,7 +300,7 @@ navigation.toggleNavElements = function( mq ) {
 	} else { // Mobile
 
 		navigation.addNavButton();
-		let button = document.querySelector( '.site-navigation button' );
+		let button = document.querySelector( '.navigation button' );
 
 		if (button) {
 			button.addEventListener( 'click', navigation.toggleNavElementsStates, false );
