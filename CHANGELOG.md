@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
 - Style elements
 	- Accessible colors
+	- Responsive forms
+	- Responsive tables
 
 ## X.X.X - XXXX-XX-XX - XXXXXX
 ### Added
