@@ -369,6 +369,15 @@ legend {
   white-space: normal;
 }
 
+/* Browser specific (not valid) styles to make preformatted text wrap */		
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 /* List Styles */
 
 nav ul,
@@ -1275,10 +1284,6 @@ sub {
 
 /* Overflow */
 
-textarea {
-  overflow: auto;
-}
-
 button,
 input {
 	overflow: visible;
@@ -1288,8 +1293,8 @@ input {
 	overflow: hidden;
 }
 
-body {
-	overflow-y: scroll;
+textarea {
+  overflow: auto;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
@@ -1298,6 +1303,14 @@ body {
 		overflow: auto;
 	}
 
+}
+
+/* Overflow X */
+
+/* Overflow Y */
+
+body {
+	overflow-y: scroll;
 }
 
 /* Vertical Align */
