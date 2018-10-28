@@ -378,6 +378,10 @@ pre {
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+pre {
+  tab-width: 2;
+}
+
 /* List Styles */
 
 nav ul,
