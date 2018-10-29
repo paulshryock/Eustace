@@ -369,6 +369,19 @@ legend {
   white-space: normal;
 }
 
+/* Browser specific (not valid) styles to make preformatted text wrap */		
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre {
+  tab-width: 2;
+}
+
 /* List Styles */
 
 nav ul,
@@ -880,6 +893,10 @@ nav li,
 }
 
 details,
+input[type="text"],
+input[type="password"],
+select,
+textarea,
 pre code,
 .navigation li,
 .navigation a {
@@ -900,6 +917,10 @@ summary {
 		display: none;
 	}
 
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea,
 	.navigation li {
 		display: inline-block;
 	}
@@ -916,6 +937,12 @@ summary {
   width: 100%;
 }
 
+/* ch */
+
+.site-footer {
+	width: 65ch;
+}
+
 /* Min Width */
 
 /* Max Width */
@@ -928,7 +955,8 @@ iframe,
 object,
 audio,
 video,
-legend {
+legend,
+textarea {
   max-width: 100%;
 }
 
@@ -942,6 +970,10 @@ article,
 .container/*,
 .card__text*/ {
 	max-width: 65ch;
+}
+
+.site-footer {
+  max-width: 100%;
 }
 
 /* Height */
@@ -1127,7 +1159,8 @@ nav ul {
 	margin: 0 -0.5rem;
 }
 
-hr {
+hr,
+form div {
 	margin: 1rem 0;
 }
 
@@ -1275,10 +1308,6 @@ sub {
 
 /* Overflow */
 
-textarea {
-  overflow: auto;
-}
-
 button,
 input {
 	overflow: visible;
@@ -1288,8 +1317,8 @@ input {
 	overflow: hidden;
 }
 
-body {
-	overflow-y: scroll;
+textarea {
+  overflow: auto;
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
@@ -1298,6 +1327,14 @@ body {
 		overflow: auto;
 	}
 
+}
+
+/* Overflow X */
+
+/* Overflow Y */
+
+body {
+	overflow-y: scroll;
 }
 
 /* Vertical Align */
@@ -1348,6 +1385,9 @@ progress {
 
 body {
 	display: grid;
+}
+
+body {
 	grid-template-columns: 1fr auto auto 1fr;
 }
 
