@@ -20,6 +20,7 @@ The humans responsible & technology colophon
 - [Sarah Cope](https://css-tricks.com/almanac/properties/q/quotes/)
 - [Tim Brown](https://abookapart.com/products/flexible-typesetting)
 - [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
+- [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
 
 ## Technology Colophon
 
