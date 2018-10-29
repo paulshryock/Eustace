@@ -937,6 +937,12 @@ summary {
   width: 100%;
 }
 
+/* ch */
+
+.site-footer {
+  width: 65ch;
+}
+
 /* Min Width */
 
 /* Max Width */
@@ -950,7 +956,8 @@ object,
 audio,
 video,
 legend,
-textarea {
+textarea,
+.site-footer {
   max-width: 100%;
 }
 
@@ -1373,13 +1380,29 @@ progress {
 	* Grid
 	*/
 
-body {
+body,
+main {
 	display: grid;
+}
+
+body {
 	grid-template-columns: 1fr auto auto 1fr;
+}
+
+main {
+	grid-template-columns: 1fr 1fr auto 1fr 1fr;
 }
 
 body > * {
 	grid-column: 2 / -2;
+}
+
+main {
+	grid-column: 1 / -1;
+}
+
+main > * {
+	grid-column: 3 / -3;
 }
 
 .cards {
