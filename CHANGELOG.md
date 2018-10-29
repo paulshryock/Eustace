@@ -19,7 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
 - Style elements
 	- Accessible colors
-	- Responsive forms
 	- Responsive tables
 	- button_cta shadow
 
@@ -35,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Style pre elements
-- Style forms and form elements
+- Style responsive forms and form elements
 
 ### Removed
 - Remove navigation items from `template.html`
