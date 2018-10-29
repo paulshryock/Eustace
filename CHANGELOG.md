@@ -32,6 +32,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.3 - XXXX-XX-XX - XXXXXX
 
+### Added
+- Add `form.html`
+
 ### Changed
 - Style pre elements
 - Style responsive forms and form elements

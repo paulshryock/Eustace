@@ -1245,7 +1245,8 @@ h6 {
   margin-top: 1rem;
 }
 
-article img + * {
+article img + *,
+fieldset + fieldset {
 	margin-top: 2rem;
 }
 
