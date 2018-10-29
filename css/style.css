@@ -893,6 +893,10 @@ nav li,
 }
 
 details,
+input[type="text"],
+input[type="password"],
+select,
+textarea,
 pre code,
 .navigation li,
 .navigation a {
@@ -913,6 +917,10 @@ summary {
 		display: none;
 	}
 
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea,
 	.navigation li {
 		display: inline-block;
 	}
@@ -941,7 +949,8 @@ iframe,
 object,
 audio,
 video,
-legend {
+legend,
+textarea {
   max-width: 100%;
 }
 
@@ -1140,7 +1149,8 @@ nav ul {
 	margin: 0 -0.5rem;
 }
 
-hr {
+hr,
+form div {
 	margin: 1rem 0;
 }
 
