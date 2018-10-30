@@ -502,14 +502,29 @@ kbd:hover,
 button:focus,
 .button:focus,
 input[type="button"]:focus,
-kbd:focus {
-	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
-}
-
+kbd:focus,
 .card:hover {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
 
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+textarea {
+	box-shadow: inset 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
+}
+
+/* This selector fails in some browsers; keep it isolated */
 .card:focus-within {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
@@ -827,6 +842,7 @@ html {
 kbd,
 code,
 details,
+select,
 button,
 .button,
 input[type="submit"],
@@ -836,6 +852,7 @@ input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="email"],
+input[type="file"],
 input[type="month"],
 input[type="week"],
 input[type="number"],
@@ -1389,10 +1406,6 @@ body {
 }
 
 /* Vertical Align */
-
-label {
-	vertical-align: top;
-}
 
 sub,
 sup,
