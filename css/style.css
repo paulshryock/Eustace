@@ -767,6 +767,10 @@ button:-moz-focusring,
 
 /* Cursor */
 
+input[disabled] {
+	cursor: auto;
+}
+
 button,
 input,
 summary {
@@ -825,9 +829,22 @@ code,
 details,
 button,
 .button,
-input[type="text"],
-input[type="password"],
+input[type="submit"],
+input[type="reset"],
 input[type="button"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
 textarea,
 .skip-link {
 	border-radius: 0.25em;
@@ -893,8 +910,19 @@ nav li,
 }
 
 details,
-input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
 input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
 select,
 textarea,
 pre code,
@@ -917,8 +945,19 @@ summary {
 		display: none;
 	}
 
-	input[type="text"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="email"],
+	input[type="month"],
+	input[type="week"],
+	input[type="number"],
 	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="url"],
 	select,
 	textarea,
 	.navigation li {
@@ -1053,9 +1092,20 @@ button::-moz-focus-inner,
 
 /* rem */
 
-input[type="text"],
-input[type="password"],
 input[type="button"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
 textarea,
 button,
 .button,

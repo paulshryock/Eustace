@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- Accessible colors
 	- Responsive tables
 	- button_cta shadow
+- Incorporate [a11y_styled_form_controls](https://scottaohara.github.io/a11y_styled_form_controls/) if it makes sense
 
 ## X.X.X - XXXX-XX-XX - XXXXXX
 ### Added
