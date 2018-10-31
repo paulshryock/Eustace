@@ -40,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style responsive forms and form elements
 - Style list elements
 - Update `components.html` markup
+- Update `index.html` markup
 
 ### Removed
 - Remove navigation items from `template.html`
