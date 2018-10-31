@@ -132,6 +132,7 @@ links to humans using your project. You can include links like: -->
 	- [v1.0.0](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.0)
 		- [v1.0.1](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.1)
 		- [v1.0.2](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.2)
+		- [v1.0.3](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.3)
 - Issue tracker: https://github.com/paulshryock/Hello-World-Front-End/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
     paul@pshry.com directly instead of using issue tracker. We value your effort

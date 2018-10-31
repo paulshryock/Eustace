@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.3 - XXXX-XX-XX - XXXXXX
+## 1.0.3 - 2018-10-31 - Forms, Lists, Pre, Scrolling
 
 ### Added
 - Add `form.html`
@@ -41,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style list elements
 - Update `components.html` markup
 - Update `index.html` markup
+- Update `archive.html` pagination markup
 
 ### Removed
 - Remove navigation items from `template.html`
