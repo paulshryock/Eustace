@@ -41,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style list elements
 - Update `components.html` markup
 - Update `index.html` markup
+- Update `archive.html` pagination markup
 
 ### Removed
 - Remove navigation items from `template.html`
