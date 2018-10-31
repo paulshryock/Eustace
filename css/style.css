@@ -375,42 +375,52 @@ pre {
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-break: break-word;      /* Internet Explorer 5.5+ */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	overflow-wrap: break-spaces; /* Internet Explorer 5.5+ */
+	overflow-wrap: break-word;   /* Internet Explorer 5.5+ */
 }
 
 pre {
-  tab-width: 2;
+  tab-size: 2;
 }
 
 /* List Styles */
 
-nav ul,
+ul,
+ol,
 .articles,
 .cards {
 	list-style: none;
 }
 
-ul {
+article ul,
+.list_bulleted {
 	list-style: disc;
 }
 
-ul ul {
+article ul ul,
+.list_bulleted ul {
 	list-style: square;
 }
 
-ul ul ul {
+article ul ul ul,
+.list_bulleted ul ul {
 	list-style: circle;
 }
 
-ol {
+article ol,
+.list_numbered {
 	list-style: decimal;
 }
 
-ol ol {
+article ol ol,
+.list_numbered ol {
 	list-style: lower-alpha;
 }
 
-ol ol ol {
+article ol ol ol,
+.list_numbered ol ol {
 	list-style: lower-roman;
 }
 
@@ -502,14 +512,29 @@ kbd:hover,
 button:focus,
 .button:focus,
 input[type="button"]:focus,
-kbd:focus {
-	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
-}
-
+kbd:focus,
 .card:hover {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
 
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+textarea {
+	box-shadow: inset 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
+}
+
+/* This selector fails in some browsers; keep it isolated */
 .card:focus-within {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
@@ -827,6 +852,7 @@ html {
 kbd,
 code,
 details,
+select,
 button,
 .button,
 input[type="submit"],
@@ -836,6 +862,7 @@ input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="email"],
+input[type="file"],
 input[type="month"],
 input[type="week"],
 input[type="number"],
@@ -978,10 +1005,6 @@ summary {
 
 /* ch */
 
-.site-footer {
-	width: 65ch;
-}
-
 /* Min Width */
 
 /* Max Width */
@@ -1006,8 +1029,7 @@ main ul,
 main ol,
 main dl,
 article,
-.container/*,
-.card__text*/ {
+.container {
 	max-width: 65ch;
 }
 
@@ -1077,7 +1099,8 @@ hr {
 legend,
 [type="checkbox"],
 [type="radio"],
-nav ul,
+ul,
+ol,
 .articles,
 .cards {
   padding: 0;
@@ -1151,9 +1174,11 @@ dl {
 	padding: 0 0 0 1em;
 }
 
-ul,
-ol,
-dd {
+dd,
+article ul,
+article ol,
+.list_bulleted,
+.list_numbered {
 	padding: 0 0 0 2em;
 }
 
@@ -1390,10 +1415,6 @@ body {
 
 /* Vertical Align */
 
-label {
-	vertical-align: top;
-}
-
 sub,
 sup,
 progress {
@@ -1417,15 +1438,29 @@ progress {
   order: 1;
 }
 
+.pagination ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.pagination li {
+	display: inline-flex;
+}
+
+@media screen and (min-width: 20.3125rem) { /* 20.3125rem / 325px */
+
+	.pagination ul {
+		flex-wrap: unset;
+	}
+
+}
+
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
 	nav ul {
 		display: flex;
 		justify-content: flex-start;
-	}
-
-	.pagination ul {
-		justify-content: center;
 	}
 
 }

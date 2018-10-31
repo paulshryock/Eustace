@@ -38,12 +38,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Style pre elements
 - Style responsive forms and form elements
+- Style list elements
+- Update `components.html` markup
 
 ### Removed
 - Remove navigation items from `template.html`
 
 ### Fixed
 - Fix scroll jump
+- Fix site-footer width
 
 ## 1.0.2 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
 
