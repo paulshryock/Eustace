@@ -30,6 +30,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## 1.0.4 - XXXX-XX-XX - XXXXXX
+
+### Added
+- Add `README.md` installation instructions
+- Add `README.md` logo
+
+### Removed
+- Remove `README.md` comments
+
 ## 1.0.3 - 2018-10-31 - Forms, Lists, Pre, Scrolling
 
 ### Added
