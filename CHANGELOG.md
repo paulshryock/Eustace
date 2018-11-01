@@ -36,6 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `README.md` installation instructions
 - Add `README.md` logo
 
+### Changed
+- Rearrange `README.md` content
+
 ### Removed
 - Remove `README.md` comments
 
