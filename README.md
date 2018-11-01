@@ -7,6 +7,17 @@ This starter package leverages a front end boilerplate, kitchen sink, and some s
 
 ![Screenshot](https://raw.githubusercontent.com/paulshryock/Hello-World-Front-End/master/img/screenshot.png "Screenshot")
 
+## Installing / Getting started
+
+Download or clone this repo and open `index.html`.
+
+```shell
+git clone https://github.com/paulshryock/Hello-World-Front-End Hello-World-Front-End
+cd Hello-World-Front-End
+open index.html
+```
+
+## Goals
 
 The goal is for every project to possess the following qualities:
 
@@ -21,16 +32,6 @@ The goal is for every project to possess the following qualities:
 - Responsive
 - Secure
 - Simple
-
-## Installing / Getting started
-
-Download or clone this repo and open `index.html`.
-
-```shell
-git clone https://github.com/paulshryock/Hello-World-Front-End Hello-World-Front-End
-cd Hello-World-Front-End
-open index.html
-```
 
 ## Features
 
