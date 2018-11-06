@@ -12,9 +12,9 @@ This starter package leverages a front end boilerplate, kitchen sink, and some s
 Download or clone this repo and open `index.html`.
 
 ```shell
-_$_ git clone https://github.com/paulshryock/Hello-World-Front-End Hello-World-Front-End
-_$_ cd Hello-World-Front-End
-_$_ open index.html
+$ git clone https://github.com/paulshryock/Hello-World-Front-End Hello-World-Front-End
+$ cd Hello-World-Front-End
+$ open index.html
 ```
 
 ## Goals
