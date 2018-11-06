@@ -57,10 +57,10 @@ branch. Pull requests are welcome.
 - Project homepage: https://paulshryock.github.io/Hello-World-Front-End/
 - Repository: https://github.com/paulshryock/Hello-World-Front-End
 - Releases:
-	- [v1.0.0](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.0)
-		- [v1.0.1](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.1)
-		- [v1.0.2](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.2)
-		- [v1.0.3](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.3)
+	- [v1.0.0 - Initial release](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.0)
+		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.1)
+		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.2)
+		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.3)
 		<!-- - [v1.0.4](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.4) -->
 		<!-- - [v1.0.5](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.5) -->
 		<!-- - [v1.0.6](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.6) -->
