@@ -1102,7 +1102,8 @@ legend,
 ul,
 ol,
 .articles,
-.cards {
+.cards,
+.navigation[aria-expanded="false"] {
   padding: 0;
 }
 

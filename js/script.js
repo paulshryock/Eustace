@@ -215,6 +215,7 @@ navigation.addNavButton = function() {
 
 	button.textContent = 'Menu';
 	button.setAttribute( 'aria-expanded', 'false' );
+	nav.setAttribute( 'aria-expanded', 'false' );
 
 	button = nav.insertBefore( button, menu );
 
@@ -241,10 +242,12 @@ navigation.removeNavButton = function() {
 	*/
 navigation.hideNavMenu = function() {
 
-	let menu = document.querySelector('.navigation ul');
+	let nav = document.querySelector('.navigation'),
+			menu = document.querySelector('.navigation ul');
 
 	menu.setAttribute( 'hidden', '' );
   menu.classList.remove('is-active');
+  nav.setAttribute('aria-expanded', 'false');
 
 };
 
@@ -254,10 +257,12 @@ navigation.hideNavMenu = function() {
 	*/
 navigation.showNavMenu = function() {
 
-	let menu = document.querySelector('.navigation ul');
+	let nav = document.querySelector('.navigation'),
+			menu = document.querySelector('.navigation ul');
 
 	menu.removeAttribute( 'hidden' );
   menu.classList.add('is-active');
+  nav.setAttribute('aria-expanded', 'true');
 
 };
 
