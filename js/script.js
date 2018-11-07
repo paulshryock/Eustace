@@ -237,6 +237,22 @@ navigation.removeNavButton = function() {
 };
 
 /**
+	* Sets mobile navigation menu toggle button text
+	*
+	*/
+navigation.setNavButtonText = function() {
+
+	let button = document.querySelector( '.navigation button' );
+
+	if ( 'Menu' == button.textContent ) {
+		button.textContent = 'Close';
+	} else if ( 'Close' == button.textContent ) {
+		button.textContent = 'Menu';
+	}
+
+};
+
+/**
 	* Hides mobile navigation menu
 	*
 	*/
@@ -283,6 +299,8 @@ navigation.toggleNavElementsStates = function() {
     navigation.showNavMenu();
     links[0].focus();
   }
+
+  navigation.setNavButtonText();
 
 };
 
