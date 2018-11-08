@@ -457,7 +457,7 @@ q:after {
 	* https://toolness.github.io/accessible-color-matrix/
 	*/
 
-/* Black / hsl( 0, 0%, 0% ) / rgb( 0, 0, 0 ) / #000 */
+/* Black Gray / hsl( 0, 0%, 5% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
 /* Darkest Gray / hsl( 0, 0%, 10% ) / rgb( 26, 26, 26 ) / #1a1a1a */
 
@@ -578,7 +578,7 @@ table {
 	box-shadow: 0 0 0.25rem 0.25rem hsl( 0, 0%, 90% );
 }
 
-/* Off White / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
+/* White Gray / hsl( 0, 0%, 95% ) / rgb( 242, 242, 242 ) / #f2f2f2 */
 
 body,
 tr:nth-of-type(even) {
@@ -611,6 +611,28 @@ button,
 	background: hsl( 0, 0%, 100% );
 }
 
+/* Black Blue / hsl( 240, 100%, 95% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Darkest Blue / hsl( 240, 100%, 90% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Darker Blue / hsl( 240, 100%, 80% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Dark Blue / hsl( 240, 100%, 70% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Medium Dark Blue / hsl( 240, 100%, 60% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Medium Light Blue / hsl( 240, 100%, 40% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Light Blue / hsl( 240, 100%, 30% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Lighter Blue / hsl( 240, 100%, 20% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* Lightest Blue / hsl( 240, 100%, 10% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
+/* White Blue / hsl( 240, 100%, 5% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
+
 /**
 	* Order for styling hyperlinks
 	*
@@ -618,13 +640,13 @@ button,
 	* “Lord Vader Hates Furry Animals”
 	*/
 
-/* Blue / hsl( 240, 100%, 55% ) / rgb( 26, 26, 255 ) / #1a1aff */
+/* Medium Blue / hsl( 240, 100%, 50% ) / rgb( XXX, XXX, XXX ) / #XXXXXX */
 
 a:link,
 a:visited {
-	color: #1a1aff;
-	color: rgb( 26, 26, 255 );
-	color: hsl( 240, 100%, 55% );
+	/*color: #XXXXXX;*/
+	/*color: rgb( XXX, XXX, XXX );*/
+	color: hsl( 240, 100%, 50% );
 }
 
 .button_cta:link,
