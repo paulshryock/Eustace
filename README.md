@@ -70,6 +70,10 @@ The goal is for every project to possess the following qualities:
 If you'd like to contribute, please read the [Code of Conduct](https://github.com/paulshryock/Hello-World-Front-End/blob/master/CODE_OF_CONDUCT.md), then fork the repository and use a feature
 branch. Pull requests are welcome.
 
+### Your First Contribution
+
+Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+
 ## Links
 
 - Project homepage: https://paulshryock.github.io/Hello-World-Front-End/
