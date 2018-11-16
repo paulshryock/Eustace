@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 1.0.4 - XXXX-XX-XX - XXXXXX
+## 1.0.4 - 2018-11-16 - Table, Colors, README
 
 ### Added
 - Add `README.md` installation instructions
