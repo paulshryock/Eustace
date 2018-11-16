@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Roadmap / Unreleased]
+- Update project name
+- Style elements
+	- Form elements
+	- Responsive tables
+	- button_cta shadow
+	- Accessible colors
 - Add [Inclusive Components](https://inclusive-components.design/)
 	- [Data Tables](https://inclusive-components.design/data-tables/)
 	- [Notifications](https://inclusive-components.design/notifications/)
@@ -16,10 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
 	- [A Todo List](https://inclusive-components.design/a-todo-list/)
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
-- Style elements
-	- Accessible colors
-	- Responsive tables
-	- button_cta shadow
 - Incorporate [a11y_styled_form_controls](https://scottaohara.github.io/a11y_styled_form_controls/) if it makes sense
 
 ## X.X.X - XXXX-XX-XX - XXXXXX
