@@ -52,6 +52,7 @@ The goal is for every project to possess the following qualities:
 ## [Roadmap / Unreleased]
 - Update project name
 - Style elements
+	- Form elements
 	- Responsive tables
 	- button_cta shadow
 	- Accessible colors
