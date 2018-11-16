@@ -42,6 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Rearrange `README.md` content
 - Update `.gitignore`
+- Update project roadmap
+- Update `README.md` goals
 
 ### Removed
 - Remove `README.md` comments
