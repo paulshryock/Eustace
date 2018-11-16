@@ -34,12 +34,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add `README.md` installation instructions
+- Add `README.md` contributing instructions
 - Add `README.md` logo
 - Add Table component
 - Add colors
 
 ### Changed
 - Rearrange `README.md` content
+- Update `.gitignore`
 
 ### Removed
 - Remove `README.md` comments
