@@ -21,17 +21,19 @@ $ open index.html
 
 The goal is for every project to possess the following qualities:
 
-- Accessible
-- Client-agnostic
-- Content-agnostic
-- Device-agnostic
-- Flexible
-- Inclusive
-- Mobile-first
-- Performant
-- Responsive
-- Secure
-- Simple
+- **Accessible**: Content should be accessible to everyone
+- **Client-agnostic**
+- **Content-agnostic**: Components and templates work with all types of content
+- **Device-agnostic**
+- **Flexible**
+- **Inclusive**
+- **JavaScript-agnostic**: Content is accessible without JavaScript
+- **Mobile-first**: Design for mobile
+- **Performant**: Content loads in under 2000ms
+- **Progressively-Enhanced**
+- **Responsive**: Look good on all devices and screen sizes
+- **Secure**
+- **Simple**: Less is more
 
 ## Features
 
@@ -48,6 +50,11 @@ The goal is for every project to possess the following qualities:
 	- Pagination
 
 ## [Roadmap / Unreleased]
+- Update project name
+- Style elements
+	- Responsive tables
+	- button_cta shadow
+	- Accessible colors
 - Add [Inclusive Components](https://inclusive-components.design/)
 	- [Data Tables](https://inclusive-components.design/data-tables/)
 	- [Notifications](https://inclusive-components.design/notifications/)
@@ -59,10 +66,6 @@ The goal is for every project to possess the following qualities:
 	- [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
 	- [A Todo List](https://inclusive-components.design/a-todo-list/)
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
-- Style elements
-	- Accessible colors
-	- Responsive tables
-	- button_cta shadow
 - Incorporate [a11y_styled_form_controls](https://scottaohara.github.io/a11y_styled_form_controls/) if it makes sense
 
 ## Contributing
