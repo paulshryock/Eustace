@@ -1,19 +1,19 @@
-![Hello World](https://raw.githubusercontent.com/paulshryock/Hello-World-Front-End/master/favicon.ico)
+![Eustace](https://raw.githubusercontent.com/paulshryock/Eustace/master/favicon.ico)
 
-# Hello World Front End
+# Eustace
 > Start from scratch without reinventing the wheel
 
 This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.
 
-![Screenshot](https://raw.githubusercontent.com/paulshryock/Hello-World-Front-End/master/img/screenshot.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/paulshryock/Eustace/master/img/screenshot.png "Screenshot")
 
 ## Quick Start
 
 Download or clone this repo and open `index.html`.
 
 ```shell
-$ git clone https://github.com/paulshryock/Hello-World-Front-End Hello-World-Front-End
-$ cd Hello-World-Front-End
+$ git clone https://github.com/paulshryock/Eustace Eustace
+$ cd Eustace
 $ open index.html
 ```
 
@@ -71,7 +71,7 @@ The goal is for every project to possess the following qualities:
 
 ## Contributing
 
-If you'd like to contribute, please read the [Code of Conduct](https://github.com/paulshryock/Hello-World-Front-End/blob/master/CODE_OF_CONDUCT.md), then fork the repository and use a feature
+If you'd like to contribute, please read the [Code of Conduct](https://github.com/paulshryock/Eustace/blob/master/CODE_OF_CONDUCT.md), then fork the repository and use a feature
 branch. Pull requests are welcome.
 
 ### Your First Contribution
@@ -80,20 +80,25 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 
 ## Links
 
-- Project homepage: https://paulshryock.github.io/Hello-World-Front-End/
-- Repository: https://github.com/paulshryock/Hello-World-Front-End
+- Project homepage: https://paulshryock.github.io/Eustace/
+- Repository: https://github.com/paulshryock/Eustace
 - Releases:
-	- [v1.0.0 - Initial release](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.0)
-		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.1)
-		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.2)
-		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.3)
-		<!-- - [v1.0.4](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.4) -->
-		<!-- - [v1.0.5](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.5) -->
-		<!-- - [v1.0.6](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.6) -->
-		<!-- - [v1.0.7](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.7) -->
-		<!-- - [v1.0.8](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.8) -->
-		<!-- - [v1.0.9](https://github.com/paulshryock/Hello-World-Front-End/releases/tag/v1.0.9) -->
-- Issue tracker: https://github.com/paulshryock/Hello-World-Front-End/issues
+	- [v1.0.0 - Initial release](https://github.com/paulshryock/Eustace/releases/tag/v1.0.0)
+		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.0.1)
+		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.0.2)
+		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
+		- [v1.0.4](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
+	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
+		<!-- - [v2.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1) -->
+		<!-- - [v2.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2) -->
+		<!-- - [v2.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3) -->
+		<!-- - [v2.0.4](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
+		<!-- - [v2.0.5](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
+		<!-- - [v2.0.6](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
+		<!-- - [v2.0.7](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
+		<!-- - [v2.0.8](https://github.com/paulshryock/Eustace/releases/tag/v2.0.8) -->
+		<!-- - [v2.0.9](https://github.com/paulshryock/Eustace/releases/tag/v2.0.9) -->
+- Issue tracker: https://github.com/paulshryock/Eustace/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
     paul@pshry.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
@@ -104,4 +109,4 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 
 ## Licensing
 
-The code in this project is licensed under [GNU General Public License v3.0](https://github.com/paulshryock/Hello-World-Front-End/blob/master/LICENSE).
+The code in this project is licensed under [GNU General Public License v3.0](https://github.com/paulshryock/Eustace/blob/master/LICENSE).

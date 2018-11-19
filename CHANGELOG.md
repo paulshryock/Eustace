@@ -32,6 +32,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## 2.0.0 - 2018-11-19 - Rename project
+
+### Changed
+- Rename project
+
 ## 1.0.4 - 2018-11-16 - Table, Colors, README
 
 ### Added
