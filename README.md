@@ -86,7 +86,7 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.0.1)
 		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.0.2)
 		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
-		- [v1.0.4](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
+		- [v1.0.4 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
 		<!-- - [v2.0.1 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1) -->
 		<!-- - [v2.0.2 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2) -->
