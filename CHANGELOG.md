@@ -34,6 +34,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 2.0.1 - 2018-11-XX - XXXXXX
 
 ### Changed
+- Style button element
+
+### Removed
+- Remove grid layout
 
 ## 2.0.0 - 2018-11-19 - Rename project
 
