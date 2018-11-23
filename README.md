@@ -50,7 +50,6 @@ The goal is for every project to possess the following qualities:
 	- Pagination
 
 ## [Roadmap / Unreleased]
-- Update project name
 - Style elements
 	- Form elements
 	- Responsive tables
@@ -102,9 +101,8 @@ Working on your first Pull Request? You can learn how from this *free* series, [
   - In case of sensitive bugs like security vulnerabilities, please contact
     paul@pshry.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
-<!-- - Related projects:
-  - Your other project: https://github.com/your/other-project/
-  - Someone else's project: https://github.com/someones/awesome-project/ -->
+- Related projects:
+  - Myrtle: https://github.com/paulshryock/Myrtle
 
 
 ## Licensing
