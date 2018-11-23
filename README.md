@@ -28,7 +28,7 @@ The goal is for every project to possess the following qualities:
 - **Flexible**
 - **Inclusive**
 - **JavaScript-agnostic**: Content is accessible without JavaScript
-- **Mobile-first**: Design for mobile
+- **Mobile-first**: Design for mobile, enhance for larger screens
 - **Performant**: Content loads in under 2000ms
 - **Progressively-Enhanced**
 - **Responsive**: Look good on all devices and screen sizes
@@ -89,15 +89,15 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
 		- [v1.0.4](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
-		<!-- - [v2.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1) -->
-		<!-- - [v2.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2) -->
-		<!-- - [v2.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3) -->
-		<!-- - [v2.0.4](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
-		<!-- - [v2.0.5](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
-		<!-- - [v2.0.6](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
-		<!-- - [v2.0.7](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
-		<!-- - [v2.0.8](https://github.com/paulshryock/Eustace/releases/tag/v2.0.8) -->
-		<!-- - [v2.0.9](https://github.com/paulshryock/Eustace/releases/tag/v2.0.9) -->
+		<!-- - [v2.0.1 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1) -->
+		<!-- - [v2.0.2 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2) -->
+		<!-- - [v2.0.3 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3) -->
+		<!-- - [v2.0.4 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
+		<!-- - [v2.0.5 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
+		<!-- - [v2.0.6 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
+		<!-- - [v2.0.7 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
+		<!-- - [v2.0.8 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.8) -->
+		<!-- - [v2.0.9 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.9) -->
 - Issue tracker: https://github.com/paulshryock/Eustace/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
     paul@pshry.com directly instead of using issue tracker. We value your effort
