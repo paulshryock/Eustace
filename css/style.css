@@ -98,35 +98,6 @@ textarea {
   font-family: inherit;
 }
 
-/* Open Type Features */
-
-:root {
-	font-feature-settings: "kern", "liga", "clig", "calt";
-}
-
-@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) {
-
-	:root {
-		font-kerning: normal;
-		font-variant-ligatures: common-ligatures contextual;
-		font-feature-settings: normal;
-	}
-	
-}
-
-abbr {
-	font-feature-settings: "c2sc", "smcp";
-}
-
-@supports (font-variant-caps: all-small-caps) {
-
-	abbr {
-		font-variant-caps: all-small-caps;
-		font-feature-settings: normal;
-	}
-	
-}
-
 /* Font Size */
 
 /* 0 */
@@ -375,6 +346,36 @@ abbr[title] {
 	text-decoration: underline dotted;
 }
 
+/* Open Type Features */
+
+:root {
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+
+@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+
+	:root {
+		font-kerning: normal;
+		font-variant-ligatures: common-ligatures contextual;
+		font-variant-numeric: oldstyle-nums proportional-nums;
+		font-feature-settings: normal;
+	}
+	
+}
+
+abbr {
+	font-feature-settings: "kern", "liga", "clig", "calt", "c2sc", "smcp";
+}
+
+@supports (font-variant-caps: all-small-caps) {
+
+	abbr {
+		font-variant-caps: all-small-caps;
+		font-feature-settings: normal;
+	}
+	
+}
+
 /* Text Transform */
 
 select {
@@ -385,23 +386,17 @@ caption,
 legend,
 label,
 button,
-.button,
 input[type="button"],
+.button,
 .meta {
 	text-transform: capitalize;
 }
 
-/* Text Align */
-
-th {
-	text-align: left;
-}
-
-blockquote {
-	text-align: center;
-}
-
 /* Letter Spacing */
+
+abbr {
+	letter-spacing: 0.01em;
+}
 
 /* White Space and Word Wrap */
 
@@ -427,6 +422,23 @@ pre {
 
 .screen-reader-text {
 	word-wrap: normal !important;
+}
+
+/* Text Align */
+
+th {
+	text-align: left;
+}
+
+blockquote {
+	text-align: center;
+}
+
+/* Hypens */
+
+main p {
+	hyphens: auto;
+	hyphenate-limit-chars: 8 3 3;
 }
 
 /* List Styles */
