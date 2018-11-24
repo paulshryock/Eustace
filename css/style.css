@@ -479,8 +479,7 @@ footer p,
 	color: hsl( 0, 0%, 10% );
 }
 
-thead,
-.hamburger {
+thead {
 	background: #1a1a1a;
 	background: rgb( 26, 26, 26 );
 	background: hsl( 0, 0%, 10% );
@@ -651,7 +650,8 @@ a:visited {
 }
 
 .button_cta:link,
-.button_cta:visited {
+.button_cta:visited,
+.hamburger {
 	background: #1a1aff;
 	background: rgb( 26, 26, 255 );
 	background: hsl( 240, 100%, 55% );
@@ -666,6 +666,8 @@ a:focus {
 	color: hsl( 280, 100%, 37% );
 }
 
+.navigation button:hover .hamburger,
+.navigation button:focus .hamburger,
 .button_cta:hover,
 .button_cta:focus {
 	background: #7e00bd;
