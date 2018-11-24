@@ -211,9 +211,21 @@ navigation.addNavButton = function() {
 
 	let nav = document.querySelector('.navigation'),
 			menu = document.querySelector('.navigation ul'),
-			button = document.createElement( 'button' );
+			button = document.createElement( 'button' ),
+			span = document.createElement( 'span' ),
+			hamburger1 = span.cloneNode(),
+			hamburger2 = span.cloneNode(),
+			hamburger3 = span.cloneNode();
 
-	button.textContent = 'Menu';
+	span.textContent = 'Menu';
+	span.classList.add( 'screen-reader-text' );
+	hamburger1.classList.add( 'hamburger-1' );
+	hamburger2.classList.add( 'hamburger-2' );
+	hamburger3.classList.add( 'hamburger-3' );
+	button.appendChild( span );
+	button.appendChild( hamburger1 );
+	button.appendChild( hamburger2 );
+	button.appendChild( hamburger3 );
 	button.setAttribute( 'aria-expanded', 'false' );
 	nav.setAttribute( 'aria-expanded', 'false' );
 
@@ -242,7 +254,7 @@ navigation.removeNavButton = function() {
 	*/
 navigation.setNavButtonText = function() {
 
-	let button = document.querySelector( '.navigation button' );
+	let button = document.querySelector( '.navigation button span' );
 
 	if ( 'Menu' == button.textContent ) {
 		button.textContent = 'Close';

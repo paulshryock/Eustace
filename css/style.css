@@ -363,7 +363,7 @@ blockquote {
 
 /* Letter Spacing */
 
-/* White Space */
+/* White Space and Word Wrap */
 
 legend {
   white-space: normal;
@@ -383,6 +383,10 @@ pre {
 
 pre {
   tab-size: 2;
+}
+
+.screen-reader-text {
+	word-wrap: normal !important;
 }
 
 /* List Styles */
@@ -475,7 +479,10 @@ footer p,
 	color: hsl( 0, 0%, 10% );
 }
 
-thead {
+thead,
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
 	background: #1a1a1a;
 	background: rgb( 26, 26, 26 );
 	background: hsl( 0, 0%, 10% );
@@ -735,6 +742,10 @@ iframe,
 	border: none;
 }
 
+.screen-reader-text {
+	border: 0;
+}
+
 img,
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -825,6 +836,18 @@ summary {
 
 /* Transform */
 
+[aria-expanded="true"] .hamburger-1 {
+	-webkit-transform: rotate(-45deg) translate( -0.25rem, 0.4375rem );
+	transform: rotate(-45deg) translate( -0.25rem, 0.4375rem );
+}
+
+[aria-expanded="true"] .hamburger-2 {opacity: 0;}
+
+[aria-expanded="true"] .hamburger-3 {
+	-webkit-transform: rotate(45deg) translate( -0.25rem, -0.4375rem );
+	transform: rotate(45deg) translate( -0.25rem, -0.4375rem );
+}
+
 /* Transition */
 
 a {
@@ -837,11 +860,22 @@ kbd {
 	transition: box-shadow 200ms ease;
 }
 
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
+	transition: all 200ms;
+}
+
 .js .navigation ul {
 	transition: all 500ms;
 }
 
 /* Content */
+
+.hamburger-1,
+.hamburger-3 {
+	content: '';
+}
 
 /* Animation Keyframes */
 
@@ -871,7 +905,6 @@ kbd,
 code,
 details,
 select,
-.button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -890,7 +923,11 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 textarea,
-.skip-link {
+.button,
+.skip-link,
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
 	border-radius: 0.25em;
 }
 
@@ -949,6 +986,7 @@ template {
 
 kbd,
 nav li,
+.navigation button,
 .button {
 	display: inline-block;
 }
@@ -971,7 +1009,10 @@ select,
 textarea,
 pre code,
 .navigation li,
-.navigation a {
+.navigation a,
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
 	display: block;
 }
 
@@ -1020,7 +1061,19 @@ summary {
   width: 100%;
 }
 
-/* ch */
+/* rem */
+
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
+	width: 1.5rem;
+}
+
+/* px */
+
+.screen-reader-text {
+	width: 1px;
+}
 
 /* Min Width */
 
@@ -1068,8 +1121,20 @@ hr {
 	height: 0.125rem;
 }
 
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
+	height: 0.25rem;
+}
+
 .card__image {
   height: 10rem;
+}
+
+/* px */
+
+.screen-reader-text {
+	height: 1px;
 }
 
 /* Min Height */
@@ -1096,6 +1161,13 @@ hr {
 
 }
 
+/* Clip and Clip Path */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+}
+
 /* Padding */
 
 /* 0 */
@@ -1105,6 +1177,7 @@ legend,
 [type="radio"],
 ul,
 ol,
+.screen-reader-text,
 .articles,
 .cards,
 .navigation[aria-expanded="false"] {
@@ -1235,6 +1308,12 @@ code {
 	margin: 0 0.125rem;
 }
 
+.hamburger-2,
+.hamburger-1,
+.hamburger-3 {
+	margin: 0.25rem 0;
+}
+
 nav ul {
 	margin: 0 -0.5rem;
 }
@@ -1305,6 +1384,12 @@ h6 {
 	margin: 4em 0;
 }
 
+/* px */
+
+.screen-reader-text {
+	margin: -1px;
+}
+
 /* Margin Top */
 
 /* 0 */
@@ -1362,6 +1447,10 @@ sup {
 	position: absolute;
 }
 
+.screen-reader-text {
+	position: absolute !important;
+}
+
 /* Top */
 
 .navigation button {
@@ -1369,7 +1458,7 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+	top: -0.5rem;
 }
 
 .skip-link:focus {
@@ -1405,6 +1494,7 @@ input {
 	overflow: visible;
 }
 
+.screen-reader-text,
 .js .navigation ul {
 	overflow: hidden;
 }
