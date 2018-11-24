@@ -1118,7 +1118,8 @@ textarea {
 
 /* ch */
 
-p {
+p,
+.entry-content {
 	max-width: 60ch;
 }
 
@@ -1204,11 +1205,6 @@ hr {
 }
 
 /* Shape Outside */
-
-.avatar {
-	-webkit-shape-outside: circle();
-	shape-outside: circle();
-}
 
 /* Padding */
 
@@ -1367,10 +1363,6 @@ form div {
 	margin: 1rem 0;
 }
 
-.avatar {
-	margin: 0 1rem 1rem 0;
-}
-
 .card {
 	margin: 2rem 0.5rem;
 }
@@ -1483,10 +1475,6 @@ blockquote p {
 /**
 	* Float
 	*/
-
-.avatar {
-	float: left;
-}
 
 /**
 	* Position
