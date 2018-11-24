@@ -903,6 +903,14 @@ html {
 
 /* Border Radius */
 
+/* % */
+
+.avatar {
+	border-radius: 50%;
+}
+
+/* em */
+
 kbd,
 code,
 details,
@@ -1099,7 +1107,11 @@ textarea {
   max-width: 100%;
 }
 
-/* ch */
+/* rem */
+
+.avatar {
+	max-width: 8rem;
+}
 
 /* Height */
 
@@ -1166,11 +1178,27 @@ hr {
 
 }
 
-/* Clip and Clip Path */
+/* Clip */
 
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
+	clip: rect( 1px, 1px, 1px, 1px );
+}
+
+/* Clip Path */
+
+.screen-reader-text {
+	clip-path: inset( 50% );
+}
+
+.avatar {
+	clip-path: circle( 50% );
+}
+
+/* Shape Outside */
+
+.avatar {
+	-webkit-shape-outside: circle();
+	shape-outside: circle();
 }
 
 /* Padding */
@@ -1330,6 +1358,10 @@ form div {
 	margin: 1rem 0;
 }
 
+.avatar {
+	margin: 0 1rem 1rem 0;
+}
+
 .card {
 	margin: 2rem 0.5rem;
 }
@@ -1439,6 +1471,10 @@ blockquote p {
 /**
 	* Float
 	*/
+
+.avatar {
+	float: left;
+}
 
 /**
 	* Position
