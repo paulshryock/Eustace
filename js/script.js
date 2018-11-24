@@ -219,9 +219,9 @@ navigation.addNavButton = function() {
 
 	span.textContent = 'Menu';
 	span.classList.add( 'screen-reader-text' );
-	hamburger1.classList.add( 'hamburger-1' );
-	hamburger2.classList.add( 'hamburger-2' );
-	hamburger3.classList.add( 'hamburger-3' );
+	hamburger1.classList.add( 'hamburger', 'hamburger__1' );
+	hamburger2.classList.add( 'hamburger', 'hamburger__2' );
+	hamburger3.classList.add( 'hamburger', 'hamburger__3' );
 	button.appendChild( span );
 	button.appendChild( hamburger1 );
 	button.appendChild( hamburger2 );
