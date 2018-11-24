@@ -50,6 +50,7 @@ The goal is for every project to possess the following qualities:
 	- Pagination
 
 ## [Roadmap / Unreleased]
+- Add breadcrumb navigation
 - Style elements
 	- Form elements
 	- Responsive tables
@@ -88,7 +89,7 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
 		- [v1.0.4 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
-		<!-- - [v2.0.1 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1) -->
+		- [v2.0.1 - Hamburger Menu](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1)
 		<!-- - [v2.0.2 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2) -->
 		<!-- - [v2.0.3 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3) -->
 		<!-- - [v2.0.4 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
