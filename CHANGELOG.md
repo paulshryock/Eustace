@@ -32,10 +32,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 2.0.2 - 2018-11-XX - XXXXXX
+## 2.0.2 - 2018-11-24 - Avatar, Typography
+
+### Added
+- Add open type features
+- Add avatar component
 
 ### Changed
 - Update markup
+- Style avatar images
+- Style typography
 
 ## 2.0.1 - 2018-11-23 - Hamburger Menu Icon
 

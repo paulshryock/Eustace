@@ -59,12 +59,17 @@
 /* Font Family */
 
 body {
-	font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: "IBM Plex Sans", /* Ideal */
+		Lato, Roboto, Helvetica, Arial, /* Fit */
+		"San Francisco", "Helvetica Neue", /* Common */
+		sans-serif; /* Generic */
 }
 
 blockquote p,
 q {
-	font-family: "IBM Plex Serif", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "IBM Plex Serif", /* Ideal */
+		Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, /* Fit */ /* Common */
+		serif; /* Generic */
 }
 
 pre,
@@ -76,7 +81,9 @@ var,
 article header p,
 footer p,
 .card footer {
-	font-family: "IBM Plex Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-family: "IBM Plex Mono", /* Ideal */
+		Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, /* Fit */ /* Common */
+		monospace; /* Generic */
 }
 
 ::-webkit-file-upload-button {
@@ -103,6 +110,7 @@ nav ul {
 
 :root {
 	font-size: calc( 1 * 100% ); /* 1 * 16px = 16px base rem unit */
+	font-size-adjust: 0.516; /* Set x-height */
 }
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
@@ -237,7 +245,8 @@ sup {
   line-height: 0;
 }
 
-html {
+html,
+button {
 	line-height: 1;
 }
 
@@ -255,21 +264,23 @@ h4 {
 blockquote p,
 caption,
 th,
-td {
+td,
+.lead {
 	line-height: 1.3;
 }
 
 body,
 p,
+h5,
+h6,
 ul,
 ol,
 dl,
-button,
-.button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+.button {
   line-height: 1.4;
 }
 
@@ -335,6 +346,36 @@ abbr[title] {
 	text-decoration: underline dotted;
 }
 
+/* Open Type Features */
+
+:root {
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+
+@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+
+	:root {
+		font-kerning: normal;
+		font-variant-ligatures: common-ligatures contextual;
+		font-variant-numeric: oldstyle-nums proportional-nums;
+		font-feature-settings: normal;
+	}
+	
+}
+
+abbr {
+	font-feature-settings: "kern", "liga", "clig", "calt", "c2sc", "smcp";
+}
+
+@supports (font-variant-caps: all-small-caps) {
+
+	abbr {
+		font-variant-caps: all-small-caps;
+		font-feature-settings: normal;
+	}
+	
+}
+
 /* Text Transform */
 
 select {
@@ -345,23 +386,17 @@ caption,
 legend,
 label,
 button,
-.button,
 input[type="button"],
+.button,
 .meta {
 	text-transform: capitalize;
 }
 
-/* Text Align */
-
-th {
-	text-align: left;
-}
-
-blockquote {
-	text-align: center;
-}
-
 /* Letter Spacing */
+
+abbr {
+	letter-spacing: 0.01em;
+}
 
 /* White Space and Word Wrap */
 
@@ -387,6 +422,23 @@ pre {
 
 .screen-reader-text {
 	word-wrap: normal !important;
+}
+
+/* Text Align */
+
+th {
+	text-align: left;
+}
+
+blockquote {
+	text-align: center;
+}
+
+/* Hypens */
+
+main p {
+	hyphens: auto;
+	hyphenate-limit-chars: 8 3 3;
 }
 
 /* List Styles */
@@ -903,6 +955,14 @@ html {
 
 /* Border Radius */
 
+/* % */
+
+.avatar {
+	border-radius: 50%;
+}
+
+/* em */
+
 kbd,
 code,
 details,
@@ -1099,7 +1159,19 @@ textarea {
   max-width: 100%;
 }
 
+/* rem */
+
+.avatar {
+	max-width: 8rem;
+}
+
 /* ch */
+
+p,
+.entry-content {
+	/*max-width: 60ch;*/
+	max-width: 36.4rem;
+}
 
 /* Height */
 
@@ -1166,12 +1238,23 @@ hr {
 
 }
 
-/* Clip and Clip Path */
+/* Clip */
 
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
+	clip: rect( 1px, 1px, 1px, 1px );
 }
+
+/* Clip Path */
+
+.screen-reader-text {
+	clip-path: inset( 50% );
+}
+
+.avatar {
+	clip-path: circle( 50% );
+}
+
+/* Shape Outside */
 
 /* Padding */
 
@@ -1352,16 +1435,18 @@ form div {
 
 /* em */
 
-dd + dt {
-	margin: 1em 0 0;
-}
-
 p,
+h5,
+h6,
 ul,
 ol,
 dl,
 article header p:only-of-type {
-	margin: 0 0 1em;
+	margin: 0 0 0.7em;
+}
+
+dd + dt {
+	margin: 1em 0 0;
 }
 
 h1,
@@ -1379,11 +1464,12 @@ table {
 	margin: 2em 0;
 }
 
-h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
+	margin: 2em 0 0.6em;
+}
+
+h2 {
 	margin: 2em 0 0.5em;
 }
 
