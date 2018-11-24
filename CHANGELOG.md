@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Roadmap / Unreleased]
 - Add breadcrumb navigation
 - Style elements
-	- Form elements
 	- Responsive tables
+	- Form elements
 	- button_cta shadow
 	- Accessible colors
 - Add [Inclusive Components](https://inclusive-components.design/)
