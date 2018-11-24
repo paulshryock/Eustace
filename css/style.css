@@ -840,6 +840,11 @@ summary {
 	transform: rotate(-45deg) translate( -0.25rem, 0.4375rem );
 }
 
+[aria-expanded="true"] .hamburger__2 {
+	-webkit-transform: rotate(80deg);
+	transform: rotate(180deg);
+}
+
 [aria-expanded="true"] .hamburger__3 {
 	-webkit-transform: rotate(45deg) translate( -0.25rem, -0.4375rem );
 	transform: rotate(45deg) translate( -0.25rem, -0.4375rem );
@@ -1046,6 +1051,12 @@ summary {
 
 /* Width */
 
+/* 0 */
+
+[aria-expanded="true"] .hamburger__2 {
+	width: 0;
+}
+
 /* % */
 
 .card__image img {
@@ -1056,6 +1067,11 @@ summary {
 
 .hamburger {
 	width: 1.5rem;
+}
+
+[aria-expanded="true"] .hamburger__1,
+[aria-expanded="true"] .hamburger__3 {
+	width: 1.85rem;
 }
 
 /* px */
@@ -1207,7 +1223,8 @@ code {
 }
 
 nav a,
-.button_cta {
+.button_cta,
+.navigation button {
 	padding: 0.5rem;
 }
 

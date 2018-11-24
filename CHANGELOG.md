@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
-## 2.0.1 - 2018-11-XX - XXXXXX
+## 2.0.1 - 2018-11-23 - Hamburger Menu
 
 ### Added
 - Add hamburger menu icon
