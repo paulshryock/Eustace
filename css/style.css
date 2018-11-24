@@ -1225,8 +1225,7 @@ code {
 }
 
 nav a,
-.button_cta,
-.navigation button {
+.button_cta {
 	padding: 0.5rem;
 }
 
@@ -1241,6 +1240,10 @@ details:not([open]) summary,
 .container,
 .card__text {
 	padding: 1rem;
+}
+
+.navigation button {
+	padding: 0.75rem 1rem;
 }
 
 /* em */
