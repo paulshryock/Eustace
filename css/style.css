@@ -98,6 +98,35 @@ textarea {
   font-family: inherit;
 }
 
+/* Open Type Features */
+
+:root {
+	font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) {
+
+	:root {
+		font-kerning: normal;
+		font-variant-ligatures: common-ligatures contextual;
+		font-feature-settings: normal;
+	}
+	
+}
+
+abbr {
+	font-feature-settings: "c2sc", "smcp";
+}
+
+@supports (font-variant-caps: all-small-caps) {
+
+	abbr {
+		font-variant-caps: all-small-caps;
+		font-feature-settings: normal;
+	}
+	
+}
+
 /* Font Size */
 
 /* 0 */
