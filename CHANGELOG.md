@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Roadmap / Unreleased]
 - Add breadcrumb navigation
 - Style elements
-	- Form elements
 	- Responsive tables
+	- Form elements
 	- button_cta shadow
 	- Accessible colors
 - Add [Inclusive Components](https://inclusive-components.design/)
@@ -31,6 +31,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 ### Fixed
 ### Security
+
+## 2.0.2 - 2018-11-XX - XXXXXX
+
+### Changed
+- Update markup
 
 ## 2.0.1 - 2018-11-23 - Hamburger Menu Icon
 
