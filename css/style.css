@@ -997,15 +997,21 @@ fieldset,
 	border-radius: 1em;
 }
 
-thead th:first-child,
-thead td:first-child,
 .card img {
+	border-top-left-radius: 0.875em;
+}
+
+thead th:first-child,
+thead td:first-child {
 	border-top-left-radius: 1em;
 }
 
-thead th:last-child,
-thead td:last-child,
 .card img {
+	border-top-right-radius: 0.875em;
+}
+
+thead th:last-child,
+thead td:last-child {
 	border-top-right-radius: 1em;
 }
 
