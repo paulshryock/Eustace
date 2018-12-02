@@ -5,7 +5,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Roadmap / Unreleased]
-- Add breadcrumb navigation
 - Style elements
 	- Responsive tables
 	- Form elements
@@ -24,13 +23,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- [Toggle Buttons](https://inclusive-components.design/toggle-button/)
 - Incorporate [a11y_styled_form_controls](https://scottaohara.github.io/a11y_styled_form_controls/) if it makes sense
 
+<!--
 ## X.X.X - XXXX-XX-XX - XXXXXX
+
 ### Added
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+-->
+
+## 2.0.3 - 2018-12-XX - Breadcrumb
+
+### Added
+- Add breadcrumb navigation
 
 ## 2.0.2 - 2018-11-24 - Avatar, Typography
 

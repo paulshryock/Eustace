@@ -80,6 +80,7 @@ samp,
 var,
 article header p,
 footer p,
+.breadcrumb,
 .card footer {
 	font-family: "IBM Plex Mono", /* Ideal */
 		Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, /* Fit */ /* Common */
@@ -179,7 +180,8 @@ tt,
 samp,
 var,
 article header p,
-footer p {
+footer p,
+.breadcrumb {
 	font-size: 0.85rem;
 }
 
