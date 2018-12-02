@@ -46,11 +46,11 @@ The goal is for every project to possess the following qualities:
 - Additional Components
 	- Accordion
 	- Blockquote
+	- Breadcrumb
 	- Code
 	- Pagination
 
 ## [Roadmap / Unreleased]
-- Add breadcrumb navigation
 - Style elements
 	- Responsive tables
 	- Form elements

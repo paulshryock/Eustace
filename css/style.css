@@ -103,7 +103,8 @@ textarea {
 
 /* 0 */
 
-nav ul {
+nav ul,
+nav ol {
 	font-size: 0;
 }
 
@@ -300,7 +301,8 @@ cite,
 legend,
 footer p,
 .site-title,
-.meta {
+.meta,
+.breadcrumb [aria-current="page"] {
 	font-weight: bold;
 }
 
@@ -539,6 +541,12 @@ thead {
 	background: hsl( 0, 0%, 10% );
 }
 
+.breadcrumb {
+	border-top: 0.25rem solid #1a1a1a;
+	border-top: 0.25rem solid rgb( 26, 26, 26 );
+	border-top: 0.25rem solid hsl( 0, 0%, 10% );
+}
+
 /* Darker Gray / hsl( 0, 0%, 20% ) / rgb( 51, 51, 51 ) / #333 */
 
 /* Dark Gray / hsl( 0, 0%, 30% ) / rgb( 77, 77, 77 ) / #4d4d4d */
@@ -611,6 +619,12 @@ details,
 	border: 0.125rem solid #b3b3b3;
 	border-color: rgb( 179, 179, 179 );
 	border-color: hsl( 0, 0%, 70% );
+}
+
+.breadcrumb li + li::before {
+	border-right: 0.125em solid #b3b3b3;
+	border-right: 0.125em solid rgb( 179, 179, 179 );
+	border-right: 0.125em solid hsl( 0, 0%, 70% );
 }
 
 /* Lighter Gray / hsl( 0, 0%, 80% ) / rgb( 204, 204, 204 ) / #ccc */
@@ -891,6 +905,11 @@ summary {
 
 /* Transform */
 
+.breadcrumb li + li::before {
+	-webkit-transform: rotate( 15deg );
+	transform: rotate( 15deg );
+}
+
 [aria-expanded="true"] .hamburger__1 {
 	-webkit-transform: rotate(-45deg) translate( -0.25rem, 0.4375rem );
 	transform: rotate(-45deg) translate( -0.25rem, 0.4375rem );
@@ -929,7 +948,8 @@ kbd {
 /* Content */
 
 .hamburger__1,
-.hamburger__3 {
+.hamburger__3,
+.breadcrumb li + li::before {
 	content: '';
 }
 
@@ -1055,7 +1075,8 @@ template {
 kbd,
 nav li,
 .navigation button,
-.button {
+.button,
+.breadcrumb li + li::before {
 	display: inline-block;
 }
 
@@ -1214,6 +1235,12 @@ hr {
 
 .card__image {
   height: 10rem;
+}
+
+/* em */
+
+.breadcrumb li + li::before {
+	height: 0.75em;
 }
 
 /* px */
@@ -1412,7 +1439,12 @@ code {
 	margin: 0.25rem 0;
 }
 
-nav ul {
+.breadcrumb li + li::before {
+	margin: 0 0.25em;
+}
+
+nav ul,
+nav ol {
 	margin: 0 -0.5rem;
 }
 
@@ -1665,7 +1697,8 @@ progress {
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	nav ul {
+	nav ul,
+	nav ol {
 		display: flex;
 		justify-content: flex-start;
 	}
