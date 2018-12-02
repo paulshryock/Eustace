@@ -103,7 +103,8 @@ textarea {
 
 /* 0 */
 
-nav ul {
+nav ul,
+nav ol {
 	font-size: 0;
 }
 
@@ -537,6 +538,12 @@ thead {
 	background: #1a1a1a;
 	background: rgb( 26, 26, 26 );
 	background: hsl( 0, 0%, 10% );
+}
+
+.breadcrumb {
+	border-top: 0.25rem solid #1a1a1a;
+	border-top: 0.25rem solid rgb( 26, 26, 26 );
+	border-top: 0.25rem solid hsl( 0, 0%, 10% );
 }
 
 /* Darker Gray / hsl( 0, 0%, 20% ) / rgb( 51, 51, 51 ) / #333 */
@@ -1412,7 +1419,8 @@ code {
 	margin: 0.25rem 0;
 }
 
-nav ul {
+nav ul,
+nav ol {
 	margin: 0 -0.5rem;
 }
 
@@ -1665,7 +1673,8 @@ progress {
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
-	nav ul {
+	nav ul,
+	nav ol {
 		display: flex;
 		justify-content: flex-start;
 	}
