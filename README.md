@@ -50,7 +50,6 @@ The goal is for every project to possess the following qualities:
 	- Pagination
 
 ## [Roadmap / Unreleased]
-- Add breadcrumb navigation
 - Style elements
 	- Responsive tables
 	- Form elements
