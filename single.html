@@ -58,12 +58,17 @@
 			
 		<main id="content">
 
-			<nav role="navigation" aria-label="Breadcrumb Navigation" class="container breadcrumb">
+			<!--
+				-- Accessible Breadcrumb
+				--
+				-- https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html
+				-->
+			<nav role="navigation" aria-label="Breadcrumb" class="container breadcrumb">
 				<ol>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="archive.html">Content Type Archive</a></li>
 					<li><a href="archive.html">Category Archive</a></li>
-					<li>The Title</li>
+					<li><a href="single.html" aria-current="page">The Title</a></li>
 				</ol>
 			</nav><!-- .container .pagination -->
 

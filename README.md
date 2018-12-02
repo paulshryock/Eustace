@@ -46,6 +46,7 @@ The goal is for every project to possess the following qualities:
 - Additional Components
 	- Accordion
 	- Blockquote
+	- Breadcrumb
 	- Code
 	- Pagination
 
