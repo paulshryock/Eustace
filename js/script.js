@@ -41,17 +41,17 @@ browser.log = function ( message, color='black' ) {
 	}
 	console.log( `%c${message}`, `color:${color}` )
 
+	// browser.log('Hello World!')
+	// browser.log('Success!', 'success')
+	// browser.log('Error!', 'error')
+	// browser.log('Warning!', 'warning')
+	// browser.log('Info...', 'info')
+
 	// These are available too:
 	// console.error()
 	// console.warn()
 	// console.table()
 }
-
-// browser.log('Hello World!')
-// browser.log('Success!', 'success')
-// browser.log('Error!', 'error')
-// browser.log('Warning!', 'warning')
-// browser.log('Info...', 'info')
 
 /**
 	* Swaps html element classes: `.no-js` to `.js`
