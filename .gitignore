@@ -30,6 +30,7 @@ Temporary Items
 
 # SSL Certificates
 /certs/*
+/scratch/*
 
 # Content Management Systems
 /cms/*
