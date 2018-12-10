@@ -91,8 +91,8 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
 		- [v2.0.1 - Hamburger Menu Icon](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1)
 		- [v2.0.2 - Avatar, Typography](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2)
-		<!-- - [v2.0.3 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3) -->
-		<!-- - [v2.0.4 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
+		- [v2.0.3 - Breadcrumb, Toggle](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3)
+		<!-- - [v2.0.4 - Text Inputs, Radio Buttons](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
 		<!-- - [v2.0.5 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
 		<!-- - [v2.0.6 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
 		<!-- - [v2.0.7 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
