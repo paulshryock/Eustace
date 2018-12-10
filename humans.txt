@@ -21,6 +21,7 @@ The humans responsible & technology colophon
 - [Tim Brown](https://abookapart.com/products/flexible-typesetting)
 - [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
 - [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
+- [Andrew Bone](https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj)
 
 ## Technology Colophon
 

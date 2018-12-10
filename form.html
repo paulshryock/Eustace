@@ -61,9 +61,19 @@
 				<h1 class="entry-title">Form</h1>
 			</header><!-- .container -->
 
+			<div class="container">
+				<ul class="list_bulleted">
+					<li><a href="#inputs">Inputs</a></li>
+					<li><a href="#checkboxes">Checkboxes, Toggles</a></li>
+					<li><a href="#radio-buttons">Radio Buttons</a></li>
+					<li><a href="#classic-form-elements">Classic Form Elements</a></li>
+					<li><a href="#new-form-elements">New Form Elements</a></li>
+				</ul>
+			</div><!-- .container -->
+
 			<form method="get" action="/" class="container">
 
-				<fieldset>
+				<fieldset id="inputs">
 					<legend>Input Element Types (All)</legend>
 
 					<div>
@@ -158,26 +168,54 @@
 				</fieldset>
 
 
-				<fieldset>
-					<legend>Checkboxes</legend>
+				<fieldset id="checkboxes">
+					<legend>Checkboxes, Toggles</legend>
 
 					<div>
-						<input type="checkbox" value="check-1" name="check-1" id="check-1" />
-						<label for="check-1">Check 1</label>
+						<label for="check-1">
+							<input type="checkbox" value="check-1" name="check-1" id="check-1" />
+							Check 1
+						</label>
 					</div>
 					<div>
-						<input type="checkbox" value="check-2" name="check-2" id="check-2" />
-						<label for="check-2">Check 2</label>
+						<label for="check-2">
+							<input type="checkbox" value="check-2" name="check-2" id="check-2" />
+							Check 2
+						</label>
 					</div>
 					<div>
-						<input type="checkbox" value="check-3" name="check-3" id="check-3" />
-						<label for="check-3">Check the microphone</label>
+						<label for="check-3">
+							<input type="checkbox" value="check-3" name="check-3" id="check-3" />
+							Check the microphone
+						</label>
+					</div>
+
+					<div>
+						<label class="toggle" for="check-a">
+							<input type="checkbox" value="check-a" name="check-a" id="check-a" />
+							<span class="toggle__switch"></span>
+							Check A
+						</label>
+					</div>
+					<div>
+						<label class="toggle" for="check-b">
+							<input type="checkbox" value="check-b" name="check-b" id="check-b" />
+							<span class="toggle__switch"></span>
+							Check B
+						</label>
+					</div>
+					<div>
+						<label class="toggle" for="check-c">
+							<input type="checkbox" value="check-c" name="check-c" id="check-c" />
+							<span class="toggle__switch"></span>
+							Toggle the microphone
+						</label>
 					</div>
 
 				</fieldset>
 
 
-				<fieldset>
+				<fieldset id="radio-buttons">
 					<legend>Radio Buttons</legend>
 
 					<div>
@@ -196,7 +234,7 @@
 				</fieldset>
 
 
-				<fieldset>
+				<fieldset id="classic-form-elements">
 					<legend>Other Classic Form Elements</legend>
 
 					<div>
@@ -246,7 +284,7 @@
 				</fieldset>
 
 
-				<fieldset>
+				<fieldset id="new-form-elements">
 					<legend>New Form Elements since HTML5</legend>
 
 					<div>
