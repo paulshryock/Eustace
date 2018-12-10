@@ -25,6 +25,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Auth
-js/auth.js
-auth.php
+# Authentication
+*auth*
+
+# SSL Certificates
+/certs/*
+
+# Content Management Systems
+/cms/*
