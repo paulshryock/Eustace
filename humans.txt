@@ -4,9 +4,11 @@ The humans responsible & technology colophon
 
 ## Team
 
-- [Paul Shryock](https://pshry.com/) -- Lead Front End Developer
+- [Paul Shryock](https://github.com/paulshryock) -- Lead Front End Developer
 
 ## Thanks
+
+Thanks to these individuals and groups for releasing high-quality open-source resources, many of which have been incorporated into this project.
 
 - [Josh Buchea](https://gethead.info/)
 - [Web Robot Pages](http://www.robotstxt.org/)
@@ -21,7 +23,7 @@ The humans responsible & technology colophon
 - [Tim Brown](https://abookapart.com/products/flexible-typesetting)
 - [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
 - [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
-- [Andrew Bone](https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj)
+- [Andrew Bone](https://dev.to/link2twenty)
 
 ## Technology Colophon
 
