@@ -37,6 +37,7 @@ The goal is for every project to possess the following qualities:
 	- Is not configured for a custom splash screen <span style="color: red;">_(Failures: Manifest does not have `name`.)_</span>
 - Accessibility: <span style="color: green;">100%</span>
 - Best Practices: <span style="color: green;">93%</span>
+	- Does not use HTTP/2 for all of its resources
 - SEO: <span style="color: green;">100%</span>
 
 ## Features
