@@ -36,3 +36,6 @@ Temporary Items
 
 # Private scratch pad
 /scratch/*
+
+# .htaccess
+.htaccess
