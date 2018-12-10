@@ -34,11 +34,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-<!-- ## 2.0.4 - 2018-12-XX - Text Inputs, Radio Buttons
+## 2.0.4 - 2018-12-XX - Text Inputs, Radio Buttons
 
-### Added
+<!-- ### Added
 - TODO: Add [Accessibility First Text Input](https://dev.to/link2twenty/accessibility-first-text-input-1l7l)
 - TODO: Add [Accessibility First Radio Buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302) -->
+
+### Changed
+- Update screenshot
 
 ## 2.0.3 - 2018-12-10 - Breadcrumb, Toggle
 
