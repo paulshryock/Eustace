@@ -85,6 +85,24 @@ browser.addSmoothScrolling = function() {
 }
 
 /**
+	* Registers a service worker
+	*
+	*/
+browser.registerServiceWorker = function() {
+
+	if ( 'serviceWorker' in navigator ) {
+		console.log( "Will the service worker register?" );
+		navigator.serviceWorker.register( 'js/service-worker.js' )
+			.then( function( reg ) {
+				console.log( "Yes, it did." );
+			} ).catch( function( err ) {
+				console.log( "No it didn't. This happened: ", err )
+			} );
+	}
+
+}
+
+/**
 	* Adds browser event listners
 	*
 	*/
@@ -92,6 +110,7 @@ browser.addEventListeners = function() {
 
 	window.addEventListener( 'load', browser.swapHTMLClasses, false );
 	window.addEventListener( 'load', browser.addSmoothScrolling, false );
+	window.addEventListener( 'load', browser.registerServiceWorker, false );
 
 };
 

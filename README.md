@@ -25,6 +25,20 @@ The goal is for every project to possess the following qualities:
 - **Style-agnostic**: Content and functionality are accessible without CSS; source order always makes sense
 - **Zero Dependencies**: Get up and running without any build tools, pre-processors, or 3rd-party scripts
 
+## Lighthouse Audits
+
+### Mobile
+
+- Performance: <span style="color: green;">100%</span>
+- Progressive Web App: <span style="color: orange;">62%</span>
+	- Does not respond with a 200 when offline
+	- User will not be prompted to Install the Web App <span style="color: red;">_(Failures: Manifest does not have `short_name`, Manifest does not have `name`, Site does not register a service worker.)_</span>
+	- Does not register a service worker
+	- Is not configured for a custom splash screen <span style="color: red;">_(Failures: Manifest does not have `name`.)_</span>
+- Accessibility: <span style="color: green;">100%</span>
+- Best Practices: <span style="color: green;">93%</span>
+- SEO: <span style="color: green;">100%</span>
+
 ## Features
 
 - [Accessible Patterns](http://www.a11ymatters.com/patterns/)
