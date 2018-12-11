@@ -11,6 +11,7 @@ The goal is for every project to possess the following qualities:
 
 - **Accessible**: Content is accessible to everyone, regardless of ableness
 - **Client-agnostic**: Content is accessible on every device, operating system, browser or non-browser client (i.e. RSS reader, "Read Only" mode, etc.)
+- **Connection-agnostic**: Content is accessible while offline, once cached
 - **Content-agnostic**: Markup, styles, and scripts work with all types of content
 - **Device-agnostic**: Content is not styled or optimized for certain devices, but rather styled and optimized for any device
 - **Flexible**
