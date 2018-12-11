@@ -91,11 +91,11 @@ browser.addSmoothScrolling = function() {
 browser.registerServiceWorker = function() {
 
 	console.log( "Will the service worker register?" );
-	navigator.serviceWorker.register( 'service-worker.js' )
-		.then( function( reg ) {
-			console.log( "Yes, it did." );
+	navigator.serviceWorker.register( 'serviceworker.js' )
+		.then( function( registration ) {
+			console.log( 'ServiceWorker registration successful with scope: ', registration.scope );
 		} ).catch( function( err ) {
-			console.log( "No it didn't. This happened: ", err )
+			console.log( 'ServiceWorker registration failed: ', err )
 		} );
 
 }
