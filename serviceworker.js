@@ -43,3 +43,7 @@ addEventListener('fetch', fetchEvent => {
    }) // end fetch.catch
   ); // end respondWith
 }); // end addEventListener
+
+// TODO: What if, every time you fetched a page from the network, you stored a copy of that page in a cache? Then if that person tries to reach that page later, but they’re offline, you could show them the cached version.
+
+// TODO: Or, what if instead of reaching out the network first, you checked to see if a file is in the cache first? You could serve up that cached version—which would be blazingly fast—and still fetch a fresh version from the network in the background to pop in the cache for next time. That might be a good strategy for images.

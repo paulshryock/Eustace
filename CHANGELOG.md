@@ -57,6 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add web manifest
 - Add service worker
+- Add `offline.html` template
 
 ### Changed
 - Update screenshot

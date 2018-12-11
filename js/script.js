@@ -91,7 +91,7 @@ browser.addSmoothScrolling = function() {
 browser.registerServiceWorker = function() {
 
 	console.log( "Will the service worker register?" );
-	navigator.serviceWorker.register( 'serviceworker.js' )
+	navigator.serviceWorker.register( '/serviceworker.js' )
 		.then( function( registration ) {
 			console.log( 'ServiceWorker registration successful with scope: ', registration.scope );
 		} ).catch( function( err ) {
