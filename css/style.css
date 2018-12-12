@@ -953,7 +953,12 @@ kbd {
 	content: '';
 }
 
-/* Animation Keyframes */
+/**
+	* Animation Keyframes
+	*
+	* Toggling Animations On and Off, a Variation
+	* http://adrianroselli.com/2018/12/toggling-animations-on-and-off-a-variation.html
+	*/
 
 /****************************************************
 	* Layout
@@ -1740,7 +1745,11 @@ progress {
 /**
 	* Accessibility First Toggle Switch
 	*
-	* TODO: Organize styles
+	* TODO: Decide if this is the appropriate approach
+	* TODO: if (it's not) { replace this with a better approach }
+	* TODO: else { continue }
+	* TODO: Update styles to match look and feel of the rest of the site
+	* TODO: Integrate and organize these styles in with the rest of the file
 	*/
 
 /* Default */
@@ -1817,3 +1826,80 @@ progress {
 [type=checkbox]:checked + .toggle__switch::after {
   transform: translate( calc( 3em - 100% ), -50% );
 }
+
+/**
+	* Under-Engineered Custom Radio Buttons and Checkboxen
+	* http://adrianroselli.com/2017/05/under-engineered-custom-radio-buttons-and-checkboxen.html
+	*
+	* TODO: Decide if this is the appropriate approach
+	* TODO: if (it's not) { replace this with [Accessibility First Radio Buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302) }
+	* TODO: else { continue }
+	* TODO: Update styles to match look and feel of the rest of the site
+	* TODO: Integrate and organize these styles in with the rest of the file
+	* 
+	* ```html
+	* <input type="radio" name="radio-button-1" id="radio-button-1" checked>
+	* <label for="radio-button-1">Radio Button 1</label>
+	* ```
+	*
+	* ```css
+	* input[type=radio],
+	* input[type=checkbox] {
+	*   position: absolute;
+	*   top: auto;
+	*   overflow: hidden;
+	*   clip: rect(1px 1px 1px 1px); // IE 6/7
+	*   clip: rect(1px, 1px, 1px, 1px);
+	*   width: 1px;
+	*   height: 1px;
+	*   white-space: nowrap; // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+	* }
+	* 
+	* input[type=radio] + label:before,
+	* input[type=checkbox] + label:before {
+	*   content: '';
+	*   background: #fff;
+	*   border: .1em solid rgba(0, 0, 0, .75);
+	*   background-color: rgba(255, 255, 255, .8);
+	*   display: block;
+	*   box-sizing: border-box;
+	*   float: left;
+	*   width: 1em;
+	*   height: 1em;
+	*   margin-left: -1.5em;
+	*   margin-top: .15em;
+	*   vertical-align: top;
+	*   cursor: pointer;
+	*   text-align: center;
+	*   transition: all .1s ease-out;
+	* }
+	* 
+	* input[type=radio] + label:before {
+	*   border-radius: 100%;
+	* }
+	* 
+	* input[type=radio]:checked + label:before {
+	*   background-color: #00f;
+	*   box-shadow: inset 0 0 0 .15em rgba(255, 255, 255, .95);
+	* }
+	* 
+	* input[type=checkbox] + label:before {
+	* 	// content: '\00d7';
+	* 	// content: '\002718';
+	* 	// content: '\002715';
+	* 	// content: '\0025a0';
+	*   content: '\002713';
+	*   font-weight: bold;
+	*   text-align: center;
+	*   line-height: 1.15;
+	*   color: rgba(0, 0, 255, 0);
+	* }
+	* 
+	* input[type=checkbox]:checked + label:before {
+	*   color: rgba(0, 0, 255, 1);
+	*   line-height: .75;
+	*   text-shadow: .05em 0 0 rgba(0, 0, 255, 1), -.05em 0 0 rgba(0, 0, 255, 1);
+	* }
+	* ```
+	* 
+	*/
