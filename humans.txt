@@ -24,6 +24,7 @@ Thanks to these individuals and groups for releasing high-quality open-source re
 - [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
 - [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
 - [Andrew Bone](https://dev.to/link2twenty)
+- [Adrian Roselli](http://adrianroselli.com/2018/12/toggling-animations-on-and-off-a-variation.html)
 
 ## Technology Colophon
 

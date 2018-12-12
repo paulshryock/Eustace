@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Roadmap
+- Address TODOs in `css/style.css`
+	- Accessibility First Toggle Switch
+	- Under-Engineered Custom Radio Buttons and Checkboxen
+		- Add [Accessibility First Radio Buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302)
+- Add [Accessibility First Text Input](https://dev.to/link2twenty/accessibility-first-text-input-1l7l)
 - Add Components
 	- Image Lightbox, if this makes any sense in 2019
 - Add Templates
@@ -46,12 +51,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 2.0.5 - 2018-12-XX - Async, Text Inputs, Radio Buttons
+## 2.0.5 - 2018-12-XX - Async
 
 ### Added
 - Add `async` attribute to linked scripts
-<!-- - TODO: Add [Accessibility First Text Input](https://dev.to/link2twenty/accessibility-first-text-input-1l7l) -->
-<!-- - TODO: Add [Accessibility First Radio Buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302) -->
 
 ## 2.0.4 - 2018-12-11 - Service Worker
 
