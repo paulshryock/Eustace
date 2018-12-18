@@ -3,6 +3,9 @@
 # Eustace
 > Start from scratch without reinventing the wheel
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/paulshryock/Eustace/graphs/commit-activity)
+[![](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/paulshryock/Eustace/releases/latest)
+
 This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.
 
 ![Screenshot](https://raw.githubusercontent.com/paulshryock/Eustace/master/img/screenshot.png "Screenshot")
