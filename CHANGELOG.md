@@ -51,10 +51,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 2.0.5 - 2018-12-XX - Async
+## 2.0.5 - 2018-12-XX - Render-Blocking Resources
 
 ### Added
 - Add `async` attribute to linked scripts
+- Add `media` attribute to linked stylesheets
 
 ## 2.0.4 - 2018-12-11 - Service Worker
 
