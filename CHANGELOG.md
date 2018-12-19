@@ -51,13 +51,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 2.0.5 - 2018-12-XX - Render-Blocking Resources
+## 2.5.0 - 2018-12-19 - Render-Blocking Resources
 
 ### Added
 - Add `async` attribute to linked scripts
 - Add `media` attribute to linked stylesheets
 
-## 2.0.4 - 2018-12-11 - Service Worker
+## 2.4.0 - 2018-12-11 - Service Worker
 
 ### Added
 - Add web manifest
@@ -70,14 +70,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update meta theme-color
 - Update meta manifest link
 
-## 2.0.3 - 2018-12-10 - Breadcrumb, Toggle
+## 2.3.0 - 2018-12-10 - Breadcrumb, Toggle
 
 ### Added
 - Add Breadcrumb
 - Add [Accessibility First Toggle Switch](https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj)
 - Add Form Template table of contents
 
-## 2.0.2 - 2018-11-24 - Avatar, Typography
+## 2.2.0 - 2018-11-24 - Avatar, Typography
 
 ### Added
 - Add open type features
@@ -88,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Style avatar images
 - Style typography
 
-## 2.0.1 - 2018-11-23 - Hamburger Menu Icon
+## 2.1.0 - 2018-11-23 - Hamburger Menu Icon
 
 ### Added
 - Add hamburger menu icon
@@ -105,7 +105,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Rename project
 
-## 1.0.4 - 2018-11-16 - Table, Colors, README
+## 1.4.0 - 2018-11-16 - Table, Colors, README
 
 ### Added
 - Add `README.md` installation instructions
@@ -123,7 +123,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Remove `README.md` comments
 
-## 1.0.3 - 2018-10-31 - Forms, Lists, Pre, Scrolling
+## 1.3.0 - 2018-10-31 - Forms, Lists, Pre, Scrolling
 
 ### Added
 - Add `form.html`
@@ -143,7 +143,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix scroll jump
 - Fix site-footer width
 
-## 1.0.2 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
+## 1.2.0 - 2018-10-27 - button_cta, Screenshot, Templates, Boilerplate
 
 ### Added
 - Add main content id
@@ -158,7 +158,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update components list markup
 - Update navigation
 
-## 1.0.1 - 2018-10-26 - Accordion, Blockquote, Cards, Code
+## 1.1.0 - 2018-10-26 - Accordion, Blockquote, Cards, Code
 
 ### Added
 - Add smooth scrolling for ID links

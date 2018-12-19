@@ -31,12 +31,10 @@ The goal is for every project to possess the following qualities:
 
 ## Lighthouse Audits
 
-### Mobile
-
 - Performance: **100%**
 - Progressive Web App: **100%**
 - Accessibility: **100%**
-- Best Practices: **93%**
+- Best Practices: **100%**
 - SEO: **100%**
 
 ## Features
@@ -114,26 +112,32 @@ branch. Pull requests are welcome.
 
 Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
-### Team
+### Contributors
 
-- [Paul Shryock](https://github.com/paulshryock) -- Lead Front End Developer
+|Name|Role|
+|---|---|
+|[Paul Shryock](https://github.com/paulshryock)|Owner|
 
 ### Thanks
 
-- [Josh Buchea](https://gethead.info/)
-- [Web Robot Pages](http://www.robotstxt.org/)
-- [humans.txt](http://humanstxt.org/)
-- [Eric Rasch](https://codepen.io/ericrasch/pen/qIiyK)
-- [Ahmad Shadeed](http://www.a11ymatters.com/patterns/)
-- [Khan Academy](http://khan.github.io/tota11y/)
-- [Heydon Pickering](https://inclusive-components.design/)
-- [Jeremy Thomas](https://jgthms.com/minireset.css/)
-- [Nicolas Gallagher](github.com/necolas/normalize.css)
-- [Sarah Cope](https://css-tricks.com/almanac/properties/q/quotes/)
-- [Tim Brown](https://abookapart.com/products/flexible-typesetting)
-- [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
-- [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
-- [Andrew Bone](https://dev.to/link2twenty)
+Thanks to these individuals and groups for releasing high-quality open-source resources, many of which have been incorporated into this project.
+
+|Name|Resource|
+|---|---|
+|Ahmad Shadeed|[a11ymatters](http://www.a11ymatters.com/patterns/)|
+|Andrew Bone|[Accessibility first toggle switches](https://dev.to/link2twenty), [Accessibility first radio buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302), [Accessibility first text input](https://dev.to/link2twenty/accessibility-first-text-input-1l7l)|
+|Eric Rasch|[HTML Kitchen Sink](https://codepen.io/ericrasch/pen/qIiyK)|
+|Heydon Pickering|[Inclusive Components](https://inclusive-components.design/)|
+|Jeremy Thomas|[minireset.css](https://jgthms.com/minireset.css/)|
+|Josh Buchea|[HEAD](https://gethead.info/)|
+|Juanjo Bernabeu|[humans.txt](http://humanstxt.org/)|
+|Khan Academy|[tota11y](http://khan.github.io/tota11y/)|
+|Kinyanjui Wangonya|[Better console.logs](https://dev.to/wangonya/better-consolelogs-448c)|
+|Nathan Swartz|[Form Ipsum](https://clicknathan.com/web-design/form-ipsum/)|
+|Nicolas Gallagher|[Normalize.css](github.com/necolas/normalize.css)|
+|Sarah Cope|[quotes](https://css-tricks.com/almanac/properties/q/quotes/)|
+|Tim Brown|[Flexible Typesetting](https://abookapart.com/products/flexible-typesetting)|
+|The Web Robot Pages|[robots.txt](http://www.robotstxt.org/)|
 
 ## Links
 
@@ -141,27 +145,25 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 - Repository: [https://github.com/paulshryock/Eustace](https://github.com/paulshryock/Eustace)
 - Releases:
 	- [v1.0.0 - Initial release](https://github.com/paulshryock/Eustace/releases/tag/v1.0.0)
-		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.0.1)
-		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.0.2)
-		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
-		- [v1.0.4 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
+		- [v1.1.0 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.1.0)
+		- [v1.2.0 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.2.0)
+		- [v1.3.0 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.3.0)
+		- [v1.4.0 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.4.0)
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
-		- [v2.0.1 - Hamburger Menu Icon](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1)
-		- [v2.0.2 - Avatar, Typography](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2)
-		- [v2.0.3 - Breadcrumb, Toggle](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3)
-		<!-- - [v2.0.4 - Text Inputs, Radio Buttons](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
-		<!-- - [v2.0.5 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
-		<!-- - [v2.0.6 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
-		<!-- - [v2.0.7 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
-		<!-- - [v2.0.8 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.8) -->
-		<!-- - [v2.0.9 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.9) -->
+		- [v2.1.0 - Hamburger Menu Icon](https://github.com/paulshryock/Eustace/releases/tag/v2.1.0)
+		- [v2.2.0 - Avatar, Typography](https://github.com/paulshryock/Eustace/releases/tag/v2.2.0)
+		- [v2.3.0 - Breadcrumb, Toggle](https://github.com/paulshryock/Eustace/releases/tag/v2.3.0)
+		- [v2.4.0 - Service Worker](https://github.com/paulshryock/Eustace/releases/tag/v2.4.0)
+		- [v2.5.0 - Render-Blocking Resources](https://github.com/paulshryock/Eustace/releases/tag/v2.5.0)
 - Issue tracker: [https://github.com/paulshryock/Eustace/issues](https://github.com/paulshryock/Eustace/issues)
   - In case of sensitive bugs like security vulnerabilities, please contact
     [paul@pshry.com](mailto:paul@pshry.com) directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
 - Related projects:
-  - **Myrtle**: [https://github.com/paulshryock/Myrtle](https://github.com/paulshryock/Myrtle): _Start Cockpit from scratch without reinventing the wheel_
-  - **Brimbly**: [https://github.com/paulshryock/Brimbly](https://github.com/paulshryock/Brimbly): _Start WordPress from scratch without reinventing the wheel_
+  - **Project Roadmap**: [https://github.com/paulshryock/Project-Roadmap](https://github.com/paulshryock/Project-Roadmap) - Plan and execute digital projects from scratch without reinventing the wheel
+  - **Leigh**: [https://github.com/paulshryock/Leigh](https://github.com/paulshryock/Leigh) - Start local development from scratch without reinventing the wheel
+  - **Myrtle**: [https://github.com/paulshryock/Myrtle](https://github.com/paulshryock/Myrtle) - Start Cockpit from scratch without reinventing the wheel
+  - **Brimbly**: [https://github.com/paulshryock/Brimbly](https://github.com/paulshryock/Brimbly) - Start WordPress from scratch without reinventing the wheel
 
 ## Licensing
 
