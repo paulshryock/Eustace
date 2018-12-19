@@ -112,26 +112,32 @@ branch. Pull requests are welcome.
 
 Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
-### Team
+### Contributors
 
-- [Paul Shryock](https://github.com/paulshryock) -- Lead Front End Developer
+|Name|Role|
+|---|---|
+|[Paul Shryock](https://github.com/paulshryock)|Owner|
 
 ### Thanks
 
-- [Josh Buchea](https://gethead.info/)
-- [Web Robot Pages](http://www.robotstxt.org/)
-- [humans.txt](http://humanstxt.org/)
-- [Eric Rasch](https://codepen.io/ericrasch/pen/qIiyK)
-- [Ahmad Shadeed](http://www.a11ymatters.com/patterns/)
-- [Khan Academy](http://khan.github.io/tota11y/)
-- [Heydon Pickering](https://inclusive-components.design/)
-- [Jeremy Thomas](https://jgthms.com/minireset.css/)
-- [Nicolas Gallagher](github.com/necolas/normalize.css)
-- [Sarah Cope](https://css-tricks.com/almanac/properties/q/quotes/)
-- [Tim Brown](https://abookapart.com/products/flexible-typesetting)
-- [Kinyanjui Wangonya](https://dev.to/wangonya/better-consolelogs-448c)
-- [Nathan Swartz](https://clicknathan.com/web-design/form-ipsum/)
-- [Andrew Bone](https://dev.to/link2twenty)
+Thanks to these individuals and groups for releasing high-quality open-source resources, many of which have been incorporated into this project.
+
+|Name|Resource|
+|---|---|
+|Ahmad Shadeed|[a11ymatters](http://www.a11ymatters.com/patterns/)|
+|Andrew Bone|[Accessibility first toggle switches](https://dev.to/link2twenty), [Accessibility first radio buttons](https://dev.to/link2twenty/accessibility-first-radio-buttons-2302), [Accessibility first text input](https://dev.to/link2twenty/accessibility-first-text-input-1l7l)|
+|Eric Rasch|[HTML Kitchen Sink](https://codepen.io/ericrasch/pen/qIiyK)|
+|Heydon Pickering|[Inclusive Components](https://inclusive-components.design/)|
+|Jeremy Thomas|[minireset.css](https://jgthms.com/minireset.css/)|
+|Josh Buchea|[HEAD](https://gethead.info/)|
+|Juanjo Bernabeu|[humans.txt](http://humanstxt.org/)|
+|Khan Academy|[tota11y](http://khan.github.io/tota11y/)|
+|Kinyanjui Wangonya|[Better console.logs](https://dev.to/wangonya/better-consolelogs-448c)|
+|Nathan Swartz|[Form Ipsum](https://clicknathan.com/web-design/form-ipsum/)|
+|Nicolas Gallagher|[Normalize.css](github.com/necolas/normalize.css)|
+|Sarah Cope|[quotes](https://css-tricks.com/almanac/properties/q/quotes/)|
+|Tim Brown|[Flexible Typesetting](https://abookapart.com/products/flexible-typesetting)|
+|The Web Robot Pages|[robots.txt](http://www.robotstxt.org/)|
 
 ## Links
 
@@ -154,10 +160,10 @@ Working on your first Pull Request? You can learn how from this *free* series, [
     [paul@pshry.com](mailto:paul@pshry.com) directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
 - Related projects:
-  - **Myrtle**: [https://github.com/paulshryock/Myrtle](https://github.com/paulshryock/Myrtle): _Start Cockpit from scratch without reinventing the wheel_
-  - **Brimbly**: [https://github.com/paulshryock/Brimbly](https://github.com/paulshryock/Brimbly): _Start WordPress from scratch without reinventing the wheel_
-  - **Leigh**: [https://github.com/paulshryock/Leigh](https://github.com/paulshryock/Leigh): _Start local development from scratch without reinventing the wheel_
-  - **Project Roadmap**: [https://github.com/paulshryock/Project-Roadmap](https://github.com/paulshryock/Project-Roadmap): _Plan and execute digital projects from scratch without reinventing the wheel_
+  - **Project Roadmap**: [https://github.com/paulshryock/Project-Roadmap](https://github.com/paulshryock/Project-Roadmap) - Plan and execute digital projects from scratch without reinventing the wheel
+  - **Leigh**: [https://github.com/paulshryock/Leigh](https://github.com/paulshryock/Leigh) - Start local development from scratch without reinventing the wheel
+  - **Myrtle**: [https://github.com/paulshryock/Myrtle](https://github.com/paulshryock/Myrtle) - Start Cockpit from scratch without reinventing the wheel
+  - **Brimbly**: [https://github.com/paulshryock/Brimbly](https://github.com/paulshryock/Brimbly) - Start WordPress from scratch without reinventing the wheel
 
 ## Licensing
 
