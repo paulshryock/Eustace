@@ -3,6 +3,9 @@
 # Eustace
 > Start from scratch without reinventing the wheel
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/paulshryock/Eustace/graphs/commit-activity)
+[![](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/paulshryock/Eustace/releases/latest)
+
 This starter package leverages a front end boilerplate, kitchen sink, and some sensible styling defaults to avoid typing the same things for each project.
 
 ![Screenshot](https://raw.githubusercontent.com/paulshryock/Eustace/master/img/screenshot.png "Screenshot")
@@ -30,15 +33,11 @@ The goal is for every project to possess the following qualities:
 
 ### Mobile
 
-- Performance: <span style="color: green;">100%</span>
-- Progressive Web App: <span style="color: orange;">65%</span>
-	- Does not respond with a 200 when offline
-	- User will not be prompted to Install the Web App
-	- Does not register a service worker
-- Accessibility: <span style="color: green;">100%</span>
-- Best Practices: <span style="color: green;">93%</span>
-	- Does not use HTTP/2 for all of its resources
-- SEO: <span style="color: green;">100%</span>
+- Performance: **100%**
+- Progressive Web App: **100%**
+- Accessibility: **100%**
+- Best Practices: **93%**
+- SEO: **100%**
 
 ## Features
 
