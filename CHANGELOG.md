@@ -56,6 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add `async` attribute to linked scripts
 - Add `media` attribute to linked stylesheets
+- Update version numbers
 
 ## 2.4.0 - 2018-12-11 - Service Worker
 
