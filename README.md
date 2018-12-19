@@ -31,12 +31,10 @@ The goal is for every project to possess the following qualities:
 
 ## Lighthouse Audits
 
-### Mobile
-
 - Performance: **100%**
 - Progressive Web App: **100%**
 - Accessibility: **100%**
-- Best Practices: **93%**
+- Best Practices: **100%**
 - SEO: **100%**
 
 ## Features
@@ -141,20 +139,16 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 - Repository: [https://github.com/paulshryock/Eustace](https://github.com/paulshryock/Eustace)
 - Releases:
 	- [v1.0.0 - Initial release](https://github.com/paulshryock/Eustace/releases/tag/v1.0.0)
-		- [v1.0.1 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.0.1)
-		- [v1.0.2 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.0.2)
-		- [v1.0.3 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.0.3)
-		- [v1.0.4 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.0.4)
+		- [v1.1.0 - Accordion, Blockquote, Cards, Code](https://github.com/paulshryock/Eustace/releases/tag/v1.1.0)
+		- [v1.2.0 - button_cta, Screenshot, Templates, Boilerplate](https://github.com/paulshryock/Eustace/releases/tag/v1.2.0)
+		- [v1.3.0 - Forms, Lists, Pre, Scrolling](https://github.com/paulshryock/Eustace/releases/tag/v1.3.0)
+		- [v1.4.0 - Table, Colors, README](https://github.com/paulshryock/Eustace/releases/tag/v1.4.0)
 	- [v2.0.0 - Rename project](https://github.com/paulshryock/Eustace/releases/tag/v2.0.0)
-		- [v2.0.1 - Hamburger Menu Icon](https://github.com/paulshryock/Eustace/releases/tag/v2.0.1)
-		- [v2.0.2 - Avatar, Typography](https://github.com/paulshryock/Eustace/releases/tag/v2.0.2)
-		- [v2.0.3 - Breadcrumb, Toggle](https://github.com/paulshryock/Eustace/releases/tag/v2.0.3)
-		<!-- - [v2.0.4 - Text Inputs, Radio Buttons](https://github.com/paulshryock/Eustace/releases/tag/v2.0.4) -->
-		<!-- - [v2.0.5 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.5) -->
-		<!-- - [v2.0.6 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.6) -->
-		<!-- - [v2.0.7 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.7) -->
-		<!-- - [v2.0.8 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.8) -->
-		<!-- - [v2.0.9 - XXXXXX](https://github.com/paulshryock/Eustace/releases/tag/v2.0.9) -->
+		- [v2.1.0 - Hamburger Menu Icon](https://github.com/paulshryock/Eustace/releases/tag/v2.1.0)
+		- [v2.2.0 - Avatar, Typography](https://github.com/paulshryock/Eustace/releases/tag/v2.2.0)
+		- [v2.3.0 - Breadcrumb, Toggle](https://github.com/paulshryock/Eustace/releases/tag/v2.3.0)
+		- [v2.4.0 - Service Worker](https://github.com/paulshryock/Eustace/releases/tag/v2.4.0)
+		- [v2.5.0 - Render-Blocking Resources](https://github.com/paulshryock/Eustace/releases/tag/v2.5.0)
 - Issue tracker: [https://github.com/paulshryock/Eustace/issues](https://github.com/paulshryock/Eustace/issues)
   - In case of sensitive bugs like security vulnerabilities, please contact
     [paul@pshry.com](mailto:paul@pshry.com) directly instead of using issue tracker. We value your effort
@@ -162,6 +156,8 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 - Related projects:
   - **Myrtle**: [https://github.com/paulshryock/Myrtle](https://github.com/paulshryock/Myrtle): _Start Cockpit from scratch without reinventing the wheel_
   - **Brimbly**: [https://github.com/paulshryock/Brimbly](https://github.com/paulshryock/Brimbly): _Start WordPress from scratch without reinventing the wheel_
+  - **Leigh**: [https://github.com/paulshryock/Leigh](https://github.com/paulshryock/Leigh): _Start local development from scratch without reinventing the wheel_
+  - **Project Roadmap**: [https://github.com/paulshryock/Project-Roadmap](https://github.com/paulshryock/Project-Roadmap): _Plan and execute digital projects from scratch without reinventing the wheel_
 
 ## Licensing
 
