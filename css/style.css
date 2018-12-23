@@ -260,7 +260,8 @@ h2,
 }
 
 h3,
-h4 {
+h4,
+pre code {
 	line-height: 1.2;
 }
 
@@ -561,12 +562,6 @@ table {
 	color: hsl( 0, 0%, 30% );
 }
 
-code {
-	background: #4d4d4d;
-	background: rgb( 77, 77, 77 );
-	background: hsl( 0, 0%, 30% );
-}
-
 /* Medium Dark Gray / hsl( 0, 0%, 40% ) / rgb( 102, 102, 102 ) / #666 */
 
 /* Medium Gray / hsl( 0, 0%, 50% ) / rgb( 128, 128, 128 ) / #808080 */
@@ -659,7 +654,6 @@ tr:nth-of-type(even) {
 /* White / hsl( 0, 0%, 100% ) / rgb( 255, 255, 255 ) / #fff */
 
 thead,
-code,
 .button_cta:link,
 .button_cta:visited,
 .button_cta:hover,
@@ -672,6 +666,7 @@ code,
 table,
 details[open],
 kbd,
+code,
 .button,
 .skip-link {
 	background: #fff;
