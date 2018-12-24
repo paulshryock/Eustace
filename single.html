@@ -60,17 +60,16 @@
 			<article class="container post">
 				<header class="post-header">
 					<h1 class="post-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
-					<ul>
-						<li><time>January 1st, 2018</time></li>
+					<ul class="post-meta">
+						<li><time>$(PUBLISH_DATE}</time></li>
 						<li><ul>
-							<li>Category 1</li>
-							<li>Category 2</li>
+							<li>${TAXONOMY_TERM}</li>
+							<li>${TAXONOMY_TERM}</li>
 						</ul></li>
 					</ul>
+					<img src="https://picsum.photos/1600/900/?random" alt="Placeholder image">
 				</header><!-- .post-header -->
 				<div class="post-content">
-					<img src="https://picsum.photos/1600/900/?random
-" alt="Placeholder image">
 					<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
 					<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
@@ -83,7 +82,7 @@
 					<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
 				</div><!-- .post-content -->
 				<footer class="post-footer">
-					<p><a href="archive.html">Read more articles about <span class="meta">this topic</span></a></p>
+					<p><a href="archive.html">Read more ${POST_TYPES} about this ${TAXONOMY_TERM}</a></p>
 				</footer>
 			</article><!-- .container .post -->
 

@@ -54,9 +54,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 2.6.0 - 2018-12-24 - Posts, Lists, Breadcrumbs
 
 ### Changed
-- Style breadcrumb active link
-- Style lists
 - Update post markup
+- Style lists
+- Style breadcrumbs
 
 ## 2.5.0 - 2018-12-19 - Render-Blocking Resources
 
