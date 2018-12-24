@@ -1201,7 +1201,6 @@ textarea {
 
 /* ch */
 
-p,
 .post-content {
 	/*max-width: 60ch;*/
 	max-width: 36.4rem;
@@ -1306,8 +1305,6 @@ legend,
 ul,
 ol,
 .screen-reader-text,
-.articles,
-.cards,
 .navigation[aria-expanded="false"] {
   padding: 0;
 }
