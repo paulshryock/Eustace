@@ -153,7 +153,9 @@ sub {
 }
 
 small,
-.card footer {
+.card footer,
+.post-meta,
+.post-footer {
 	font-size: 85%;
 }
 
@@ -211,7 +213,7 @@ h2,
 }
 
 h1,
-.entry-title {
+.post-title {
 	font-size: 2rem;
 }
 
@@ -235,7 +237,7 @@ h1,
 	}
 
 	h1,
-	.entry-title {
+	.post-title {
 		font-size: 3rem;
 	}
 
@@ -302,7 +304,6 @@ cite,
 legend,
 footer p,
 .site-title,
-.meta,
 .breadcrumb [aria-current="page"] {
 	font-weight: bold;
 }
@@ -393,7 +394,7 @@ label,
 button,
 input[type="button"],
 .button,
-.meta {
+.post-meta {
 	text-transform: capitalize;
 }
 
@@ -449,47 +450,53 @@ main p {
 /* List Styles */
 
 ul,
-ol,
-.articles,
-.cards {
+ol {
 	list-style: none;
 }
 
-article ul,
+.post-content ul,
+.list_unordered,
 .list_bulleted {
 	list-style: disc;
 }
 
-article ul ul,
+.post-content ul ul,
+.list_unordered ul,
 .list_bulleted ul {
 	list-style: square;
 }
 
-article ul ul ul,
+.post-content ul ul ul,
+.list_unordered ul ul,
 .list_bulleted ul ul {
 	list-style: circle;
 }
 
-article ol,
+.post-content ol,
+.list_ordered,
 .list_numbered {
 	list-style: decimal;
 }
 
-article ol ol,
+.post-content ol ol,
+.list_ordered ol,
 .list_numbered ol {
 	list-style: lower-alpha;
 }
 
-article ol ol ol,
+.post-content ol ol ol,
+.list_ordered ol ol,
 .list_numbered ol ol {
 	list-style: lower-roman;
 }
 
+/* TODO: Update and use, or remove these summary styles */
+
 /*summary {
   list-style-image: url(right-arrow.svg);
-}
+}*/
 
-summary::-webkit-details-marker {
+/*summary::-webkit-details-marker {
   background: url(right-arrow.svg);
   color: transparent;
 }*/
@@ -524,13 +531,14 @@ q:after {
 
 body,
 button,
-article header p,
-footer p,
+.post-header,
+.post-footer,
 .button:link,
 .button:visited,
 .button:hover,
 .button:focus,
-.button:active {
+.button:active,
+.breadcrumb [aria-current="page"] {
 	color: #1a1a1a;
 	color: rgb( 26, 26, 26 );
 	color: hsl( 0, 0%, 10% );
@@ -552,14 +560,26 @@ thead {
 
 /* Dark Gray / hsl( 0, 0%, 30% ) / rgb( 77, 77, 77 ) / #4d4d4d */
 
-p,
-ul,
-ol,
 dl,
-table {
+table,
+.post-content,
+.post-meta {
 	color: #4d4d4d;
 	color: rgb( 77, 77, 77 );
 	color: hsl( 0, 0%, 30% );
+}
+
+.card:hover {
+	box-shadow: 0 0 0.125rem 0.125rem #4d4d4d;
+	box-shadow: 0 0 0.125rem 0.125rem rgb( 77, 77, 77 );
+	box-shadow: 0 0 0.125rem 0.125rem hsl( 0, 0%, 30% );
+}
+
+/* This selector fails in some browsers; keep it isolated */
+.card:focus-within {
+	box-shadow: 0 0 0.125rem 0.125rem #4d4d4d;
+	box-shadow: 0 0 0.125rem 0.125rem rgb( 77, 77, 77 );
+	box-shadow: 0 0 0.125rem 0.125rem hsl( 0, 0%, 30% );
 }
 
 /* Medium Dark Gray / hsl( 0, 0%, 40% ) / rgb( 102, 102, 102 ) / #666 */
@@ -571,8 +591,7 @@ input[type="button"]:hover,
 kbd:hover,
 .button:focus,
 input[type="button"]:focus,
-kbd:focus,
-.card:hover {
+kbd:focus {
 	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
 
@@ -591,11 +610,6 @@ input[type="time"],
 input[type="url"],
 textarea {
 	box-shadow: inset 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
-}
-
-/* This selector fails in some browsers; keep it isolated */
-.card:focus-within {
-	box-shadow: 0 0.0625rem 0.0625rem 0.0625rem hsl( 0, 0%, 50% );
 }
 
 /* Medium Light Gray / hsl( 0, 0%, 60% ) / rgb( 153, 153, 153 ) / #999 */
@@ -948,6 +962,10 @@ kbd {
 	content: '';
 }
 
+.post-meta li + li::before {
+	content: '/ ';
+}
+
 /**
 	* Animation Keyframes
 	*
@@ -1072,8 +1090,14 @@ template {
 	display: none;
 }
 
+.post-meta ul,
+.post-meta ol {
+	display: inline;
+}
+
 kbd,
 nav li,
+.post-meta li,
 .navigation button,
 .button,
 .breadcrumb li + li::before {
@@ -1107,7 +1131,12 @@ legend {
   display: table;
 }
 
-summary {
+summary,
+.post-content li,
+.list_unordered li,
+.list_bulleted li,
+.list_ordered li,
+.list_numbered li {
 	display: list-item;
 }
 
@@ -1196,9 +1225,7 @@ textarea {
 
 /* ch */
 
-p,
-.entry-content {
-	/*max-width: 60ch;*/
+.post {
 	max-width: 36.4rem;
 }
 
@@ -1301,8 +1328,6 @@ legend,
 ul,
 ol,
 .screen-reader-text,
-.articles,
-.cards,
 .navigation[aria-expanded="false"] {
   padding: 0;
 }
@@ -1380,12 +1405,16 @@ dl {
 }
 
 dd,
-article ul,
-article ol,
+.post-content ul,
+.list_unordered,
 .list_bulleted,
+.post-content ol,
+.list_ordered,
 .list_numbered {
 	padding: 0 0 0 2em;
 }
+
+
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
@@ -1457,11 +1486,12 @@ form div {
 	margin: 2rem 0.5rem;
 }
 
-.single article footer {
+.single .post-header__image,
+.single .post-footer {
 	margin: 4rem 0 0;
 }
 
-.single article header {
+.single .post-header {
 	margin: 0 0 4rem;
 }
 
@@ -1490,7 +1520,7 @@ dd + dt {
 }
 
 h1,
-.entry-title {
+.post-title {
 	margin: 1em 0 0.5em;
 }
 

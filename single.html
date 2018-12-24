@@ -57,29 +57,19 @@
 			
 		<main id="content">
 
-			<!--
-				-- Accessible Breadcrumb
-				--
-				-- https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html
-				-->
-			<nav role="navigation" aria-label="Breadcrumb" class="container breadcrumb">
-				<ol>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="archive.html">Content Type Archive</a></li>
-					<li><a href="archive.html">Category Archive</a></li>
-					<li><a href="single.html" aria-current="page">The Title</a></li>
-				</ol>
-			</nav><!-- .container .pagination -->
-
-			<article class="container">
-				<header>
-					<h1 class="entry-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
-					<p>Written by <span class="meta">Jessica Johnson</span></p>
-					<p>Published on <time class="meta">January 1st, 2018</time></p>
-				</header>
-				<div class="entry-content">
-					<img src="https://picsum.photos/1600/900/?random
-" alt="Placeholder image">
+			<article class="container post">
+				<header class="post-header">
+					<h1 class="post-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
+					<ul class="post-meta">
+						<li><time>January 1, 2019</time></li>
+						<li><span class="screen-reader-text">Topics: </span><ul>
+							<li><a href="archive.html">Marketing</a></li>
+							<li><a href="archive.html">Design</a></li>
+						</ul></li>
+					</ul>
+					<img class="post-header__image" src="https://picsum.photos/1600/900/?random" alt="Placeholder image">
+				</header><!-- .post-header -->
+				<div class="post-content">
 					<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
 					<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
@@ -90,11 +80,16 @@
 					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
 					<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 					<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
-				</div><!-- .entry-content -->
-				<footer>
-					<p><a href="archive.html">Read more articles about <span class="meta">this topic</span></a></p>
+				</div><!-- .post-content -->
+				<footer class="post-footer">
+					<ul class="post-meta">
+						<li>Read more about: <ul>
+							<li><a href="archive.html">Marketing</a></li>
+							<li><a href="archive.html">Design</a></li>
+						</ul></li>
+					</ul>
 				</footer>
-			</article><!-- .container -->
+			</article><!-- .container .post -->
 
 		</main>
 
