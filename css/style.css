@@ -530,7 +530,8 @@ footer p,
 .button:visited,
 .button:hover,
 .button:focus,
-.button:active {
+.button:active,
+.breadcrumb [aria-current="page"] {
 	color: #1a1a1a;
 	color: rgb( 26, 26, 26 );
 	color: hsl( 0, 0%, 10% );
