@@ -211,7 +211,7 @@ h2,
 }
 
 h1,
-.entry-title {
+.post-title {
 	font-size: 2rem;
 }
 
@@ -235,7 +235,7 @@ h1,
 	}
 
 	h1,
-	.entry-title {
+	.post-title {
 		font-size: 3rem;
 	}
 
@@ -449,38 +449,42 @@ main p {
 /* List Styles */
 
 ul,
-ol,
-.articles,
-.cards {
+ol {
 	list-style: none;
 }
 
-article ul,
+.post-content ul,
+.list_unordered,
 .list_bulleted {
 	list-style: disc;
 }
 
-article ul ul,
+.post-content ul ul,
+.list_unordered ul,
 .list_bulleted ul {
 	list-style: square;
 }
 
-article ul ul ul,
+.post-content ul ul ul,
+.list_unordered ul ul,
 .list_bulleted ul ul {
 	list-style: circle;
 }
 
-article ol,
+.post-content ol,
+.list_ordered,
 .list_numbered {
 	list-style: decimal;
 }
 
-article ol ol,
+.post-content ol ol,
+.list_ordered ol,
 .list_numbered ol {
 	list-style: lower-alpha;
 }
 
-article ol ol ol,
+.post-content ol ol ol,
+.list_ordered ol ol,
 .list_numbered ol ol {
 	list-style: lower-roman;
 }
@@ -1198,7 +1202,7 @@ textarea {
 /* ch */
 
 p,
-.entry-content {
+.post-content {
 	/*max-width: 60ch;*/
 	max-width: 36.4rem;
 }
@@ -1381,12 +1385,16 @@ dl {
 }
 
 dd,
-article ul,
-article ol,
+.post-content ul,
+.list_unordered,
 .list_bulleted,
+.post-content ol,
+.list_ordered,
 .list_numbered {
 	padding: 0 0 0 2em;
 }
+
+
 
 @media screen and (min-width: 37.5rem) { /* Tablet Portrait / 37.5rem / 600px */
 
@@ -1491,7 +1499,7 @@ dd + dt {
 }
 
 h1,
-.entry-title {
+.post-title {
 	margin: 1em 0 0.5em;
 }
 
