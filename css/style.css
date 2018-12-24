@@ -962,6 +962,10 @@ kbd {
 	content: '';
 }
 
+.post-meta li + li::before {
+	content: '/ ';
+}
+
 /**
 	* Animation Keyframes
 	*
@@ -1084,6 +1088,11 @@ table {
 [hidden],
 template {
 	display: none;
+}
+
+.post-meta ul,
+.post-meta ol {
+	display: inline;
 }
 
 kbd,
@@ -1477,11 +1486,12 @@ form div {
 	margin: 2rem 0.5rem;
 }
 
-.single article footer {
+.single .post-header__image,
+.single .post-footer {
 	margin: 4rem 0 0;
 }
 
-.single article header {
+.single .post-header {
 	margin: 0 0 4rem;
 }
 
