@@ -134,6 +134,7 @@ Thanks to these individuals and groups for releasing high-quality open-source re
 |Kinyanjui Wangonya|[Better console.logs](https://dev.to/wangonya/better-consolelogs-448c)|
 |Nathan Swartz|[Form Ipsum](https://clicknathan.com/web-design/form-ipsum/)|
 |Nicolas Gallagher|[Normalize.css](github.com/necolas/normalize.css)|
+|Phan An|[.htaccess Snippets](https://github.com/phanan/htaccess)|
 |Sarah Cope|[quotes](https://css-tricks.com/almanac/properties/q/quotes/)|
 |Tim Brown|[Flexible Typesetting](https://abookapart.com/products/flexible-typesetting)|
 |The Web Robot Pages|[robots.txt](http://www.robotstxt.org/)|
